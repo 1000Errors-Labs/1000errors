@@ -135,6 +135,7 @@ window.SITE_CONFIG = {
     ownerJobTitle: "Light installation artist, VJ and stage designer",
     location: { town: "Bristol", country: "GB" },    // town and country only, no street address
     areaServed: "Worldwide",
+    verify: { "p:domain_verify": "f71c7614d74e7ed4854f7b5b6bbbbb04" }, // Pinterest website claim
     knowsAbout: ["Light installations", "Laser cutting", "LED lighting", "Sacred geometry", "Stage design",
       "Projection mapping", "VJing", "3D animation", "Festival installations"],
     shareImage: "assets/sacred-geometry-flower-garden-festival-night.jpg", // used when a page has no picture of its own

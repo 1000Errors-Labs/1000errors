@@ -164,6 +164,8 @@ function headHtml(page) {
     ...(page.ogExtra || []).map(([k, v]) => `<meta property="${k}" content="${esc(v)}" />`),
     `<meta name="twitter:card" content="${image ? "summary_large_image" : "summary"}" />`,
     seo.twitter ? `<meta name="twitter:site" content="${esc(seo.twitter)}" />` : "",
+    // seo.verify: ownership tags from Pinterest, Google etc., e.g. { "p:domain_verify": "abc123" }. Homepage only.
+    ...(page.path === "" ? Object.entries(seo.verify || {}) : []).map(([k, v]) => `<meta name="${esc(k)}" content="${esc(v)}" />`),
     ...(page.jsonld || []).filter(Boolean).map(data =>
       `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, "\\u003c")}</script>`),
   ];
