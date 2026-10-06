@@ -55,7 +55,10 @@
   const PROJECTS_PAGE = SITE.projectsPage || "/projects";
 
   function setTitle(part, description) {
-    document.title = part ? `${part} | ${SITE.name}` : SITE.name;
+    // A page file built by `npm run sync` already has the right title and description (search titles, product
+    // summaries), so leave them on first load; only set them when moving between pages without a reload.
+    if (mainEl.dataset.prerendered === currentPath()) return;
+    document.title = part ? `${part} | ${SITE.name}` : SITE.seo?.homeTitle || SITE.name;
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.content = description || SITE.description || "";
   }
@@ -179,7 +182,8 @@
     renderNav();
     if (!p) return showNotFound();
 
-    setTitle(p.title);
+    const summary = (p.descriptionHtml || "").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    setTitle(p.seo?.title || p.title, p.seo?.description || summary.slice(0, 160));
     const variants = p.variants.nodes;
     const images = p.images.nodes;
     const selected = R.selectedOf(R.firstVariant(p));
