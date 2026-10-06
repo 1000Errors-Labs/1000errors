@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>1000 Errors: Laser Cut Art &amp; Light Sculptures</title>
+  <link>https://1000errors.uk/</link>
+  <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
+  <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>Sacred Geometry Laser Cut Light Art</title>
+    <link>https://1000errors.uk/lasercut-art/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=olly-balsom-hexstatic-illuminated-wall-art</link>
+    <description>Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">olly-balsom-hexstatic-illuminated-wall-art</guid>
+    <pubDate>Tue, 06 Oct 2026 06:00:00 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/olly-balsom-hexstatic-illuminated-wall-art.jpg" length="150341" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/olly-balsom-hexstatic-illuminated-wall-art.jpg" medium="image" type="image/jpeg" />
+  </item>
+</channel>
+</rss>

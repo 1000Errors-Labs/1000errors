@@ -1,0 +1,1966 @@
+{
+  "start": "2026-10-06",
+  "perDay": 3,
+  "boards": {
+    "light-installations": {
+      "name": "Light Installations",
+      "share": 0.3,
+      "pins": [
+        {
+          "id": "laser-cut-wood-flower-mandalas-daylight",
+          "title": "Sacred Geometry Flower Garden LED Light Installation",
+          "description": "The flowers' layered wooden mandalas in daylight. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/light-installations/",
+          "image": "https://1000errors.uk/pinterest/img/laser-cut-wood-flower-mandalas-daylight.jpg",
+          "bytes": 269341
+        },
+        {
+          "id": "sacred-geometry-flower-garden-festival-night",
+          "title": "Light Installation Commissions for Clubs & Festivals",
+          "description": "Bespoke LED light installations, laser cut sculptures and stage design for clubs, festivals and events. Designed and built in Bristol, UK, made to tour worldwide. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/commissions/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-geometry-flower-garden-festival-night.jpg",
+          "bytes": 50908
+        },
+        {
+          "id": "projection-mapped-face-sculpture-stage",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "The larger face with additional details projected onto it. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/projection-mapped-face-sculpture-stage.jpg",
+          "bytes": 75202
+        },
+        {
+          "id": "ayahuasca-temple-jaguar-head-entrance",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-jaguar-head-entrance.jpg",
+          "bytes": 82066
+        },
+        {
+          "id": "sacred-geometry-flower-purple-led",
+          "title": "Sacred Geometry Flower Garden LED Light Installation",
+          "description": "A mandala flower glowing purple at night, with the rest of the garden behind it. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/light-installations/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-geometry-flower-purple-led.jpg",
+          "bytes": 176274
+        },
+        {
+          "id": "layered-hexagon-pattern-wood-detail",
+          "title": "Light Installation Commissions for Clubs & Festivals",
+          "description": "Bespoke LED light installations, laser cut sculptures and stage design for clubs, festivals and events. Designed and built in Bristol, UK, made to tour worldwide. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/commissions/",
+          "image": "https://1000errors.uk/pinterest/img/layered-hexagon-pattern-wood-detail.jpg",
+          "bytes": 167038
+        },
+        {
+          "id": "face-sculpture-concept-sketch",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "An early design concept sketch with the 3D face already included. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-concept-sketch.jpg",
+          "bytes": 83424
+        },
+        {
+          "id": "ayahuasca-temple-aerial-view",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "Aerial view of the temple and its seven outer sections. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-aerial-view.jpg",
+          "bytes": 105075
+        },
+        {
+          "id": "flower-garden-festival-visitors-night",
+          "title": "Sacred Geometry Flower Garden LED Light Installation",
+          "description": "Visitors walking among the illuminated flowers at night. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/light-installations/",
+          "image": "https://1000errors.uk/pinterest/img/flower-garden-festival-visitors-night.jpg",
+          "bytes": 90748
+        },
+        {
+          "id": "wedding-archway-pieces-packed-in-suitcase",
+          "title": "Light Installation Commissions for Clubs & Festivals",
+          "description": "Bespoke LED light installations, laser cut sculptures and stage design for clubs, festivals and events. Designed and built in Bristol, UK, made to tour worldwide. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/commissions/",
+          "image": "https://1000errors.uk/pinterest/img/wedding-archway-pieces-packed-in-suitcase.jpg",
+          "bytes": 280101
+        },
+        {
+          "id": "face-sculpture-3d-printed-prototype",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "A further developed small scale prototype that combines 3D printing and multiple layers of laser cut wood. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-3d-printed-prototype.jpg",
+          "bytes": 74633
+        },
+        {
+          "id": "ayahuasca-temple-seven-pointed-star-roof",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "Top-down view of the seven-pointed star roof. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-seven-pointed-star-roof.jpg",
+          "bytes": 85663
+        },
+        {
+          "id": "sacred-geometry-flower-rainbow-led",
+          "title": "Sacred Geometry Flower Garden LED Light Installation",
+          "description": "A mandala flower glowing in rainbow colours. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/light-installations/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-geometry-flower-rainbow-led.jpg",
+          "bytes": 241144
+        },
+        {
+          "id": "eurorack-case-designer-rows-and-arc",
+          "title": "Light Installation Commissions for Clubs & Festivals",
+          "description": "Bespoke LED light installations, laser cut sculptures and stage design for clubs, festivals and events. Designed and built in Bristol, UK, made to tour worldwide. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/commissions/",
+          "image": "https://1000errors.uk/pinterest/img/eurorack-case-designer-rows-and-arc.jpg",
+          "bytes": 44732
+        },
+        {
+          "id": "face-sculpture-early-3d-prototype",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "Another early 3D prototype, used to work out how much of the face to include so the projections would not distort when projected from too steep an angle. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-early-3d-prototype.jpg",
+          "bytes": 76002
+        },
+        {
+          "id": "ayahuasca-temple-jaguar-entrance-side",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "Side view of the jaguar head entrance. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-jaguar-entrance-side.jpg",
+          "bytes": 94852
+        },
+        {
+          "id": "colour-changing-led-flower-mandalas",
+          "title": "Sacred Geometry Flower Garden LED Light Installation",
+          "description": "The mandala flowers in different LED colours, with festival crowds. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/light-installations/",
+          "image": "https://1000errors.uk/pinterest/img/colour-changing-led-flower-mandalas.jpg",
+          "bytes": 247260
+        },
+        {
+          "id": "face-sculpture-miniature-test-projection",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "An early test projection on the miniature scale model, making sure everything worked well. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-miniature-test-projection.jpg",
+          "bytes": 73351
+        },
+        {
+          "id": "ayahuasca-temple-jaguar-mouth",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "Looking up into the jaguar's mouth at the entrance. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-jaguar-mouth.jpg",
+          "bytes": 100776
+        },
+        {
+          "id": "face-sculpture-interlocking-wood-prototype",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "Software turned the 3D mesh into a series of interlocking pieces of wood, laser cut and slotted together. This was a small scale prototype. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-interlocking-wood-prototype.jpg",
+          "bytes": 126291
+        },
+        {
+          "id": "ayahuasca-temple-entrance-walkthrough",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-entrance-walkthrough.jpg",
+          "bytes": 104008
+        },
+        {
+          "id": "face-sculpture-chicken-wire-frame",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "On the full size version, chicken wire bridged the gaps between the wood. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-chicken-wire-frame.jpg",
+          "bytes": 146655
+        },
+        {
+          "id": "ayahuasca-temple-inner-archway",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "The inner archway and patterned floor. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-inner-archway.jpg",
+          "bytes": 121176
+        },
+        {
+          "id": "face-sculpture-papier-mache-layer",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "A layer of papier-mâché was then built up over the chicken wire. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-papier-mache-layer.jpg",
+          "bytes": 72148
+        },
+        {
+          "id": "ayahuasca-temple-ceiling",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "The ceiling above the inner archway. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-ceiling.jpg",
+          "bytes": 135038
+        },
+        {
+          "id": "face-sculpture-wireframe-projection-test",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "A wireframe image of the digital model projection mapped onto the physical sculpture to test for discrepancies. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-wireframe-projection-test.jpg",
+          "bytes": 66979
+        },
+        {
+          "id": "ayahuasca-temple-star-window-archway",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "The inner archway with its seven-pointed star window. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-star-window-archway.jpg",
+          "bytes": 139425
+        },
+        {
+          "id": "face-sculpture-photogrammetry-capture",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "A photogrammetry capture of the physical sculpture, so it could be compared closely with the digital version used for animation. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-photogrammetry-capture.jpg",
+          "bytes": 72403
+        },
+        {
+          "id": "ayahuasca-temple-inlaid-star-floor",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "The inlaid star pattern on the floor. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-inlaid-star-floor.jpg",
+          "bytes": 108673
+        },
+        {
+          "id": "face-sculpture-digital-model-comparison",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "The capture imported into the modelling software, to compare the two and make small adjustments to the animation model. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-digital-model-comparison.jpg",
+          "bytes": 68862
+        },
+        {
+          "id": "ayahuasca-temple-ceiling-lantern",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "The central ceiling lantern. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-ceiling-lantern.jpg",
+          "bytes": 116938
+        },
+        {
+          "id": "face-sculpture-side-view-comparison",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "A side view comparing the physical sculpture and the original digital model. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-side-view-comparison.jpg",
+          "bytes": 48581
+        },
+        {
+          "id": "ayahuasca-temple-carved-pillars",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "Carved pillars. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-carved-pillars.jpg",
+          "bytes": 112786
+        },
+        {
+          "id": "face-sculpture-detail-sections",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "Separating the face into sections by level of detail allowed more pieces of wood to be used where the detail was finer. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-detail-sections.jpg",
+          "bytes": 73241
+        },
+        {
+          "id": "ayahuasca-temple-ouroboros-altar-wall",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "The ouroboros altar wall. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-ouroboros-altar-wall.jpg",
+          "bytes": 114458
+        },
+        {
+          "id": "face-sculpture-high-detail-wood-pieces",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "The higher detail areas, built from more pieces of wood. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-high-detail-wood-pieces.jpg",
+          "bytes": 104381
+        },
+        {
+          "id": "ayahuasca-temple-ouroboros-seed-of-life-altar",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "The ouroboros and seed of life altar. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-ouroboros-seed-of-life-altar.jpg",
+          "bytes": 120605
+        },
+        {
+          "id": "face-sculpture-hessian-clay-features",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "A layer of hessian, then a mix of clay and papier-mâché, used to create these features. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-hessian-clay-features.jpg",
+          "bytes": 105067
+        },
+        {
+          "id": "ayahuasca-temple-lattice-detail",
+          "title": "Ayahuasca Temple Architectural Design",
+          "description": "Close-up of the interlaced lattice. A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/architectural-design/",
+          "image": "https://1000errors.uk/pinterest/img/ayahuasca-temple-lattice-detail.jpg",
+          "bytes": 128036
+        },
+        {
+          "id": "face-sculpture-inserted-features",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "The features were inserted into the larger, simpler face, so the fine details could be worked on separately. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-inserted-features.jpg",
+          "bytes": 89868
+        },
+        {
+          "id": "face-sculpture-sanded-surface",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "Another view of the face after more layers and sanding. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-sanded-surface.jpg",
+          "bytes": 96813
+        },
+        {
+          "id": "face-sculpture-painted-eyes",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "After some paint had been added. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-painted-eyes.jpg",
+          "bytes": 42238
+        },
+        {
+          "id": "face-sculpture-2-5m-face-from-above",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "The 2.5m tall face from above. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-2-5m-face-from-above.jpg",
+          "bytes": 51292
+        },
+        {
+          "id": "projection-mapped-face-sculpture-performer",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "The larger of the two faces with projections. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/projection-mapped-face-sculpture-performer.jpg",
+          "bytes": 56395
+        },
+        {
+          "id": "small-projection-mapped-face-sculpture",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "The smaller of the two projection mapped face sculptures. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/small-projection-mapped-face-sculpture.jpg",
+          "bytes": 77545
+        },
+        {
+          "id": "face-sculpture-festival-dj-booth",
+          "title": "Projection Mapped Face Sculpture for Festival Stages",
+          "description": "A face sculpture behind the DJ booth at a festival. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.",
+          "link": "https://1000errors.uk/sculptural-work/",
+          "image": "https://1000errors.uk/pinterest/img/face-sculpture-festival-dj-booth.jpg",
+          "bytes": 96549
+        }
+      ]
+    },
+    "laser-cut-art": {
+      "name": "Laser Cut Art & Light Sculptures",
+      "share": 0.3,
+      "pins": [
+        {
+          "id": "olly-balsom-hexstatic-illuminated-wall-art",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/olly-balsom-hexstatic-illuminated-wall-art.jpg",
+          "bytes": 150341
+        },
+        {
+          "id": "beetle-laser-cut-card-silhouette",
+          "title": "Layered Laser Cut Beetle Art",
+          "description": "Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/layered-beetles/",
+          "image": "https://1000errors.uk/pinterest/img/beetle-laser-cut-card-silhouette.jpg",
+          "bytes": 82916
+        },
+        {
+          "id": "squircles-blender-addon-room-shadows",
+          "title": "Squircles: 3D Printed Shadow Lamp Design",
+          "description": "Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/shadow-lamp-designer/",
+          "image": "https://1000errors.uk/pinterest/img/squircles-blender-addon-room-shadows.jpg",
+          "bytes": 75443
+        },
+        {
+          "id": "eurorack-case-designer-tall-case-3d",
+          "title": "Laser Cut Eurorack Case Design",
+          "description": "A standalone, parametric app for designing curved Eurorack cases for modular synthesizers, with native exports for CNC and laser cutting. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/eurorack-case-designer/",
+          "image": "https://1000errors.uk/pinterest/img/eurorack-case-designer-tall-case-3d.jpg",
+          "bytes": 44973
+        },
+        {
+          "id": "septagram-light-sculpture-1-14",
+          "title": "Septagram LED Light Sculpture, Laser Cut Wood Mandala",
+          "description": "Septagram laser cut wooden light sculpture glowing red on a sideboard. Seven-pointed septagram light sculpture in 7 layers of laser cut wood, LED-lit, with a stand and wall hanging ring. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/septagram-light-sculpture-1/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-1-14.jpg",
+          "bytes": 204348
+        },
+        {
+          "id": "seed-of-life-light-sculpture-12",
+          "title": "Seed of Life LED Light Sculpture, Laser Cut Birch Mandala",
+          "description": "Seed of Life wooden LED light sculpture hanging on a wooden wall above a sofa. Seed of Life sacred geometry light sculpture, laser cut from layered birch and hand painted, with adjustable LED lighting. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/seed-of-life-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-12.jpg",
+          "bytes": 117674
+        },
+        {
+          "id": "quintessence-light-sculpture-4",
+          "title": "Quintessence LED Light Sculpture, 5-Layer Wood Mandala",
+          "description": "Quintessence laser cut wooden mandala light sculpture glowing purple. Five-fold sacred geometry light sculpture in 5 layers of laser cut wood, with colour-changing LEDs and a stand. Numbered first run. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/quintessence-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/quintessence-light-sculpture-4.jpg",
+          "bytes": 187839
+        },
+        {
+          "id": "sacred-geometry-xmas-tree-ornament-set-1",
+          "title": "Sacred Geometry Christmas Ornaments, Laser Cut Birch Set of 10",
+          "description": "Set of laser cut wooden sacred geometry Christmas tree ornaments laid out around a star. Ten laser cut and engraved birch Christmas tree ornaments: a 20cm star plus nine 6.5cm sacred geometry pieces. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/sacred-geometry-xmas-tree-ornament-set/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-geometry-xmas-tree-ornament-set-1.jpg",
+          "bytes": 177318
+        },
+        {
+          "id": "platonic-energy-circle-1",
+          "title": "Platonic Energy Circle, LED Sacred Geometry Wall Mandala",
+          "description": "Platonic Energy Circle wooden mandala LED wall light sculpture glowing red. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/platonic-energy-circle/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-circle-1.jpg",
+          "bytes": 212297
+        },
+        {
+          "id": "hexstatic-illuminated-wall-art-6",
+          "title": "Hexstatic LED Light Sculpture, Flower of Life Wood Mandala",
+          "description": "Hexstatic wooden mandala LED light sculpture glowing warm white. Flower of Life inspired mandala in hexagon layers, laser cut from birch, hand painted and lit with adjustable LEDs. 35–70cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/hexstatic-illuminated-wall-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-6.jpg",
+          "bytes": 195260
+        },
+        {
+          "id": "lotus-flower-of-life-lamp-1",
+          "title": "Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light",
+          "description": "Lotus Flower of Life laser cut wooden table lamp with a vintage filament bulb. 3D lotus lamp with the Flower of Life pattern in gold, silver or natural wood. Hangs from the ceiling or stands as a table or floor lamp. 38–115cm wide. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/lotus-flower-of-life-lamp/",
+          "image": "https://1000errors.uk/pinterest/img/lotus-flower-of-life-lamp-1.jpg",
+          "bytes": 117003
+        },
+        {
+          "id": "hexagonal-wall-art-led-detail",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "Close-up of layered hexagonal laser cut wall art lit with warm LEDs. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexagonal-wall-art-led-detail.jpg",
+          "bytes": 183100
+        },
+        {
+          "id": "beetle-raised-layers-3d-preview",
+          "title": "Layered Laser Cut Beetle Art",
+          "description": "Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/layered-beetles/",
+          "image": "https://1000errors.uk/pinterest/img/beetle-raised-layers-3d-preview.jpg",
+          "bytes": 96972
+        },
+        {
+          "id": "squircles-sphere-preview",
+          "title": "Squircles: 3D Printed Shadow Lamp Design",
+          "description": "Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/shadow-lamp-designer/",
+          "image": "https://1000errors.uk/pinterest/img/squircles-sphere-preview.jpg",
+          "bytes": 140264
+        },
+        {
+          "id": "eurorack-case-designer-countersunk-holes-close-up",
+          "title": "Laser Cut Eurorack Case Design",
+          "description": "A standalone, parametric app for designing curved Eurorack cases for modular synthesizers, with native exports for CNC and laser cutting. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/eurorack-case-designer/",
+          "image": "https://1000errors.uk/pinterest/img/eurorack-case-designer-countersunk-holes-close-up.jpg",
+          "bytes": 53968
+        },
+        {
+          "id": "septagram-light-sculpture-1-15",
+          "title": "Septagram LED Light Sculpture, Laser Cut Wood Mandala",
+          "description": "Septagram seven pointed star wooden sculpture held up, unlit, showing the layered gold design. Seven-pointed septagram light sculpture in 7 layers of laser cut wood, LED-lit, with a stand and wall hanging ring. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/septagram-light-sculpture-1/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-1-15.jpg",
+          "bytes": 305123
+        },
+        {
+          "id": "seed-of-life-light-sculpture-13",
+          "title": "Seed of Life LED Light Sculpture, Laser Cut Birch Mandala",
+          "description": "Seed of Life light sculpture glowing in rainbow colours on a shop wall. Seed of Life sacred geometry light sculpture, laser cut from layered birch and hand painted, with adjustable LED lighting. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/seed-of-life-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-13.jpg",
+          "bytes": 137995
+        },
+        {
+          "id": "quintessence-light-sculpture-1",
+          "title": "Quintessence LED Light Sculpture, 5-Layer Wood Mandala",
+          "description": "Quintessence wooden mandala light sculpture glowing red on its stand. Five-fold sacred geometry light sculpture in 5 layers of laser cut wood, with colour-changing LEDs and a stand. Numbered first run. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/quintessence-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/quintessence-light-sculpture-1.jpg",
+          "bytes": 218720
+        },
+        {
+          "id": "sacred-geometry-xmas-tree-ornament-set-2",
+          "title": "Sacred Geometry Christmas Ornaments, Laser Cut Birch Set of 10",
+          "description": "Sacred geometry wooden Christmas ornaments hanging from a tree branch outdoors. Ten laser cut and engraved birch Christmas tree ornaments: a 20cm star plus nine 6.5cm sacred geometry pieces. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/sacred-geometry-xmas-tree-ornament-set/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-geometry-xmas-tree-ornament-set-2.jpg",
+          "bytes": 204415
+        },
+        {
+          "id": "platonic-energy-circle-2",
+          "title": "Platonic Energy Circle, LED Sacred Geometry Wall Mandala",
+          "description": "Platonic Energy Circle wooden mandala wall sculpture lit in blue. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/platonic-energy-circle/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-circle-2.jpg",
+          "bytes": 242262
+        },
+        {
+          "id": "hexstatic-illuminated-wall-art-7",
+          "title": "Hexstatic LED Light Sculpture, Flower of Life Wood Mandala",
+          "description": "Olly Balsom holding the Hexstatic hexagonal light sculpture glowing pink. Flower of Life inspired mandala in hexagon layers, laser cut from birch, hand painted and lit with adjustable LEDs. 35–70cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/hexstatic-illuminated-wall-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-7.jpg",
+          "bytes": 150917
+        },
+        {
+          "id": "lotus-flower-of-life-lamp-2",
+          "title": "Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light",
+          "description": "Close-up of the lotus lamp's petals with Flower of Life cut-outs. 3D lotus lamp with the Flower of Life pattern in gold, silver or natural wood. Hangs from the ceiling or stands as a table or floor lamp. 38–115cm wide. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/lotus-flower-of-life-lamp/",
+          "image": "https://1000errors.uk/pinterest/img/lotus-flower-of-life-lamp-2.jpg",
+          "bytes": 101750
+        },
+        {
+          "id": "hexagon-mandala-laser-cut-wood",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A hexagonal sacred geometry mandala in layered laser cut wood, held up outdoors. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexagon-mandala-laser-cut-wood.jpg",
+          "bytes": 228105
+        },
+        {
+          "id": "beetle-tunnel-layers-3d-preview",
+          "title": "Layered Laser Cut Beetle Art",
+          "description": "3D preview of the beetle sunk into a tunnel of rainbow coloured layers. Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/layered-beetles/",
+          "image": "https://1000errors.uk/pinterest/img/beetle-tunnel-layers-3d-preview.jpg",
+          "bytes": 70976
+        },
+        {
+          "id": "squircles-room-shadow-preview",
+          "title": "Squircles: 3D Printed Shadow Lamp Design",
+          "description": "Simulated shadows from the lamp covering the walls, floor and ceiling of a room. Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/shadow-lamp-designer/",
+          "image": "https://1000errors.uk/pinterest/img/squircles-room-shadow-preview.jpg",
+          "bytes": 126341
+        },
+        {
+          "id": "septagram-light-sculpture-1-1",
+          "title": "Septagram LED Light Sculpture, Laser Cut Wood Mandala",
+          "description": "Septagram laser cut wooden LED light sculpture glowing green on its stand. Seven-pointed septagram light sculpture in 7 layers of laser cut wood, LED-lit, with a stand and wall hanging ring. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/septagram-light-sculpture-1/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-1-1.jpg",
+          "bytes": 260932
+        },
+        {
+          "id": "seed-of-life-light-sculpture-1",
+          "title": "Seed of Life LED Light Sculpture, Laser Cut Birch Mandala",
+          "description": "Seed of Life laser cut wooden light sculpture glowing purple on its stand. Seed of Life sacred geometry light sculpture, laser cut from layered birch and hand painted, with adjustable LED lighting. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/seed-of-life-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-1.jpg",
+          "bytes": 285475
+        },
+        {
+          "id": "quintessence-light-sculpture-2",
+          "title": "Quintessence LED Light Sculpture, 5-Layer Wood Mandala",
+          "description": "Side view of the Quintessence light sculpture on its wooden stand. Five-fold sacred geometry light sculpture in 5 layers of laser cut wood, with colour-changing LEDs and a stand. Numbered first run. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/quintessence-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/quintessence-light-sculpture-2.jpg",
+          "bytes": 40202
+        },
+        {
+          "id": "platonic-energy-circle-3",
+          "title": "Platonic Energy Circle, LED Sacred Geometry Wall Mandala",
+          "description": "Platonic Energy Circle light sculpture glowing turquoise, with a thumbs-up. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/platonic-energy-circle/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-circle-3.jpg",
+          "bytes": 233322
+        },
+        {
+          "id": "hexstatic-illuminated-wall-art-1",
+          "title": "Hexstatic LED Light Sculpture, Flower of Life Wood Mandala",
+          "description": "Hexstatic laser cut wooden mandala wall light sculpture glowing magenta. Flower of Life inspired mandala in hexagon layers, laser cut from birch, hand painted and lit with adjustable LEDs. 35–70cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/hexstatic-illuminated-wall-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-1.jpg",
+          "bytes": 191901
+        },
+        {
+          "id": "lotus-flower-of-life-lamp-3",
+          "title": "Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light",
+          "description": "Lotus Flower of Life wooden lamp hung as a ceiling light above a bookshelf. 3D lotus lamp with the Flower of Life pattern in gold, silver or natural wood. Hangs from the ceiling or stands as a table or floor lamp. 38–115cm wide. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/lotus-flower-of-life-lamp/",
+          "image": "https://1000errors.uk/pinterest/img/lotus-flower-of-life-lamp-3.jpg",
+          "bytes": 84724
+        },
+        {
+          "id": "lotus-flower-of-life-lamp",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "The Lotus Flower of Life lamp in laser cut wood, with an Edison bulb. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/lotus-flower-of-life-lamp.jpg",
+          "bytes": 106205
+        },
+        {
+          "id": "beetle-tunnel-layers-3d-close-up",
+          "title": "Layered Laser Cut Beetle Art",
+          "description": "Close-up of the stepped rainbow layers in the 3D preview. Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/layered-beetles/",
+          "image": "https://1000errors.uk/pinterest/img/beetle-tunnel-layers-3d-close-up.jpg",
+          "bytes": 76261
+        },
+        {
+          "id": "squircles-outdoor-floor-shadows",
+          "title": "Squircles: 3D Printed Shadow Lamp Design",
+          "description": "The lamp hanging over an endless floor at night, casting its bottom cap pattern below it. Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/shadow-lamp-designer/",
+          "image": "https://1000errors.uk/pinterest/img/squircles-outdoor-floor-shadows.jpg",
+          "bytes": 96319
+        },
+        {
+          "id": "septagram-light-sculpture-1-2",
+          "title": "Septagram LED Light Sculpture, Laser Cut Wood Mandala",
+          "description": "Close-up of the Septagram light sculpture's layered star lit in red. Seven-pointed septagram light sculpture in 7 layers of laser cut wood, LED-lit, with a stand and wall hanging ring. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/septagram-light-sculpture-1/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-1-2.jpg",
+          "bytes": 238886
+        },
+        {
+          "id": "seed-of-life-light-sculpture-2",
+          "title": "Seed of Life LED Light Sculpture, Laser Cut Birch Mandala",
+          "description": "Olly Balsom holding the Seed of Life light sculpture glowing warm orange. Seed of Life sacred geometry light sculpture, laser cut from layered birch and hand painted, with adjustable LED lighting. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/seed-of-life-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-2.jpg",
+          "bytes": 239948
+        },
+        {
+          "id": "quintessence-light-sculpture-3",
+          "title": "Quintessence LED Light Sculpture, 5-Layer Wood Mandala",
+          "description": "Back of the Quintessence light sculpture engraved with the 1000 Errors logo and edition number 1/10. Five-fold sacred geometry light sculpture in 5 layers of laser cut wood, with colour-changing LEDs and a stand. Numbered first run. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/quintessence-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/quintessence-light-sculpture-3.jpg",
+          "bytes": 50094
+        },
+        {
+          "id": "platonic-energy-circle-4",
+          "title": "Platonic Energy Circle, LED Sacred Geometry Wall Mandala",
+          "description": "Platonic Energy Circle laser cut wooden mandala, unlit, on a white background. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/platonic-energy-circle/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-circle-4.jpg",
+          "bytes": 291091
+        },
+        {
+          "id": "hexstatic-illuminated-wall-art-2",
+          "title": "Hexstatic LED Light Sculpture, Flower of Life Wood Mandala",
+          "description": "Grid of close-ups showing the Hexstatic light sculpture's colour changing LED options. Flower of Life inspired mandala in hexagon layers, laser cut from birch, hand painted and lit with adjustable LEDs. 35–70cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/hexstatic-illuminated-wall-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-2.jpg",
+          "bytes": 229674
+        },
+        {
+          "id": "lotus-flower-of-life-lamp-4",
+          "title": "Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light",
+          "description": "Close-up of the filament bulb glowing inside the Lotus Flower of Life lamp petals. 3D lotus lamp with the Flower of Life pattern in gold, silver or natural wood. Hangs from the ceiling or stands as a table or floor lamp. 38–115cm wide. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/lotus-flower-of-life-lamp/",
+          "image": "https://1000errors.uk/pinterest/img/lotus-flower-of-life-lamp-4.jpg",
+          "bytes": 131654
+        },
+        {
+          "id": "seed-of-life-light-sculpture",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "The Seed of Life light sculpture, illuminated on its stand. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture.jpg",
+          "bytes": 303686
+        },
+        {
+          "id": "beetle-layered-card-test-cut",
+          "title": "Layered Laser Cut Beetle Art",
+          "description": "Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/layered-beetles/",
+          "image": "https://1000errors.uk/pinterest/img/beetle-layered-card-test-cut.jpg",
+          "bytes": 250635
+        },
+        {
+          "id": "squircles-lamp-in-slicer",
+          "title": "Squircles: 3D Printed Shadow Lamp Design",
+          "description": "Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/blog/shadow-lamp-designer/",
+          "image": "https://1000errors.uk/pinterest/img/squircles-lamp-in-slicer.jpg",
+          "bytes": 87600
+        },
+        {
+          "id": "septagram-light-sculpture-1-3",
+          "title": "Septagram LED Light Sculpture, Laser Cut Wood Mandala",
+          "description": "Close-up of the Septagram's central heptagram lit in purple. Seven-pointed septagram light sculpture in 7 layers of laser cut wood, LED-lit, with a stand and wall hanging ring. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/septagram-light-sculpture-1/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-1-3.jpg",
+          "bytes": 257625
+        },
+        {
+          "id": "seed-of-life-light-sculpture-3",
+          "title": "Seed of Life LED Light Sculpture, Laser Cut Birch Mandala",
+          "description": "Seed of Life laser cut wooden light sculpture glowing green on its stand. Seed of Life sacred geometry light sculpture, laser cut from layered birch and hand painted, with adjustable LED lighting. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/seed-of-life-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-3.jpg",
+          "bytes": 324670
+        },
+        {
+          "id": "platonic-energy-circle-5",
+          "title": "Platonic Energy Circle, LED Sacred Geometry Wall Mandala",
+          "description": "Close-up of the Platonic Energy Circle's layered sacred geometry lit in turquoise. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/platonic-energy-circle/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-circle-5.jpg",
+          "bytes": 175803
+        },
+        {
+          "id": "hexstatic-illuminated-wall-art-3",
+          "title": "Hexstatic LED Light Sculpture, Flower of Life Wood Mandala",
+          "description": "Close-up of the Hexstatic light sculpture's layered hexagons lit in pink. Flower of Life inspired mandala in hexagon layers, laser cut from birch, hand painted and lit with adjustable LEDs. 35–70cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/hexstatic-illuminated-wall-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-3.jpg",
+          "bytes": 149542
+        },
+        {
+          "id": "lotus-mandala-red-led",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A lotus-shaped mandala in layered wood, glowing red. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/lotus-mandala-red-led.jpg",
+          "bytes": 190373
+        },
+        {
+          "id": "septagram-light-sculpture-1-4",
+          "title": "Septagram LED Light Sculpture, Laser Cut Wood Mandala",
+          "description": "Septagram wooden LED light sculpture glowing green against a green background. Seven-pointed septagram light sculpture in 7 layers of laser cut wood, LED-lit, with a stand and wall hanging ring. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/septagram-light-sculpture-1/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-1-4.jpg",
+          "bytes": 203682
+        },
+        {
+          "id": "seed-of-life-light-sculpture-4",
+          "title": "Seed of Life LED Light Sculpture, Laser Cut Birch Mandala",
+          "description": "Seed of Life laser cut wooden light sculpture glowing pink and purple on its stand. Seed of Life sacred geometry light sculpture, laser cut from layered birch and hand painted, with adjustable LED lighting. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/seed-of-life-light-sculpture/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-4.jpg",
+          "bytes": 332345
+        },
+        {
+          "id": "platonic-energy-circle-6",
+          "title": "Platonic Energy Circle, LED Sacred Geometry Wall Mandala",
+          "description": "Close-up of the Platonic Energy Circle's layered wood lit in red and pink. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/platonic-energy-circle/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-circle-6.jpg",
+          "bytes": 246637
+        },
+        {
+          "id": "hexstatic-illuminated-wall-art-4",
+          "title": "Hexstatic LED Light Sculpture, Flower of Life Wood Mandala",
+          "description": "Close-up of the Hexstatic sculpture's layered laser cut wooden hexagon pattern. Flower of Life inspired mandala in hexagon layers, laser cut from birch, hand painted and lit with adjustable LEDs. 35–70cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/p/hexstatic-illuminated-wall-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-4.jpg",
+          "bytes": 177287
+        },
+        {
+          "id": "mandala-macrame-dreamcatcher-turquoise-led",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A turquoise-lit mandala with a macramé dreamcatcher hanging beneath it. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/mandala-macrame-dreamcatcher-turquoise-led.jpg",
+          "bytes": 265640
+        },
+        {
+          "id": "septagram-light-sculpture-purple-led",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "The Septagram light sculpture glowing purple. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-purple-led.jpg",
+          "bytes": 256400
+        },
+        {
+          "id": "septagram-light-sculpture-close-up",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "Close-up of the Septagram light sculpture. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/septagram-light-sculpture-close-up.jpg",
+          "bytes": 215060
+        },
+        {
+          "id": "triangular-honeycomb-wall-art",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "Triangular laser cut wall art with honeycomb and star patterns. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/triangular-honeycomb-wall-art.jpg",
+          "bytes": 192042
+        },
+        {
+          "id": "hexagon-flower-mandala-wood",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A flower-shaped mandala of interlocking hexagons in layered wood. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/hexagon-flower-mandala-wood.jpg",
+          "bytes": 167739
+        },
+        {
+          "id": "laser-cut-pyramid-lamp-maze-pattern",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A laser cut wooden pyramid lamp with a maze-like pattern. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/laser-cut-pyramid-lamp-maze-pattern.jpg",
+          "bytes": 185647
+        },
+        {
+          "id": "laser-cut-pyramid-lamp-lit",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "The laser cut pyramid lamp lit from inside. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/laser-cut-pyramid-lamp-lit.jpg",
+          "bytes": 121099
+        },
+        {
+          "id": "seed-of-life-mandala-turquoise-led",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A seed of life mandala glowing turquoise. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-mandala-turquoise-led.jpg",
+          "bytes": 219243
+        },
+        {
+          "id": "seed-of-life-mandala-pink-led",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A seed of life mandala glowing pink. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-mandala-pink-led.jpg",
+          "bytes": 262701
+        },
+        {
+          "id": "olly-balsom-illuminated-mandala-wall-art",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "Olly Balsom in front of an illuminated mandala wall piece. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/olly-balsom-illuminated-mandala-wall-art.jpg",
+          "bytes": 152193
+        },
+        {
+          "id": "lotus-mandala-blue-led",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "A lotus mandala lit blue. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/lotus-mandala-blue-led.jpg",
+          "bytes": 209433
+        },
+        {
+          "id": "quintessence-light-sculpture",
+          "title": "Sacred Geometry Laser Cut Light Art",
+          "description": "The Quintessence light sculpture, illuminated. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.",
+          "link": "https://1000errors.uk/lasercut-art/",
+          "image": "https://1000errors.uk/pinterest/img/quintessence-light-sculpture.jpg",
+          "bytes": 211759
+        }
+      ]
+    },
+    "clothing": {
+      "name": "Sacred Geometry Clothing",
+      "share": 0.25,
+      "pins": [
+        {
+          "id": "sacred-patterns-rasta-halter-bikini-6",
+          "title": "Sacred Patterns (Rasta) Halter Bikini",
+          "description": "Close-up of the Sacred Patterns rasta halter bikini top being worn. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-rasta-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-rasta-halter-bikini-6.jpg",
+          "bytes": 115767
+        },
+        {
+          "id": "sacred-patterns-black-white-halter-bikini-6",
+          "title": "Sacred Patterns (Black & White) Halter Bikini",
+          "description": "Close-up of the Sacred Patterns black and white halter bikini top being worn. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-black-white-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-black-white-halter-bikini-6.jpg",
+          "bytes": 112821
+        },
+        {
+          "id": "specie-operis-nomen-black-white-yoga-leggings-7",
+          "title": "Specie Operis Nomen (Black & White) Yoga Leggings",
+          "description": "Specie Operis Nomen black and white mandala yoga leggings worn in a woodland meadow. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/specie-operis-nomen-black-white-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/specie-operis-nomen-black-white-yoga-leggings-7.jpg",
+          "bytes": 328287
+        },
+        {
+          "id": "platonic-energy-khaki-leggings-7",
+          "title": "Platonic Energy (Khaki) Leggings",
+          "description": "Platonic Energy khaki sacred geometry yoga leggings worn in a meadow of buttercups. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-khaki-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-khaki-leggings-7.jpg",
+          "bytes": 265936
+        },
+        {
+          "id": "celtic-knots-black-white-shirt-1",
+          "title": "Celtic Knots (Black & White) Shirt",
+          "description": "Man wearing the Celtic Knots black and white short sleeve button down shirt, front view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/celtic-knots-black-white-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/celtic-knots-black-white-shirt-1.jpg",
+          "bytes": 101657
+        },
+        {
+          "id": "platonic-energy-grey-black-shirt-1-1",
+          "title": "Platonic Energy (Grey & Black) Shirt",
+          "description": "Man wearing the Platonic Energy grey and black sacred geometry short sleeve shirt, front view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-grey-black-shirt-1/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-grey-black-shirt-1-1.jpg",
+          "bytes": 87900
+        },
+        {
+          "id": "platonic-energy-burgundy-black-yoga-leggings-1",
+          "title": "Platonic Energy (Burgundy & Black) Yoga Leggings",
+          "description": "Platonic Energy burgundy and black yoga leggings, side view with a close-up of the sacred geometry print. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-burgundy-black-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-burgundy-black-yoga-leggings-1.jpg",
+          "bytes": 162015
+        },
+        {
+          "id": "alien-maze-brown-black-shirt-10",
+          "title": "Alien Maze (Brown & Black) Shirt",
+          "description": "Man wearing the Alien Maze brown and black psychedelic short sleeve shirt among ferns. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-brown-black-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-brown-black-shirt-10.jpg",
+          "bytes": 144766
+        },
+        {
+          "id": "interstellar-brown-hoodie-1",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Interstellar brown sacred geometry zip-up hoodie, front view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-hoodie-1.jpg",
+          "bytes": 127790
+        },
+        {
+          "id": "interstellar-green-hoody-21",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Person wearing the Interstellar green zip-up hoodie, back view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-hoody-21.jpg",
+          "bytes": 94873
+        },
+        {
+          "id": "interstellar-grey-black-hoody-21",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Man wearing the Interstellar grey hoodie outdoors, back view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-black-hoody-21.jpg",
+          "bytes": 361891
+        },
+        {
+          "id": "alien-maze-rasta2-6",
+          "title": "Alien Maze (Subtle Rasta) Yoga Leggings",
+          "description": "Close-up of the Alien Maze rasta psychedelic yoga leggings worn outdoors. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rasta2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rasta2-6.jpg",
+          "bytes": 166529
+        },
+        {
+          "id": "platonic-solids-grey-black-9",
+          "title": "Platonic Energy (Grey & Black) Yoga Leggings",
+          "description": "Platonic Energy grey and black sacred geometry yoga leggings being worn. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-solids-grey-black/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-solids-grey-black-9.jpg",
+          "bytes": 87099
+        },
+        {
+          "id": "alien-maze-rust2-9",
+          "title": "Alien Maze (Rust) Yoga Leggings",
+          "description": "Alien Maze rust orange psychedelic yoga leggings being worn. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rust2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rust2-9.jpg",
+          "bytes": 73016
+        },
+        {
+          "id": "hexagon-fade-mens-high-top-canvas-shoes-1000-errors-1",
+          "title": "Hexagon Fade Shoes",
+          "description": "Pair of Hexagon Fade black men's high top canvas shoes on a shoebox. Hexagon pattern black and white men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/hexagon-fade-mens-high-top-canvas-shoes-1000-errors/",
+          "image": "https://1000errors.uk/pinterest/img/hexagon-fade-mens-high-top-canvas-shoes-1000-errors-1.jpg",
+          "bytes": 72502
+        },
+        {
+          "id": "uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-5",
+          "title": "Uaniloquentia Primum Nomen - Men's High Top Canvas Shoes - 1000 Errors",
+          "description": "Uaniloquentia Primum Nomen black and white mandala high top shoes on a wooden floor. Sacred geometry, black and white mandala, men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1/",
+          "image": "https://1000errors.uk/pinterest/img/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-5.jpg",
+          "bytes": 129489
+        },
+        {
+          "id": "sacred-patterns-rasta-halter-bikini-7",
+          "title": "Sacred Patterns (Rasta) Halter Bikini",
+          "description": "Sacred Patterns rasta tie-side bikini bottoms laid flat. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-rasta-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-rasta-halter-bikini-7.jpg",
+          "bytes": 120267
+        },
+        {
+          "id": "sacred-patterns-black-white-halter-bikini-7",
+          "title": "Sacred Patterns (Black & White) Halter Bikini",
+          "description": "Sacred Patterns black and white tie-side bikini bottoms laid flat. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-black-white-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-black-white-halter-bikini-7.jpg",
+          "bytes": 119712
+        },
+        {
+          "id": "specie-operis-nomen-black-white-yoga-leggings-1",
+          "title": "Specie Operis Nomen (Black & White) Yoga Leggings",
+          "description": "Specie Operis Nomen black and white yoga leggings, front view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/specie-operis-nomen-black-white-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/specie-operis-nomen-black-white-yoga-leggings-1.jpg",
+          "bytes": 65394
+        },
+        {
+          "id": "platonic-energy-khaki-leggings-8",
+          "title": "Platonic Energy (Khaki) Leggings",
+          "description": "Close-up of the Platonic Energy khaki leggings' geometric pattern, worn outdoors. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-khaki-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-khaki-leggings-8.jpg",
+          "bytes": 239505
+        },
+        {
+          "id": "celtic-knots-black-white-shirt-2",
+          "title": "Celtic Knots (Black & White) Shirt",
+          "description": "Celtic Knots short sleeve shirt, back view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/celtic-knots-black-white-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/celtic-knots-black-white-shirt-2.jpg",
+          "bytes": 107977
+        },
+        {
+          "id": "platonic-energy-grey-black-shirt-1-2",
+          "title": "Platonic Energy (Grey & Black) Shirt",
+          "description": "Platonic Energy grey and black short sleeve shirt, back view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-grey-black-shirt-1/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-grey-black-shirt-1-2.jpg",
+          "bytes": 92461
+        },
+        {
+          "id": "platonic-energy-burgundy-black-yoga-leggings-2",
+          "title": "Platonic Energy (Burgundy & Black) Yoga Leggings",
+          "description": "Platonic Energy burgundy and black yoga leggings, front view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-burgundy-black-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-burgundy-black-yoga-leggings-2.jpg",
+          "bytes": 45425
+        },
+        {
+          "id": "alien-maze-brown-black-shirt-1",
+          "title": "Alien Maze (Brown & Black) Shirt",
+          "description": "Alien Maze brown and black short sleeve button down shirt, front view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-brown-black-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-brown-black-shirt-1.jpg",
+          "bytes": 98109
+        },
+        {
+          "id": "interstellar-brown-hoodie-2",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Interstellar brown zip-up hoodie, back view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-hoodie-2.jpg",
+          "bytes": 123166
+        },
+        {
+          "id": "interstellar-green-hoody-1",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green sacred geometry zip-up hoodie, front view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-hoody-1.jpg",
+          "bytes": 105125
+        },
+        {
+          "id": "interstellar-grey-black-hoody-1",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey hoodie worn outdoors, close-up of the hexagon pattern on the back. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-black-hoody-1.jpg",
+          "bytes": 131334
+        },
+        {
+          "id": "alien-maze-rasta2-1",
+          "title": "Alien Maze (Subtle Rasta) Yoga Leggings",
+          "description": "Alien Maze rasta yoga leggings, side view with a close-up of the maze print. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rasta2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rasta2-1.jpg",
+          "bytes": 274682
+        },
+        {
+          "id": "platonic-solids-grey-black-1",
+          "title": "Platonic Energy (Grey & Black) Yoga Leggings",
+          "description": "Platonic Energy grey and black yoga leggings, side view with a close-up of the print. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-solids-grey-black/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-solids-grey-black-1.jpg",
+          "bytes": 250183
+        },
+        {
+          "id": "alien-maze-rust2-1",
+          "title": "Alien Maze (Rust) Yoga Leggings",
+          "description": "Alien Maze rust yoga leggings, side view with a close-up of the maze print. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rust2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rust2-1.jpg",
+          "bytes": 207555
+        },
+        {
+          "id": "hexagon-fade-mens-high-top-canvas-shoes-1000-errors-2",
+          "title": "Hexagon Fade Shoes",
+          "description": "Hexagon Fade men's high top canvas shoe, angled front view. Hexagon pattern black and white men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/hexagon-fade-mens-high-top-canvas-shoes-1000-errors/",
+          "image": "https://1000errors.uk/pinterest/img/hexagon-fade-mens-high-top-canvas-shoes-1000-errors-2.jpg",
+          "bytes": 63150
+        },
+        {
+          "id": "uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-1",
+          "title": "Uaniloquentia Primum Nomen - Men's High Top Canvas Shoes - 1000 Errors",
+          "description": "Pair of Uaniloquentia Primum Nomen men's high top canvas shoes on a shoebox. Sacred geometry, black and white mandala, men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1/",
+          "image": "https://1000errors.uk/pinterest/img/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-1.jpg",
+          "bytes": 118778
+        },
+        {
+          "id": "sacred-patterns-rasta-halter-bikini-1",
+          "title": "Sacred Patterns (Rasta) Halter Bikini",
+          "description": "Model wearing the Sacred Patterns rasta halter bikini, front view. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-rasta-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-rasta-halter-bikini-1.jpg",
+          "bytes": 75185
+        },
+        {
+          "id": "sacred-patterns-black-white-halter-bikini-1",
+          "title": "Sacred Patterns (Black & White) Halter Bikini",
+          "description": "Model wearing the Sacred Patterns black and white halter bikini, front view. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-black-white-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-black-white-halter-bikini-1.jpg",
+          "bytes": 76560
+        },
+        {
+          "id": "specie-operis-nomen-black-white-yoga-leggings-2",
+          "title": "Specie Operis Nomen (Black & White) Yoga Leggings",
+          "description": "Specie Operis Nomen black and white yoga leggings, back view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/specie-operis-nomen-black-white-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/specie-operis-nomen-black-white-yoga-leggings-2.jpg",
+          "bytes": 67189
+        },
+        {
+          "id": "platonic-energy-khaki-leggings-1",
+          "title": "Platonic Energy (Khaki) Leggings",
+          "description": "Platonic Energy khaki yoga leggings, front view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-khaki-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-khaki-leggings-1.jpg",
+          "bytes": 62513
+        },
+        {
+          "id": "celtic-knots-black-white-shirt-3",
+          "title": "Celtic Knots (Black & White) Shirt",
+          "description": "Celtic Knots short sleeve shirt, three-quarter front view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/celtic-knots-black-white-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/celtic-knots-black-white-shirt-3.jpg",
+          "bytes": 87446
+        },
+        {
+          "id": "platonic-energy-grey-black-shirt-1-3",
+          "title": "Platonic Energy (Grey & Black) Shirt",
+          "description": "Platonic Energy grey and black short sleeve shirt, three-quarter front view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-grey-black-shirt-1/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-grey-black-shirt-1-3.jpg",
+          "bytes": 76952
+        },
+        {
+          "id": "platonic-energy-burgundy-black-yoga-leggings-3",
+          "title": "Platonic Energy (Burgundy & Black) Yoga Leggings",
+          "description": "Platonic Energy burgundy and black yoga leggings, back view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-burgundy-black-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-burgundy-black-yoga-leggings-3.jpg",
+          "bytes": 45020
+        },
+        {
+          "id": "alien-maze-brown-black-shirt-2",
+          "title": "Alien Maze (Brown & Black) Shirt",
+          "description": "Alien Maze brown and black short sleeve shirt, back view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-brown-black-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-brown-black-shirt-2.jpg",
+          "bytes": 103370
+        },
+        {
+          "id": "interstellar-brown-hoodie-3",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Interstellar brown zip-up hoodie, back view with hands in pockets. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-hoodie-3.jpg",
+          "bytes": 128449
+        },
+        {
+          "id": "interstellar-green-hoody-2",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green zip-up hoodie, back view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-hoody-2.jpg",
+          "bytes": 102115
+        },
+        {
+          "id": "interstellar-grey-black-hoody-2",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey sacred geometry zip-up hoodie, front view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-black-hoody-2.jpg",
+          "bytes": 134474
+        },
+        {
+          "id": "alien-maze-rasta2-2",
+          "title": "Alien Maze (Subtle Rasta) Yoga Leggings",
+          "description": "Alien Maze rasta yoga leggings, front view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rasta2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rasta2-2.jpg",
+          "bytes": 54708
+        },
+        {
+          "id": "platonic-solids-grey-black-2",
+          "title": "Platonic Energy (Grey & Black) Yoga Leggings",
+          "description": "Platonic Energy grey and black yoga leggings, front view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-solids-grey-black/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-solids-grey-black-2.jpg",
+          "bytes": 63943
+        },
+        {
+          "id": "alien-maze-rust2-2",
+          "title": "Alien Maze (Rust) Yoga Leggings",
+          "description": "Alien Maze rust yoga leggings, front view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rust2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rust2-2.jpg",
+          "bytes": 62673
+        },
+        {
+          "id": "hexagon-fade-mens-high-top-canvas-shoes-1000-errors-3",
+          "title": "Hexagon Fade Shoes",
+          "description": "Hexagon Fade men's high top canvas shoe, outer side view. Hexagon pattern black and white men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/hexagon-fade-mens-high-top-canvas-shoes-1000-errors/",
+          "image": "https://1000errors.uk/pinterest/img/hexagon-fade-mens-high-top-canvas-shoes-1000-errors-3.jpg",
+          "bytes": 70775
+        },
+        {
+          "id": "uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-2",
+          "title": "Uaniloquentia Primum Nomen - Men's High Top Canvas Shoes - 1000 Errors",
+          "description": "Uaniloquentia Primum Nomen men's high top canvas shoe, outer side view. Sacred geometry, black and white mandala, men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1/",
+          "image": "https://1000errors.uk/pinterest/img/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-2.jpg",
+          "bytes": 97178
+        },
+        {
+          "id": "sacred-patterns-rasta-halter-bikini-2",
+          "title": "Sacred Patterns (Rasta) Halter Bikini",
+          "description": "Model wearing the Sacred Patterns rasta halter bikini, side pose. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-rasta-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-rasta-halter-bikini-2.jpg",
+          "bytes": 54144
+        },
+        {
+          "id": "sacred-patterns-black-white-halter-bikini-2",
+          "title": "Sacred Patterns (Black & White) Halter Bikini",
+          "description": "Model wearing the Sacred Patterns black and white halter bikini, side pose. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-black-white-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-black-white-halter-bikini-2.jpg",
+          "bytes": 54853
+        },
+        {
+          "id": "specie-operis-nomen-black-white-yoga-leggings-3",
+          "title": "Specie Operis Nomen (Black & White) Yoga Leggings",
+          "description": "Specie Operis Nomen black and white yoga leggings, side view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/specie-operis-nomen-black-white-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/specie-operis-nomen-black-white-yoga-leggings-3.jpg",
+          "bytes": 50061
+        },
+        {
+          "id": "platonic-energy-khaki-leggings-2",
+          "title": "Platonic Energy (Khaki) Leggings",
+          "description": "Platonic Energy khaki yoga leggings, back view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-khaki-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-khaki-leggings-2.jpg",
+          "bytes": 65149
+        },
+        {
+          "id": "celtic-knots-black-white-shirt-4",
+          "title": "Celtic Knots (Black & White) Shirt",
+          "description": "Celtic Knots short sleeve shirt, three-quarter back view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/celtic-knots-black-white-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/celtic-knots-black-white-shirt-4.jpg",
+          "bytes": 90815
+        },
+        {
+          "id": "platonic-energy-grey-black-shirt-1-4",
+          "title": "Platonic Energy (Grey & Black) Shirt",
+          "description": "Platonic Energy grey and black short sleeve shirt, three-quarter back view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-grey-black-shirt-1/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-grey-black-shirt-1-4.jpg",
+          "bytes": 77941
+        },
+        {
+          "id": "platonic-energy-burgundy-black-yoga-leggings-4",
+          "title": "Platonic Energy (Burgundy & Black) Yoga Leggings",
+          "description": "Platonic Energy burgundy and black yoga leggings, side view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-burgundy-black-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-burgundy-black-yoga-leggings-4.jpg",
+          "bytes": 42103
+        },
+        {
+          "id": "alien-maze-brown-black-shirt-3",
+          "title": "Alien Maze (Brown & Black) Shirt",
+          "description": "Alien Maze brown and black short sleeve shirt, three-quarter front view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-brown-black-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-brown-black-shirt-3.jpg",
+          "bytes": 84465
+        },
+        {
+          "id": "interstellar-brown-hoodie-4",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Interstellar brown zip-up hoodie, front view zipped up. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-hoodie-4.jpg",
+          "bytes": 132595
+        },
+        {
+          "id": "interstellar-green-hoody-3",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green zip-up hoodie, back view with hands in pockets. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-hoody-3.jpg",
+          "bytes": 107639
+        },
+        {
+          "id": "interstellar-grey-black-hoody-3",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey zip-up hoodie, back view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-black-hoody-3.jpg",
+          "bytes": 143454
+        },
+        {
+          "id": "alien-maze-rasta2-3",
+          "title": "Alien Maze (Subtle Rasta) Yoga Leggings",
+          "description": "Alien Maze rasta yoga leggings, back view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rasta2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rasta2-3.jpg",
+          "bytes": 56582
+        },
+        {
+          "id": "platonic-solids-grey-black-3",
+          "title": "Platonic Energy (Grey & Black) Yoga Leggings",
+          "description": "Platonic Energy grey and black yoga leggings, back view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-solids-grey-black/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-solids-grey-black-3.jpg",
+          "bytes": 66065
+        },
+        {
+          "id": "alien-maze-rust2-3",
+          "title": "Alien Maze (Rust) Yoga Leggings",
+          "description": "Alien Maze rust yoga leggings, back view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rust2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rust2-3.jpg",
+          "bytes": 64049
+        },
+        {
+          "id": "hexagon-fade-mens-high-top-canvas-shoes-1000-errors-4",
+          "title": "Hexagon Fade Shoes",
+          "description": "Hexagon Fade men's high top canvas shoe, inner side view. Hexagon pattern black and white men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/hexagon-fade-mens-high-top-canvas-shoes-1000-errors/",
+          "image": "https://1000errors.uk/pinterest/img/hexagon-fade-mens-high-top-canvas-shoes-1000-errors-4.jpg",
+          "bytes": 71539
+        },
+        {
+          "id": "uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-3",
+          "title": "Uaniloquentia Primum Nomen - Men's High Top Canvas Shoes - 1000 Errors",
+          "description": "Uaniloquentia Primum Nomen men's high top canvas shoe, inner side view. Sacred geometry, black and white mandala, men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1/",
+          "image": "https://1000errors.uk/pinterest/img/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-3.jpg",
+          "bytes": 92074
+        },
+        {
+          "id": "sacred-patterns-rasta-halter-bikini-3",
+          "title": "Sacred Patterns (Rasta) Halter Bikini",
+          "description": "Model wearing the Sacred Patterns rasta halter bikini, back view. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-rasta-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-rasta-halter-bikini-3.jpg",
+          "bytes": 58649
+        },
+        {
+          "id": "sacred-patterns-black-white-halter-bikini-3",
+          "title": "Sacred Patterns (Black & White) Halter Bikini",
+          "description": "Model wearing the Sacred Patterns black and white halter bikini, back view. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-black-white-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-black-white-halter-bikini-3.jpg",
+          "bytes": 59673
+        },
+        {
+          "id": "specie-operis-nomen-black-white-yoga-leggings-4",
+          "title": "Specie Operis Nomen (Black & White) Yoga Leggings",
+          "description": "Specie Operis Nomen black and white yoga leggings, side view from the other side. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/specie-operis-nomen-black-white-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/specie-operis-nomen-black-white-yoga-leggings-4.jpg",
+          "bytes": 47518
+        },
+        {
+          "id": "platonic-energy-khaki-leggings-3",
+          "title": "Platonic Energy (Khaki) Leggings",
+          "description": "Platonic Energy khaki yoga leggings, side view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-khaki-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-khaki-leggings-3.jpg",
+          "bytes": 50817
+        },
+        {
+          "id": "celtic-knots-black-white-shirt-5",
+          "title": "Celtic Knots (Black & White) Shirt",
+          "description": "Celtic Knots shirt worn open over a white t-shirt. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/celtic-knots-black-white-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/celtic-knots-black-white-shirt-5.jpg",
+          "bytes": 95257
+        },
+        {
+          "id": "platonic-energy-grey-black-shirt-1-5",
+          "title": "Platonic Energy (Grey & Black) Shirt",
+          "description": "Platonic Energy grey and black shirt worn open over a white t-shirt. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-grey-black-shirt-1/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-grey-black-shirt-1-5.jpg",
+          "bytes": 82110
+        },
+        {
+          "id": "platonic-energy-burgundy-black-yoga-leggings-5",
+          "title": "Platonic Energy (Burgundy & Black) Yoga Leggings",
+          "description": "Platonic Energy burgundy and black yoga leggings, side view from the other side. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-burgundy-black-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-burgundy-black-yoga-leggings-5.jpg",
+          "bytes": 43026
+        },
+        {
+          "id": "alien-maze-brown-black-shirt-4",
+          "title": "Alien Maze (Brown & Black) Shirt",
+          "description": "Alien Maze brown and black short sleeve shirt, three-quarter back view. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-brown-black-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-brown-black-shirt-4.jpg",
+          "bytes": 86313
+        },
+        {
+          "id": "interstellar-brown-hoodie-5",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Model wearing the Interstellar brown hoodie, back view. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-hoodie-5.jpg",
+          "bytes": 72409
+        },
+        {
+          "id": "interstellar-green-hoody-4",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green zip-up hoodie, front view zipped up. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-hoody-4.jpg",
+          "bytes": 111882
+        },
+        {
+          "id": "interstellar-grey-black-hoody-4",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey zip-up hoodie, back view with hands in pockets. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-black-hoody-4.jpg",
+          "bytes": 142912
+        },
+        {
+          "id": "alien-maze-rasta2-4",
+          "title": "Alien Maze (Subtle Rasta) Yoga Leggings",
+          "description": "Alien Maze rasta yoga leggings, side view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rasta2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rasta2-4.jpg",
+          "bytes": 51848
+        },
+        {
+          "id": "platonic-solids-grey-black-4",
+          "title": "Platonic Energy (Grey & Black) Yoga Leggings",
+          "description": "Platonic Energy grey and black yoga leggings, side view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-solids-grey-black/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-solids-grey-black-4.jpg",
+          "bytes": 60249
+        },
+        {
+          "id": "alien-maze-rust2-4",
+          "title": "Alien Maze (Rust) Yoga Leggings",
+          "description": "Alien Maze rust yoga leggings, side view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rust2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rust2-4.jpg",
+          "bytes": 59112
+        },
+        {
+          "id": "uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-4",
+          "title": "Uaniloquentia Primum Nomen - Men's High Top Canvas Shoes - 1000 Errors",
+          "description": "Uaniloquentia Primum Nomen men's high top canvas shoe, angled front view. Sacred geometry, black and white mandala, men's high top canvas shoes designed by 1000 Errors. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1/",
+          "image": "https://1000errors.uk/pinterest/img/uaniloquentia-primum-nomen-mens-high-top-canvas-shoes-1000-errors-1-4.jpg",
+          "bytes": 82964
+        },
+        {
+          "id": "sacred-patterns-rasta-halter-bikini-4",
+          "title": "Sacred Patterns (Rasta) Halter Bikini",
+          "description": "Sacred Patterns rasta halter bikini top and tie-side bottoms. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-rasta-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-rasta-halter-bikini-4.jpg",
+          "bytes": 61250
+        },
+        {
+          "id": "sacred-patterns-black-white-halter-bikini-4",
+          "title": "Sacred Patterns (Black & White) Halter Bikini",
+          "description": "Sacred Patterns black and white halter bikini top and tie-side bottoms. A halter bikini with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/sacred-patterns-black-white-halter-bikini/",
+          "image": "https://1000errors.uk/pinterest/img/sacred-patterns-black-white-halter-bikini-4.jpg",
+          "bytes": 62683
+        },
+        {
+          "id": "specie-operis-nomen-black-white-yoga-leggings-5",
+          "title": "Specie Operis Nomen (Black & White) Yoga Leggings",
+          "description": "Specie Operis Nomen black and white yoga leggings, three-quarter front view. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/specie-operis-nomen-black-white-yoga-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/specie-operis-nomen-black-white-yoga-leggings-5.jpg",
+          "bytes": 67926
+        },
+        {
+          "id": "platonic-energy-khaki-leggings-4",
+          "title": "Platonic Energy (Khaki) Leggings",
+          "description": "Platonic Energy khaki yoga leggings, side view from the other side. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-khaki-leggings/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-khaki-leggings-4.jpg",
+          "bytes": 46879
+        },
+        {
+          "id": "celtic-knots-black-white-shirt-6",
+          "title": "Celtic Knots (Black & White) Shirt",
+          "description": "Close-up of the Celtic Knots shirt pattern being buttoned up. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/celtic-knots-black-white-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/celtic-knots-black-white-shirt-6.jpg",
+          "bytes": 179006
+        },
+        {
+          "id": "platonic-energy-grey-black-shirt-1-6",
+          "title": "Platonic Energy (Grey & Black) Shirt",
+          "description": "Close-up of the Platonic Energy shirt's geometric pattern being buttoned up. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-grey-black-shirt-1/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-grey-black-shirt-1-6.jpg",
+          "bytes": 169962
+        },
+        {
+          "id": "alien-maze-brown-black-shirt-5",
+          "title": "Alien Maze (Brown & Black) Shirt",
+          "description": "Alien Maze brown and black shirt worn open over a white t-shirt. An all-over print short sleeve button-down shirt with an original psychedelic geometric pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-brown-black-shirt/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-brown-black-shirt-5.jpg",
+          "bytes": 91790
+        },
+        {
+          "id": "interstellar-brown-fleece-hoody-1",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Interstellar brown zip-up hoodie, open front showing the black lining. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-fleece-hoody-1.jpg",
+          "bytes": 127642
+        },
+        {
+          "id": "interstellar-green-fleece-hoody-6",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Person wearing the Interstellar green hoodie, back view with arms raised. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-fleece-hoody-6.jpg",
+          "bytes": 94873
+        },
+        {
+          "id": "interstellar-grey-fleece-hoody-6",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey zip-up hoodie, front view zipped up. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-fleece-hoody-6.jpg",
+          "bytes": 361891
+        },
+        {
+          "id": "alien-maze-rasta2-5",
+          "title": "Alien Maze (Subtle Rasta) Yoga Leggings",
+          "description": "Alien Maze rasta yoga leggings, side view from the other side. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rasta2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rasta2-5.jpg",
+          "bytes": 51377
+        },
+        {
+          "id": "platonic-solids-grey-black-5",
+          "title": "Platonic Energy (Grey & Black) Yoga Leggings",
+          "description": "Platonic Energy grey and black yoga leggings, side view from the other side. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-solids-grey-black/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-solids-grey-black-5.jpg",
+          "bytes": 59663
+        },
+        {
+          "id": "alien-maze-rust2-5",
+          "title": "Alien Maze (Rust) Yoga Leggings",
+          "description": "Alien Maze rust yoga leggings, side view from the other side. All-over print yoga leggings with an original sacred geometry pattern. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/alien-maze-rust2/",
+          "image": "https://1000errors.uk/pinterest/img/alien-maze-rust2-5.jpg",
+          "bytes": 55442
+        },
+        {
+          "id": "interstellar-brown-fleece-hoody-4",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Interstellar brown zip-up hoodie with drawstrings, hands in pockets. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-fleece-hoody-4.jpg",
+          "bytes": 117362
+        },
+        {
+          "id": "interstellar-green-fleece-hoody-1",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green zip-up hoodie, open front showing the black lining. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-fleece-hoody-1.jpg",
+          "bytes": 122733
+        },
+        {
+          "id": "interstellar-grey-fleece-hoody-1",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey zip-up hoodie, open front showing the black lining. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-fleece-hoody-1.jpg",
+          "bytes": 163193
+        },
+        {
+          "id": "interstellar-brown-fleece-hoody-5",
+          "title": "Interstellar (Brown) Hoodie",
+          "description": "Interstellar brown hoodie, back view showing the hexagon fade pattern. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-brown-hoodie/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-brown-fleece-hoody-5.jpg",
+          "bytes": 117434
+        },
+        {
+          "id": "interstellar-green-fleece-hoody-2",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green zip-up hoodie with drawstrings, hands in pockets. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-fleece-hoody-2.jpg",
+          "bytes": 110765
+        },
+        {
+          "id": "interstellar-grey-fleece-hoody-2",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey hoodie, back view showing the hexagon fade pattern. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-fleece-hoody-2.jpg",
+          "bytes": 159443
+        },
+        {
+          "id": "interstellar-green-fleece-hoody-3",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green hoodie, back view showing the hexagon fade pattern. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-fleece-hoody-3.jpg",
+          "bytes": 108528
+        },
+        {
+          "id": "interstellar-grey-fleece-hoody-3",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey zip-up hoodie, partly open front. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-fleece-hoody-3.jpg",
+          "bytes": 166283
+        },
+        {
+          "id": "interstellar-green-fleece-hoody-4",
+          "title": "Interstellar (Green) Hoodie",
+          "description": "Interstellar green hoodie, back view with hood down. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-green-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-green-fleece-hoody-4.jpg",
+          "bytes": 118347
+        },
+        {
+          "id": "interstellar-grey-fleece-hoody-4",
+          "title": "Interstellar (Grey) Hoodie",
+          "description": "Interstellar grey zip-up hoodie with drawstrings, hands in pockets. An all-over print zip-up hoodie with an original sacred geometry design. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/interstellar-grey-black-hoody/",
+          "image": "https://1000errors.uk/pinterest/img/interstellar-grey-fleece-hoody-4.jpg",
+          "bytes": 140367
+        }
+      ]
+    },
+    "leather-accessories": {
+      "name": "Leather & Accessories",
+      "share": 0.15,
+      "pins": [
+        {
+          "id": "cyber-serpent-belt-1",
+          "title": "Cyber Serpent Belt",
+          "description": "Cyber Serpent laser engraved black leather belt worn with jeans. A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/cyber-serpent-belt/",
+          "image": "https://1000errors.uk/pinterest/img/cyber-serpent-belt-1.jpg",
+          "bytes": 276878
+        },
+        {
+          "id": "seed-of-life-leather-bracelet-5",
+          "title": "Seed Of Life Leather Bracelet",
+          "description": "Black Seed of Life laser engraved leather bracelet laid across a hand. A beautiful laser engraved leather bracelet featuring other the seed of life and flower of life. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/seed-of-life-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-leather-bracelet-5.jpg",
+          "bytes": 63864
+        },
+        {
+          "id": "flower-of-life-dog-collar-1",
+          "title": "Flower Of Life Dog Collar",
+          "description": "Dog wearing the Flower of Life laser engraved brown leather dog collar. A beautiful laser engraved brown leather dog collar featuring the flower of life, available in a variety of sizes. Size XS S M L XL Length (Inches) 11.8 14.6 16.5 20 24 Neck Size (Inches) 7.8-10.2 10.6-13 11.4-15 14.5-18.5 18.5-22.4 Width (Inches) 0.6 0.6 0.8 0. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/flower-of-life-dog-collar/",
+          "image": "https://1000errors.uk/pinterest/img/flower-of-life-dog-collar-1.jpg",
+          "bytes": 142762
+        },
+        {
+          "id": "quinque-viis-celtic-leather-bracelet-5",
+          "title": "Quinque Viis Celtic Leather Bracelet",
+          "description": "Quinque Viis Celtic mandala leather bracelet laid on an open hand. A beautiful laser engraved leather bracelet featuring a hand drawn mandala with 5 way symmetry and intricate details that resemble celtic knots. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/quinque-viis-celtic-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/quinque-viis-celtic-leather-bracelet-5.jpg",
+          "bytes": 142493
+        },
+        {
+          "id": "lost-language-leather-bracelet-1",
+          "title": "Lost Language Leather Bracelet",
+          "description": "Lost Language laser engraved brown leather bracelet worn on the wrist. A beautiful laser engraved leather bracelet featuring other worldly text only perceivable during altered states of consciousness. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/lost-language-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/lost-language-leather-bracelet-1.jpg",
+          "bytes": 87293
+        },
+        {
+          "id": "platonic-energy-belt-5",
+          "title": "Platonic Energy Belt",
+          "description": "Platonic Energy laser engraved leather belt worn with jeans. A high quality leather belt featuring the five Platonic solids woven into an evolving geometric pattern. Tetrahedrons, cubes, octahedrons, dodecahedrons and icosahedrons flow around the belt, gradually transforming into intricate geometric forms that create a sense of movement and energy. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-belt/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-belt-5.jpg",
+          "bytes": 122907
+        },
+        {
+          "id": "flower-of-life-belt-1",
+          "title": "Flower Of Life Belt",
+          "description": "Brown Flower of Life laser engraved leather belt with silver buckle. A high quality leather belt featuring an intricate Flower of Life pattern, flowing continuously around the entire belt. Overlapping circles evolve into complex geometric forms, creating a mesmerising pattern that feels both organic and precise. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/flower-of-life-belt/",
+          "image": "https://1000errors.uk/pinterest/img/flower-of-life-belt-1.jpg",
+          "bytes": 122756
+        },
+        {
+          "id": "cyber-serpent-belt-2",
+          "title": "Cyber Serpent Belt",
+          "description": "Cyber Serpent leather belt rolled up, showing the engraved psychedelic serpent pattern. A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/cyber-serpent-belt/",
+          "image": "https://1000errors.uk/pinterest/img/cyber-serpent-belt-2.jpg",
+          "bytes": 230591
+        },
+        {
+          "id": "seed-of-life-leather-bracelet-6",
+          "title": "Seed Of Life Leather Bracelet",
+          "description": "Brown Seed of Life leather cuff bracelet worn on the wrist. A beautiful laser engraved leather bracelet featuring other the seed of life and flower of life. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/seed-of-life-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-leather-bracelet-6.jpg",
+          "bytes": 109842
+        },
+        {
+          "id": "flower-of-life-dog-collar-2",
+          "title": "Flower Of Life Dog Collar",
+          "description": "Flower of Life brown leather dog collar laid on weathered wooden boards. A beautiful laser engraved brown leather dog collar featuring the flower of life, available in a variety of sizes. Size XS S M L XL Length (Inches) 11.8 14.6 16.5 20 24 Neck Size (Inches) 7.8-10.2 10.6-13 11.4-15 14.5-18.5 18.5-22.4 Width (Inches) 0.6 0.6 0.8 0. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/flower-of-life-dog-collar/",
+          "image": "https://1000errors.uk/pinterest/img/flower-of-life-dog-collar-2.jpg",
+          "bytes": 183158
+        },
+        {
+          "id": "quinque-viis-celtic-leather-bracelet-6",
+          "title": "Quinque Viis Celtic Leather Bracelet",
+          "description": "Close-up of the Quinque Viis bracelet's laser engraved five-way mandala. A beautiful laser engraved leather bracelet featuring a hand drawn mandala with 5 way symmetry and intricate details that resemble celtic knots. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/quinque-viis-celtic-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/quinque-viis-celtic-leather-bracelet-6.jpg",
+          "bytes": 150602
+        },
+        {
+          "id": "lost-language-leather-bracelet-2",
+          "title": "Lost Language Leather Bracelet",
+          "description": "Lost Language leather cuff bracelet standing on grass. A beautiful laser engraved leather bracelet featuring other worldly text only perceivable during altered states of consciousness. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/lost-language-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/lost-language-leather-bracelet-2.jpg",
+          "bytes": 137128
+        },
+        {
+          "id": "platonic-energy-belt-1",
+          "title": "Platonic Energy Belt",
+          "description": "Platonic Energy black leather belt with silver buckle, engraved with the Platonic solids. A high quality leather belt featuring the five Platonic solids woven into an evolving geometric pattern. Tetrahedrons, cubes, octahedrons, dodecahedrons and icosahedrons flow around the belt, gradually transforming into intricate geometric forms that create a sense of movement and energy. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-belt/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-belt-1.jpg",
+          "bytes": 138006
+        },
+        {
+          "id": "flower-of-life-belt-2",
+          "title": "Flower Of Life Belt",
+          "description": "Black Flower of Life laser engraved leather belt with silver buckle. A high quality leather belt featuring an intricate Flower of Life pattern, flowing continuously around the entire belt. Overlapping circles evolve into complex geometric forms, creating a mesmerising pattern that feels both organic and precise. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/flower-of-life-belt/",
+          "image": "https://1000errors.uk/pinterest/img/flower-of-life-belt-2.jpg",
+          "bytes": 148424
+        },
+        {
+          "id": "cyber-serpent-belt-3",
+          "title": "Cyber Serpent Belt",
+          "description": "Close-up of the Cyber Serpent belt tip with laser engraved geometric detail. A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/cyber-serpent-belt/",
+          "image": "https://1000errors.uk/pinterest/img/cyber-serpent-belt-3.jpg",
+          "bytes": 250460
+        },
+        {
+          "id": "seed-of-life-leather-bracelet-1",
+          "title": "Seed Of Life Leather Bracelet",
+          "description": "Brown Seed of Life laser engraved leather bracelet worn on the wrist outdoors. A beautiful laser engraved leather bracelet featuring other the seed of life and flower of life. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/seed-of-life-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-leather-bracelet-1.jpg",
+          "bytes": 106439
+        },
+        {
+          "id": "quinque-viis-celtic-leather-bracelet-7",
+          "title": "Quinque Viis Celtic Leather Bracelet",
+          "description": "Quinque Viis Celtic leather cuff bracelet worn on the wrist. A beautiful laser engraved leather bracelet featuring a hand drawn mandala with 5 way symmetry and intricate details that resemble celtic knots. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/quinque-viis-celtic-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/quinque-viis-celtic-leather-bracelet-7.jpg",
+          "bytes": 83686
+        },
+        {
+          "id": "lost-language-leather-bracelet-3",
+          "title": "Lost Language Leather Bracelet",
+          "description": "Lost Language black leather bracelet laid flat with silver snaps. A beautiful laser engraved leather bracelet featuring other worldly text only perceivable during altered states of consciousness. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/lost-language-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/lost-language-leather-bracelet-3.jpg",
+          "bytes": 50059
+        },
+        {
+          "id": "platonic-energy-belt-2",
+          "title": "Platonic Energy Belt",
+          "description": "Black and brown Platonic Energy laser engraved leather belts side by side. A high quality leather belt featuring the five Platonic solids woven into an evolving geometric pattern. Tetrahedrons, cubes, octahedrons, dodecahedrons and icosahedrons flow around the belt, gradually transforming into intricate geometric forms that create a sense of movement and energy. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-belt/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-belt-2.jpg",
+          "bytes": 115535
+        },
+        {
+          "id": "flower-of-life-belt-3",
+          "title": "Flower Of Life Belt",
+          "description": "Black and brown Flower of Life leather belts, close-up of the engraved pattern. A high quality leather belt featuring an intricate Flower of Life pattern, flowing continuously around the entire belt. Overlapping circles evolve into complex geometric forms, creating a mesmerising pattern that feels both organic and precise. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/flower-of-life-belt/",
+          "image": "https://1000errors.uk/pinterest/img/flower-of-life-belt-3.jpg",
+          "bytes": 154533
+        },
+        {
+          "id": "seed-of-life-leather-bracelet-2",
+          "title": "Seed Of Life Leather Bracelet",
+          "description": "Brown Seed of Life leather cuff bracelet standing on grass. A beautiful laser engraved leather bracelet featuring other the seed of life and flower of life. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/seed-of-life-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-leather-bracelet-2.jpg",
+          "bytes": 119807
+        },
+        {
+          "id": "quinque-viis-celtic-leather-bracelet-1",
+          "title": "Quinque Viis Celtic Leather Bracelet",
+          "description": "Quinque Viis laser engraved leather bracelet worn on the wrist, front view. A beautiful laser engraved leather bracelet featuring a hand drawn mandala with 5 way symmetry and intricate details that resemble celtic knots. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/quinque-viis-celtic-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/quinque-viis-celtic-leather-bracelet-1.jpg",
+          "bytes": 127333
+        },
+        {
+          "id": "platonic-energy-belt-3",
+          "title": "Platonic Energy Belt",
+          "description": "Close-up of the Platonic Energy belt tip with engraved geometric pattern. A high quality leather belt featuring the five Platonic solids woven into an evolving geometric pattern. Tetrahedrons, cubes, octahedrons, dodecahedrons and icosahedrons flow around the belt, gradually transforming into intricate geometric forms that create a sense of movement and energy. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-belt/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-belt-3.jpg",
+          "bytes": 82607
+        },
+        {
+          "id": "flower-of-life-belt-4",
+          "title": "Flower Of Life Belt",
+          "description": "Black and brown Flower of Life leather belts draped over an arm outdoors. A high quality leather belt featuring an intricate Flower of Life pattern, flowing continuously around the entire belt. Overlapping circles evolve into complex geometric forms, creating a mesmerising pattern that feels both organic and precise. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/flower-of-life-belt/",
+          "image": "https://1000errors.uk/pinterest/img/flower-of-life-belt-4.jpg",
+          "bytes": 156076
+        },
+        {
+          "id": "seed-of-life-leather-bracelet-3",
+          "title": "Seed Of Life Leather Bracelet",
+          "description": "Black Seed of Life leather bracelet with Flower of Life pattern and silver snaps. A beautiful laser engraved leather bracelet featuring other the seed of life and flower of life. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/seed-of-life-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-leather-bracelet-3.jpg",
+          "bytes": 84837
+        },
+        {
+          "id": "quinque-viis-celtic-leather-bracelet-2",
+          "title": "Quinque Viis Celtic Leather Bracelet",
+          "description": "Quinque Viis Celtic leather cuff bracelet standing on grass. A beautiful laser engraved leather bracelet featuring a hand drawn mandala with 5 way symmetry and intricate details that resemble celtic knots. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/quinque-viis-celtic-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/quinque-viis-celtic-leather-bracelet-2.jpg",
+          "bytes": 154740
+        },
+        {
+          "id": "platonic-energy-belt-4",
+          "title": "Platonic Energy Belt",
+          "description": "Platonic Energy leather belts in black and brown, laid out in a row. A high quality leather belt featuring the five Platonic solids woven into an evolving geometric pattern. Tetrahedrons, cubes, octahedrons, dodecahedrons and icosahedrons flow around the belt, gradually transforming into intricate geometric forms that create a sense of movement and energy. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/platonic-energy-belt/",
+          "image": "https://1000errors.uk/pinterest/img/platonic-energy-belt-4.jpg",
+          "bytes": 133676
+        },
+        {
+          "id": "flower-of-life-belt-5",
+          "title": "Flower Of Life Belt",
+          "description": "Close-up of the Flower of Life belt tip in black leather. A high quality leather belt featuring an intricate Flower of Life pattern, flowing continuously around the entire belt. Overlapping circles evolve into complex geometric forms, creating a mesmerising pattern that feels both organic and precise. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/flower-of-life-belt/",
+          "image": "https://1000errors.uk/pinterest/img/flower-of-life-belt-5.jpg",
+          "bytes": 93977
+        },
+        {
+          "id": "seed-of-life-leather-bracelet-4",
+          "title": "Seed Of Life Leather Bracelet",
+          "description": "Brown Seed of Life leather bracelet laid flat, showing the full engraved band. A beautiful laser engraved leather bracelet featuring other the seed of life and flower of life. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/seed-of-life-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/seed-of-life-leather-bracelet-4.jpg",
+          "bytes": 39795
+        },
+        {
+          "id": "quinque-viis-celtic-leather-bracelet-3",
+          "title": "Quinque Viis Celtic Leather Bracelet",
+          "description": "Quinque Viis leather bracelet on grass, showing the engraved Celtic knot detail. A beautiful laser engraved leather bracelet featuring a hand drawn mandala with 5 way symmetry and intricate details that resemble celtic knots. For wrists up to 22cm in diameter. Designed by 1000 Errors.",
+          "link": "https://1000errors.uk/p/quinque-viis-celtic-leather-bracelet/",
+          "image": "https://1000errors.uk/pinterest/img/quinque-viis-celtic-leather-bracelet-3.jpg",
+          "bytes": 175850
+        }
+      ]
+    }
+  }
+}
