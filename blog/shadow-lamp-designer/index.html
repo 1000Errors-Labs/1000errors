@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Page template: `npm run sync` fills in the {{…}} parts and writes one copy per page (see core/prerender.mjs). -->
+  <base href="/1000errors/" />
+  <title>Squircles: designing 3D printed shadow lamps | 1000 Errors</title>
+  <meta name="description" content="Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on." />
+  <link rel="canonical" href="https://1000errors-labs.github.io/1000errors/blog/shadow-lamp-designer/" />
+  <meta property="og:site_name" content="1000 Errors" />
+  <meta property="og:title" content="Squircles: designing 3D printed shadow lamps" />
+  <meta property="og:description" content="Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:url" content="https://1000errors-labs.github.io/1000errors/blog/shadow-lamp-designer/" />
+  <meta property="og:image" content="https://1000errors-labs.github.io/1000errors/assets/blog/squircles/squircles-room-shadow-preview.png" />
+  <meta property="og:image:alt" content="Squircles: designing 3D printed shadow lamps" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Squircles: designing 3D printed shadow lamps","description":"Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on.","url":"https://1000errors-labs.github.io/1000errors/blog/shadow-lamp-designer/","mainEntityOfPage":"https://1000errors-labs.github.io/1000errors/blog/shadow-lamp-designer/","image":["https://1000errors-labs.github.io/1000errors/assets/blog/squircles/squircles-room-shadow-preview.png","https://1000errors-labs.github.io/1000errors/assets/blog/squircles/squircles-blender-addon-room-shadows.jpg","https://1000errors-labs.github.io/1000errors/assets/blog/squircles/squircles-pattern-editor-sections.png","https://1000errors-labs.github.io/1000errors/assets/blog/squircles/squircles-sphere-preview.png","https://1000errors-labs.github.io/1000errors/assets/blog/squircles/squircles-outdoor-floor-shadows.png","https://1000errors-labs.github.io/1000errors/assets/blog/squircles/squircles-lamp-in-slicer.jpg"],"datePublished":"2026-10-03","keywords":"3D printing, Lighting, Work in progress","author":{"@type":"Person","name":"Olly Balsom","jobTitle":"Light installation artist, VJ and stage designer","address":{"@type":"PostalAddress","addressLocality":"Bristol","addressCountry":"GB"}},"publisher":{"@type":"Organization","name":"1000 Errors","description":"Bespoke LED light installations, laser cut art and visuals for clubs, festivals and events, by Bristol-based artist Olly Balsom. Available worldwide.","url":"https://1000errors-labs.github.io/1000errors/","address":{"@type":"PostalAddress","addressLocality":"Bristol","addressCountry":"GB"},"areaServed":"Worldwide","knowsAbout":["Light installations","Laser cutting","LED lighting","Sacred geometry","Stage design","Projection mapping","VJing","3D animation","Festival installations"],"sameAs":["https://www.instagram.com/1000_errors","https://www.facebook.com/1000ErrorsLaserCutArt"],"founder":{"@type":"Person","name":"Olly Balsom","jobTitle":"Light installation artist, VJ and stage designer","address":{"@type":"PostalAddress","addressLocality":"Bristol","addressCountry":"GB"}}}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"1000 Errors","item":"https://1000errors-labs.github.io/1000errors/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://1000errors-labs.github.io/1000errors/blog/"},{"@type":"ListItem","position":3,"name":"Squircles: designing 3D printed shadow lamps","item":"https://1000errors-labs.github.io/1000errors/blog/shadow-lamp-designer/"}]}</script>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>:root{--bg:#000000;--surface:#1a1a1f;--text:#f2f2f2;--muted:#9a9aa3;--accent:#f2f2f2;--accent-text:#000000;--border:#2a2a31;--radius:10px;--font-body:'Inter', sans-serif;--font-heading:'Inter', sans-serif}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/1000errors/" id="brand"><img src="assets/logo-light.png" alt="1000 Errors"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav"><a href="/1000errors/shop/" class="">Shop</a><a href="/1000errors/projects/" class="">Projects</a><a href="/1000errors/commissions/" class="">Commissions</a><a href="/1000errors/vj-shop/" class="">VJ Shop</a><a href="/1000errors/blog/" class="active">Blog</a><a href="/1000errors/about/" class="">About</a><a href="/1000errors/contact/" class="">Contact</a></nav>
+  </header>
+
+  <main class="main" id="main" data-prerendered="blog/shadow-lamp-designer"><div class="page page-blog-shadow-lamp-designer"><section class="block block-html project-back"><a class="back-link" href="/1000errors/blog/">← Blog</a></section><section class="block block-postHeader">
+      <div class="prose">
+        <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+        <h1>Squircles: designing 3D printed shadow lamps</h1>
+        <div class="project-types"><span>3D printing</span><span>Lighting</span><span>Work in progress</span></div>
+      </div></section><section class="block block-text">
+    <div class="prose ">
+      
+      <p>A bit of an update on my shadow lamp designer: a 3D printed lampshade with a pattern cut right through it,
+            so a single bulb inside throws the design across the walls, floor and ceiling of the room.</p>
+    </div></section><section class="block block-split">
+    <div class="split ">
+      <div class="split-media"><img loading="lazy" src="assets/blog/squircles/squircles-blender-addon-room-shadows.jpg" alt="The original Blender add-on: a spherical lampshade casting a maze pattern across a furnished room"></div>
+      <div class="split-text prose">
+        
+        <h2>Where it started</h2>
+            <p>It began as a plug-in for Blender. The add-on built the lampshade around a pattern and lit a virtual room
+            from the inside, so I could see where the shadows would land on the walls, ceiling and furniture.</p>
+        
+      </div>
+    </div></section><section class="block block-split">
+    <div class="split reverse">
+      <div class="split-media"><img loading="lazy" src="assets/blog/squircles/squircles-pattern-editor-sections.png" alt="The Squircles pattern editor, with the lamp split into horizontal bands of maze-like pixel patterns"></div>
+      <div class="split-text prose">
+        
+        <h2>Now a standalone app</h2>
+            <p>It's now a standalone app that lets me draw patterns and see simulated shadows being cast in real time.</p>
+            <p>The lamp is split into sections, from a cap at the top, through a series of bands, to a cap at the bottom.
+            Each one can use either equirectangular or anamorphic projection, and its own density grid, depending on how
+            I want the shadows to behave and their relative size.</p>
+        
+      </div>
+    </div></section><section class="block block-split">
+    <div class="split ">
+      <div class="split-media"><img loading="lazy" src="assets/blog/squircles/squircles-sphere-preview.png" alt="The pattern drawn on the left and wrapped onto the sphere of the lamp in the preview on the right"></div>
+      <div class="split-text prose">
+        
+        <p>A fair bit of this is directly translatable knowledge from creating 360 degree videos and interior dome
+            video projection mapping techniques: it's the same problem of wrapping a flat image around a sphere and
+            knowing where every pixel will end up.</p>
+        
+      </div>
+    </div></section><section class="block block-gallery">
+    
+    <div class="gallery-grid" style="--cols:2">
+      
+          <figure>
+            <button class="lightbox-open" data-src="assets/blog/squircles/squircles-room-shadow-preview.png" aria-label="View larger">
+              <img loading="lazy" src="assets/blog/squircles/squircles-room-shadow-preview.png" alt="Simulated shadows from the lamp covering the walls, floor and ceiling of a room">
+            </button>
+            <figcaption>The room preview: white is light through an open pixel, dark is the shadow of a solid one</figcaption>
+          </figure>
+          <figure>
+            <button class="lightbox-open" data-src="assets/blog/squircles/squircles-outdoor-floor-shadows.png" aria-label="View larger">
+              <img loading="lazy" src="assets/blog/squircles/squircles-outdoor-floor-shadows.png" alt="The lamp hanging over an endless floor at night, casting its bottom cap pattern below it">
+            </button>
+            <figcaption>The outdoor preview, with the bottom cap pattern drawn on the left and its shadow on the floor</figcaption>
+          </figure>
+    </div></section><section class="block block-split">
+    <div class="split reverse">
+      <div class="split-media"><img loading="lazy" src="assets/blog/squircles/squircles-lamp-in-slicer.jpg" alt="The exported lamp mesh in red in Bambu Studio, ready to slice for a Bambu Lab A1 printer"></div>
+      <div class="split-text prose">
+        
+        <h2>Ready to print (almost)</h2>
+            <p>It also exports perfect 3D meshes that are generated directly from the same grid used to draw the details
+            in the first place, rather than trying to convert vectors into polygons. The exported meshes are ready to go
+            straight into 3D printing software.</p>
+            <p>I still need to break up the mesh into pieces first, but it's getting pretty close to 3D printing the
+            first one.</p>
+        
+      </div>
+    </div></section><section class="block block-text">
+    <div class="prose ">
+      
+      <p>Having said that, I might find the lamp needs to be huge, and in a huge room, to project this much detail
+            in focus. Real life testing will tell.</p>
+    </div></section><section class="block block-buttons">
+    <div class="buttons ">
+      <a class="button button-primary" href="/1000errors/light-installations/">See the light installations</a><a class="button " href="/1000errors/contact/">Get in touch</a>
+    </div></section><section class="block block-posts">
+      <h2 class="block-title">More posts</h2>
+      
+      <div class="projects posts">
+        
+          <a class="project-card post-card" href="/1000errors/blog/parabolic-arts/" data-types="news">
+            <div class="project-img"><img loading="lazy" src="assets/blog/parabolic-arts/parabolic-arts-card.jpg" alt="Parabolic Arts: a sister studio for weddings and interiors"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-04">4 October 2026</time>
+              <h3>Parabolic Arts: a sister studio for weddings and interiors</h3>
+              <p class="muted">Wedding décor and interior installations for homes and businesses now have their own home at Parabolic Arts.</p>
+              <div class="project-types"><span>News</span></div>
+            </div>
+          </a>
+          <a class="project-card post-card" href="/1000errors/blog/eurorack-case-designer/" data-types="eurorack cnc work-in-progress">
+            <div class="project-img"><img loading="lazy" src="assets/blog/eurorack-case/eurorack-case-designer-tall-case-3d.jpg" alt="A parametric Eurorack case designer"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+              <h3>A parametric Eurorack case designer</h3>
+              <p class="muted">A standalone app that generates a whole Eurorack case, joints, holes and LED channels included, around whatever configuration a build calls for.</p>
+              <div class="project-types"><span>Eurorack</span><span>CNC</span><span>Work in progress</span></div>
+            </div>
+          </a>
+          <a class="project-card post-card" href="/1000errors/blog/layered-beetles/" data-types="lasercut work-in-progress">
+            <div class="project-img"><img loading="lazy" src="assets/blog/beetle/beetle-raised-layers-3d-preview.jpg" alt="Layered beetles: a tool for turning paintings into laser cut depth"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+              <h3>Layered beetles: a tool for turning paintings into laser cut depth</h3>
+              <p class="muted">A home-made app that turns a traced painting into stacked laser cut layers of card, with a 3D preview before anything gets cut.</p>
+              <div class="project-types"><span>Lasercut</span><span>Work in progress</span></div>
+            </div>
+          </a>
+      </div>
+      </section></div></main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <!-- Order matters: config and content first, then the shared code, then this site's own additions. -->
+  <script src="products.js"></script>
+  <script src="site.config.js"></script>
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+  <script src="blocks.js"></script>
+  <script src="custom.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

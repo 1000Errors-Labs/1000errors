@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Page template: `npm run sync` fills in the {{…}} parts and writes one copy per page (see core/prerender.mjs). -->
+  <base href="/1000errors/" />
+  <title>Contact | 1000 Errors</title>
+  <meta name="description" content="Get in touch about commissions, hiring an installation for your festival or event, visuals and animation work, or just to say hi! Based in Bristol, UK, and…" />
+  <link rel="canonical" href="https://1000errors-labs.github.io/1000errors/contact/" />
+  <meta property="og:site_name" content="1000 Errors" />
+  <meta property="og:title" content="Contact" />
+  <meta property="og:description" content="Get in touch about commissions, hiring an installation for your festival or event, visuals and animation work, or just to say hi! Based in Bristol, UK, and…" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:url" content="https://1000errors-labs.github.io/1000errors/contact/" />
+  <meta property="og:image" content="https://1000errors-labs.github.io/1000errors/assets/sacred-geometry-flower-garden-festival-night.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"1000 Errors","item":"https://1000errors-labs.github.io/1000errors/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://1000errors-labs.github.io/1000errors/contact/"}]}</script>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>:root{--bg:#000000;--surface:#1a1a1f;--text:#f2f2f2;--muted:#9a9aa3;--accent:#f2f2f2;--accent-text:#000000;--border:#2a2a31;--radius:10px;--font-body:'Inter', sans-serif;--font-heading:'Inter', sans-serif}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/1000errors/" id="brand"><img src="assets/logo-light.png" alt="1000 Errors"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav"><a href="/1000errors/shop/" class="">Shop</a><a href="/1000errors/projects/" class="">Projects</a><a href="/1000errors/commissions/" class="">Commissions</a><a href="/1000errors/vj-shop/" class="">VJ Shop</a><a href="/1000errors/blog/" class="">Blog</a><a href="/1000errors/about/" class="">About</a><a href="/1000errors/contact/" class="active">Contact</a></nav>
+  </header>
+
+  <main class="main" id="main" data-prerendered="contact"><div class="page page-contact"><section class="block block-contact">
+    <div class="prose">
+      <h1>Contact</h1>
+      <p>Get in touch about commissions, hiring an installation for your festival or event, visuals and animation work, or just to say hi! Based in Bristol, UK, and available worldwide.</p>
+    </div>
+    <form class="contact-form" novalidate>
+      <div class="field-row">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      </div>
+      <label>Phone (optional)<input name="phone" type="tel" autocomplete="tel"></label>
+      <label>Message<textarea name="message" rows="6" required></textarea></label>
+      <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="button button-primary" type="submit">Send</button>
+      <p class="form-status small" role="status"></p>
+    </form></section><section class="block block-text">
+    <div class="prose ">
+      
+      <p>Planning a wedding, or looking for a piece for your home, hotel, restaurant or office? Visit my sister studio,
+            <a href="https://parabolicarts.uk" target="_blank" rel="noopener">Parabolic Arts →</a></p>
+    </div></section></div></main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <!-- Order matters: config and content first, then the shared code, then this site's own additions. -->
+  <script src="products.js"></script>
+  <script src="site.config.js"></script>
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+  <script src="blocks.js"></script>
+  <script src="custom.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

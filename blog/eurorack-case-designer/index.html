@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Page template: `npm run sync` fills in the {{…}} parts and writes one copy per page (see core/prerender.mjs). -->
+  <base href="/1000errors/" />
+  <title>A parametric Eurorack case designer | 1000 Errors</title>
+  <meta name="description" content="A standalone, parametric app for designing curved Eurorack cases for modular synthesizers, with native exports for CNC and laser cutting." />
+  <link rel="canonical" href="https://1000errors-labs.github.io/1000errors/blog/eurorack-case-designer/" />
+  <meta property="og:site_name" content="1000 Errors" />
+  <meta property="og:title" content="A parametric Eurorack case designer" />
+  <meta property="og:description" content="A standalone, parametric app for designing curved Eurorack cases for modular synthesizers, with native exports for CNC and laser cutting." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:url" content="https://1000errors-labs.github.io/1000errors/blog/eurorack-case-designer/" />
+  <meta property="og:image" content="https://1000errors-labs.github.io/1000errors/assets/blog/eurorack-case/eurorack-case-designer-tall-case-3d.jpg" />
+  <meta property="og:image:alt" content="A parametric Eurorack case designer" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"A parametric Eurorack case designer","description":"A standalone, parametric app for designing curved Eurorack cases for modular synthesizers, with native exports for CNC and laser cutting.","url":"https://1000errors-labs.github.io/1000errors/blog/eurorack-case-designer/","mainEntityOfPage":"https://1000errors-labs.github.io/1000errors/blog/eurorack-case-designer/","image":["https://1000errors-labs.github.io/1000errors/assets/blog/eurorack-case/eurorack-case-designer-tall-case-3d.jpg","https://1000errors-labs.github.io/1000errors/assets/blog/eurorack-case/eurorack-case-designer-rows-and-arc.jpg","https://1000errors-labs.github.io/1000errors/assets/blog/eurorack-case/eurorack-case-designer-countersunk-holes-close-up.jpg"],"datePublished":"2026-10-03","keywords":"Eurorack, CNC, Work in progress","author":{"@type":"Person","name":"Olly Balsom","jobTitle":"Light installation artist, VJ and stage designer","address":{"@type":"PostalAddress","addressLocality":"Bristol","addressCountry":"GB"}},"publisher":{"@type":"Organization","name":"1000 Errors","description":"Bespoke LED light installations, laser cut art and visuals for clubs, festivals and events, by Bristol-based artist Olly Balsom. Available worldwide.","url":"https://1000errors-labs.github.io/1000errors/","address":{"@type":"PostalAddress","addressLocality":"Bristol","addressCountry":"GB"},"areaServed":"Worldwide","knowsAbout":["Light installations","Laser cutting","LED lighting","Sacred geometry","Stage design","Projection mapping","VJing","3D animation","Festival installations"],"sameAs":["https://www.instagram.com/1000_errors","https://www.facebook.com/1000ErrorsLaserCutArt"],"founder":{"@type":"Person","name":"Olly Balsom","jobTitle":"Light installation artist, VJ and stage designer","address":{"@type":"PostalAddress","addressLocality":"Bristol","addressCountry":"GB"}}}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"1000 Errors","item":"https://1000errors-labs.github.io/1000errors/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://1000errors-labs.github.io/1000errors/blog/"},{"@type":"ListItem","position":3,"name":"A parametric Eurorack case designer","item":"https://1000errors-labs.github.io/1000errors/blog/eurorack-case-designer/"}]}</script>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>:root{--bg:#000000;--surface:#1a1a1f;--text:#f2f2f2;--muted:#9a9aa3;--accent:#f2f2f2;--accent-text:#000000;--border:#2a2a31;--radius:10px;--font-body:'Inter', sans-serif;--font-heading:'Inter', sans-serif}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/1000errors/" id="brand"><img src="assets/logo-light.png" alt="1000 Errors"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav"><a href="/1000errors/shop/" class="">Shop</a><a href="/1000errors/projects/" class="">Projects</a><a href="/1000errors/commissions/" class="">Commissions</a><a href="/1000errors/vj-shop/" class="">VJ Shop</a><a href="/1000errors/blog/" class="active">Blog</a><a href="/1000errors/about/" class="">About</a><a href="/1000errors/contact/" class="">Contact</a></nav>
+  </header>
+
+  <main class="main" id="main" data-prerendered="blog/eurorack-case-designer"><div class="page page-blog-eurorack-case-designer"><section class="block block-html project-back"><a class="back-link" href="/1000errors/blog/">← Blog</a></section><section class="block block-postHeader">
+      <div class="prose">
+        <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+        <h1>A parametric Eurorack case designer</h1>
+        <div class="project-types"><span>Eurorack</span><span>CNC</span><span>Work in progress</span></div>
+      </div></section><section class="block block-text">
+    <div class="prose ">
+      
+      <p>I also vibe coded a standalone app for designing Eurorack cases for modular synthesizers. It's all parametric
+            design, and it natively exports files for CNC machine and laser cutting software.</p>
+            <p>After designing one case manually, using traditional polygonal modelling in Maya, converting it to vectors and then
+            laser cutting those vectors, I quickly realised how long it takes to fix errors and iterate on a design, let alone
+            make multiple cases with different configurations.</p>
+            <p>So I built this tool, because I wanted the ability to design endless variations: different module heights (3U, 1U),
+            custom LED screens, custom artwork panels, integrated LED lighting in the side panels, custom patch bay layouts,
+            whatever a specific build calls for. Instead of redrawing everything from scratch each time, the tool generates the
+            actual case around whatever configuration I decide on.</p>
+            <p>It takes into account the actual rail hardware I'm using and the thickness of whatever wood I've got, and every
+            joint, slot, hole and panel gap sizes itself off those numbers automatically. Switch to a different rail, use thicker
+            or thinner material, tweak the gap between any two panels: it all just adjusts, rather than me having to redesign the
+            whole case every time something changes.</p>
+    </div></section><section class="block block-split">
+    <div class="split ">
+      <div class="split-media"><img loading="lazy" src="assets/blog/eurorack-case/eurorack-case-designer-rows-and-arc.jpg" alt="The case designer in split view: the curved side profile with its rows and holes in 2D, and the finished wooden case in 3D"></div>
+      <div class="split-text prose">
+        
+        <h2>The curve</h2>
+            <p>In this view, the rows section on the left lets me specify how many module rows I want, the module size (3U or 1U),
+            whether I want a custom patch bay and its size, and the angle of the first and last rows. It then creates a perfect arc
+            for the orientation of the rows in between, taking the dimensions of each row and the patch bay into account.</p>
+            <p>Then it calculates where all the holes need to be drilled. I can even specify the size of the bolt heads, so every
+            bolt is countersunk when it's screwed in.</p>
+        
+      </div>
+    </div></section><section class="block block-text">
+    <div class="prose ">
+      
+      <p>This is one of my favourite parts. The front of the case follows a curve, and that curve has to stay smooth no
+            matter what's actually in the rack. If I add a module, remove one, swap a 3U row for a 1U row or mix in a patch bay,
+            the tool recalculates the whole arc on the fly, so it still comes out as a clean, consistent curve rather than kinking
+            around whatever happens to be plugged in.</p>
+            <p>It's not just splitting the bend evenly per module either: it weights it by the real physical size of each piece,
+            so the curve stays true whether the rack is all 3U or a mix of everything.</p>
+    </div></section><section class="block block-split">
+    <div class="split reverse">
+      <div class="split-media"><img loading="lazy" src="assets/blog/eurorack-case/eurorack-case-designer-tall-case-3d.jpg" alt="A taller version of the case in 3D, with extra rows of different sizes"></div>
+      <div class="split-text prose">
+        
+        <p>With a few clicks I added some extra rows in different module sizes: 1U modules, and a custom patch bay to
+            connect audio, CV and MIDI into the case.</p>
+            <p>Those signals drive the custom coded microcontrollers that power the LED strips running along the perimeter of the
+            panels, and the LED matrix panels at the very top of the case, which visualise the audio, CV and MIDI data.</p>
+        
+      </div>
+    </div></section><section class="block block-split">
+    <div class="split ">
+      <div class="split-media"><img loading="lazy" src="assets/blog/eurorack-case/eurorack-case-designer-countersunk-holes-close-up.jpg" alt="Close-up of the 3D case showing countersunk bolt holes and the channels for LED strips and diffusers"></div>
+      <div class="split-text prose">
+        
+        <p>A close-up showing the fidelity of the design: the parametric holes that let the bolt heads sit countersunk,
+            and the parametric channels for the LED strips and diffusers. Those are proper stepped pockets for a strip and
+            diffuser, designed directly into the side panels rather than bolted on afterwards.</p>
+            <p>Everything is created parametrically in the 2D view and then automatically extruded into 3D, with zero polygonal
+            modelling. That's a first for me, and it's actually much simpler and 10 to 20 times quicker to iterate on. The live
+            2D and 3D previews mean I can see a case coming together before committing to cutting anything.</p>
+        
+      </div>
+    </div></section><section class="block block-text">
+    <div class="prose ">
+      
+      <p>This is part of a whole range of new projects I'm working on that use my node based, audio, CV and MIDI reactive
+            LED and screen software, which I'm also vibe coding.</p>
+            <p>The initial laser cut prototype is done, and now this tool is almost finished, I'll be ready to start CNC cutting the
+            first real version soon.</p>
+    </div></section><section class="block block-buttons">
+    <div class="buttons ">
+      <a class="button button-primary" href="/1000errors/projects/">View projects</a><a class="button " href="/1000errors/contact/">Get in touch</a>
+    </div></section><section class="block block-posts">
+      <h2 class="block-title">More posts</h2>
+      
+      <div class="projects posts">
+        
+          <a class="project-card post-card" href="/1000errors/blog/parabolic-arts/" data-types="news">
+            <div class="project-img"><img loading="lazy" src="assets/blog/parabolic-arts/parabolic-arts-card.jpg" alt="Parabolic Arts: a sister studio for weddings and interiors"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-04">4 October 2026</time>
+              <h3>Parabolic Arts: a sister studio for weddings and interiors</h3>
+              <p class="muted">Wedding décor and interior installations for homes and businesses now have their own home at Parabolic Arts.</p>
+              <div class="project-types"><span>News</span></div>
+            </div>
+          </a>
+          <a class="project-card post-card" href="/1000errors/blog/shadow-lamp-designer/" data-types="3d-printing lighting work-in-progress">
+            <div class="project-img"><img loading="lazy" src="assets/blog/squircles/squircles-room-shadow-preview.png" alt="Squircles: designing 3D printed shadow lamps"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+              <h3>Squircles: designing 3D printed shadow lamps</h3>
+              <p class="muted">My shadow lamp designer started life as a Blender add-on. It&#39;s now a standalone app that draws patterns and simulates their shadows in real time.</p>
+              <div class="project-types"><span>3D printing</span><span>Lighting</span><span>Work in progress</span></div>
+            </div>
+          </a>
+          <a class="project-card post-card" href="/1000errors/blog/layered-beetles/" data-types="lasercut work-in-progress">
+            <div class="project-img"><img loading="lazy" src="assets/blog/beetle/beetle-raised-layers-3d-preview.jpg" alt="Layered beetles: a tool for turning paintings into laser cut depth"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+              <h3>Layered beetles: a tool for turning paintings into laser cut depth</h3>
+              <p class="muted">A home-made app that turns a traced painting into stacked laser cut layers of card, with a 3D preview before anything gets cut.</p>
+              <div class="project-types"><span>Lasercut</span><span>Work in progress</span></div>
+            </div>
+          </a>
+      </div>
+      </section></div></main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <!-- Order matters: config and content first, then the shared code, then this site's own additions. -->
+  <script src="products.js"></script>
+  <script src="site.config.js"></script>
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+  <script src="blocks.js"></script>
+  <script src="custom.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

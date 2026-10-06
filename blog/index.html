@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Page template: `npm run sync` fills in the {{…}} parts and writes one copy per page (see core/prerender.mjs). -->
+  <base href="/1000errors/" />
+  <title>Blog | 1000 Errors</title>
+  <meta name="description" content="News, works in progress and behind the scenes from 1000 Errors." />
+  <link rel="canonical" href="https://1000errors-labs.github.io/1000errors/blog/" />
+  <meta property="og:site_name" content="1000 Errors" />
+  <meta property="og:title" content="Blog" />
+  <meta property="og:description" content="News, works in progress and behind the scenes from 1000 Errors." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:url" content="https://1000errors-labs.github.io/1000errors/blog/" />
+  <meta property="og:image" content="https://1000errors-labs.github.io/1000errors/assets/sacred-geometry-flower-garden-festival-night.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"1000 Errors","item":"https://1000errors-labs.github.io/1000errors/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://1000errors-labs.github.io/1000errors/blog/"}]}</script>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>:root{--bg:#000000;--surface:#1a1a1f;--text:#f2f2f2;--muted:#9a9aa3;--accent:#f2f2f2;--accent-text:#000000;--border:#2a2a31;--radius:10px;--font-body:'Inter', sans-serif;--font-heading:'Inter', sans-serif}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/1000errors/" id="brand"><img src="assets/logo-light.png" alt="1000 Errors"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav"><a href="/1000errors/shop/" class="">Shop</a><a href="/1000errors/projects/" class="">Projects</a><a href="/1000errors/commissions/" class="">Commissions</a><a href="/1000errors/vj-shop/" class="">VJ Shop</a><a href="/1000errors/blog/" class="active">Blog</a><a href="/1000errors/about/" class="">About</a><a href="/1000errors/contact/" class="">Contact</a></nav>
+  </header>
+
+  <main class="main" id="main" data-prerendered="blog"><div class="page page-blog"><section class="block block-posts">
+      <h2 class="block-title">Blog</h2><p class="block-intro">News, works in progress and behind the scenes from the studio.</p>
+      
+        <nav class="filter-pills" aria-label="Filter posts">
+          <button type="button" class="active" data-filter="">All</button>
+          <button type="button" data-filter="3d-printing">3D printing</button><button type="button" data-filter="cnc">CNC</button><button type="button" data-filter="eurorack">Eurorack</button><button type="button" data-filter="lasercut">Lasercut</button><button type="button" data-filter="lighting">Lighting</button><button type="button" data-filter="news">News</button><button type="button" data-filter="work-in-progress">Work in progress</button>
+        </nav>
+      <div class="projects posts">
+        
+          <a class="project-card post-card" href="/1000errors/blog/parabolic-arts/" data-types="news">
+            <div class="project-img"><img loading="lazy" src="assets/blog/parabolic-arts/parabolic-arts-card.jpg" alt="Parabolic Arts: a sister studio for weddings and interiors"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-04">4 October 2026</time>
+              <h3>Parabolic Arts: a sister studio for weddings and interiors</h3>
+              <p class="muted">Wedding décor and interior installations for homes and businesses now have their own home at Parabolic Arts.</p>
+              <div class="project-types"><span>News</span></div>
+            </div>
+          </a>
+          <a class="project-card post-card" href="/1000errors/blog/eurorack-case-designer/" data-types="eurorack cnc work-in-progress">
+            <div class="project-img"><img loading="lazy" src="assets/blog/eurorack-case/eurorack-case-designer-tall-case-3d.jpg" alt="A parametric Eurorack case designer"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+              <h3>A parametric Eurorack case designer</h3>
+              <p class="muted">A standalone app that generates a whole Eurorack case, joints, holes and LED channels included, around whatever configuration a build calls for.</p>
+              <div class="project-types"><span>Eurorack</span><span>CNC</span><span>Work in progress</span></div>
+            </div>
+          </a>
+          <a class="project-card post-card" href="/1000errors/blog/shadow-lamp-designer/" data-types="3d-printing lighting work-in-progress">
+            <div class="project-img"><img loading="lazy" src="assets/blog/squircles/squircles-room-shadow-preview.png" alt="Squircles: designing 3D printed shadow lamps"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+              <h3>Squircles: designing 3D printed shadow lamps</h3>
+              <p class="muted">My shadow lamp designer started life as a Blender add-on. It&#39;s now a standalone app that draws patterns and simulates their shadows in real time.</p>
+              <div class="project-types"><span>3D printing</span><span>Lighting</span><span>Work in progress</span></div>
+            </div>
+          </a>
+          <a class="project-card post-card" href="/1000errors/blog/layered-beetles/" data-types="lasercut work-in-progress">
+            <div class="project-img"><img loading="lazy" src="assets/blog/beetle/beetle-raised-layers-3d-preview.jpg" alt="Layered beetles: a tool for turning paintings into laser cut depth"></div>
+            <div class="project-body">
+              <time class="post-date" datetime="2026-10-03">3 October 2026</time>
+              <h3>Layered beetles: a tool for turning paintings into laser cut depth</h3>
+              <p class="muted">A home-made app that turns a traced painting into stacked laser cut layers of card, with a 3D preview before anything gets cut.</p>
+              <div class="project-types"><span>Lasercut</span><span>Work in progress</span></div>
+            </div>
+          </a>
+      </div>
+      <p class="muted empty" hidden>No posts with this tag yet.</p></section></div></main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <!-- Order matters: config and content first, then the shared code, then this site's own additions. -->
+  <script src="products.js"></script>
+  <script src="site.config.js"></script>
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+  <script src="blocks.js"></script>
+  <script src="custom.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
