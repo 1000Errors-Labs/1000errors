@@ -142,7 +142,7 @@ window.SITE_CONFIG = {
 
   // Your own domain for GitHub Pages, e.g. "1000errors.com" (then run npm run sync). Share links,
   // canonical tags and sitemap.xml use it. (Not decided yet: .com or .uk.)
-  customDomain: "",
+  customDomain: "1000errors.uk",
 
   // Set by `npm run eject`. When true, `npm run sync` no longer overwrites this site's
   // index.html / app.js / styles.css etc, so you can customise them freely.

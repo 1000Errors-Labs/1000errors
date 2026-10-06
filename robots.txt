@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://1000errors-labs.github.io/1000errors/sitemap.xml
+Sitemap: https://1000errors.uk/sitemap.xml
