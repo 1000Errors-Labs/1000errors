@@ -187,20 +187,11 @@ const Blocks = (() => {
       }).join("")}
     </div>`,
   root => {
-    root.querySelectorAll(".lightbox-open").forEach(btn => btn.addEventListener("click", () => {
-      const box = document.createElement("div");
-      box.className = "lightbox";
-      const image = document.createElement("img");
-      image.src = btn.dataset.src;
-      image.alt = btn.querySelector("img")?.alt || "";
-      box.append(image);
-      box.insertAdjacentHTML("beforeend", `<button class="lightbox-close" aria-label="Close">×</button>`);
-      const close = () => { box.remove(); document.removeEventListener("keydown", onKey); };
-      const onKey = e => { if (e.key === "Escape") close(); };
-      box.addEventListener("click", close);
-      document.addEventListener("keydown", onKey);
-      document.body.appendChild(box);
-    }));
+    root.querySelectorAll(".gallery-grid").forEach(grid => {
+      const btns = [...grid.querySelectorAll(".lightbox-open")];
+      const items = btns.map(btn => ({ src: btn.dataset.src, alt: btn.querySelector("img")?.alt || "" }));
+      btns.forEach((btn, i) => btn.addEventListener("click", () => lightbox(items, i)));
+    });
   });
 
   register("features", (b, ctx) => `
@@ -572,7 +563,62 @@ const Blocks = (() => {
 
   register("divider", () => `<hr>`);
 
+  // ---------- full screen photo viewer ----------
+  // lightbox([{ src, alt }, …], index): shows one photo full screen, with ‹ › arrows (and ← → keys, or a swipe on
+  // phones) to step through the rest. Clicking the dark background, the × or pressing Escape closes it.
+  function lightbox(items, index = 0) {
+    const box = document.createElement("div");
+    box.className = "lightbox";
+    const image = document.createElement("img");
+    box.append(image);
+    box.insertAdjacentHTML("beforeend", `<button class="lightbox-close" aria-label="Close">×</button>`);
+    const many = items.length > 1;
+    if (many) box.insertAdjacentHTML("beforeend", `
+      <button class="lightbox-prev" aria-label="Previous photo">‹</button>
+      <button class="lightbox-next" aria-label="Next photo">›</button>`);
+    const show = i => {
+      index = (i + items.length) % items.length;
+      box.classList.remove("zoomed");
+      image.style.transform = "";
+      image.src = items[index].src;
+      image.alt = items[index].alt || "";
+    };
+    // Stop the page scrolling behind the viewer (padding fills the gap the hidden scrollbar leaves).
+    const page = document.documentElement;
+    const before = { overflow: page.style.overflow, paddingRight: page.style.paddingRight };
+    page.style.paddingRight = `${window.innerWidth - page.clientWidth}px`;
+    page.style.overflow = "hidden";
+    const close = () => {
+      box.remove();
+      document.removeEventListener("keydown", onKey);
+      Object.assign(page.style, before);
+    };
+    const onKey = e => {
+      if (e.key === "Escape") close();
+      else if (many && e.key === "ArrowLeft") show(index - 1);
+      else if (many && e.key === "ArrowRight") show(index + 1);
+    };
+    box.addEventListener("click", e => {
+      if (e.target.closest(".lightbox-prev")) show(index - 1);
+      else if (e.target.closest(".lightbox-next")) show(index + 1);
+      else close();
+    });
+    if (many) {
+      let startX = null;
+      box.addEventListener("touchstart", e => { startX = e.touches.length === 1 ? e.touches[0].clientX : null; }, { passive: true });
+      box.addEventListener("touchend", e => {
+        if (startX === null || box.classList.contains("zoomed")) return;
+        const dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+        startX = null;
+      });
+    }
+    document.addEventListener("keydown", onKey);
+    show(index);
+    document.body.appendChild(box);
+  }
+
   register("html", b => b.html || "");
 
-  return { register, render, mount, embedUrl, subscribe, signupForm, mountSignups };
+  return { register, render, mount, lightbox, embedUrl, subscribe, signupForm, mountSignups };
 })();

@@ -62,7 +62,8 @@ window.PARALLAX = Object.assign({
 // - The big photos beside the text zoom in close on hover and follow the pointer (mouse/trackpad only),
 //   and clicking or tapping one opens it full screen, like the gallery photos.
 // - Full screen (any photo): clicking the photo zooms in and the close-up follows the pointer; clicking again
-//   zooms back out. Clicking the dark background, the × or pressing Escape closes it. Phones pinch to zoom.
+//   zooms back out. The arrows (or ← → keys, or a swipe) step through every photo on the page. Clicking the
+//   dark background, the × or pressing Escape closes it. Phones pinch to zoom.
 (() => {
   if (!window.addEventListener || !window.matchMedia) return; // the page builder runs this file outside a browser
   const fine = matchMedia("(hover: hover) and (pointer: fine)").matches;
@@ -99,23 +100,18 @@ window.PARALLAX = Object.assign({
     window.addEventListener("blur", stop);
   }
 
-  // Click a photo beside the text to open it full screen (the same viewer the galleries use).
+  // Click any photo on a project page (beside the text or in a gallery) to open it full screen. The arrows
+  // step through every photo on the page in order.
   document.addEventListener("click", e => {
-    const pic = e.target.closest?.(".split-media img");
+    const pic = e.target.closest?.(".split-media img, .lightbox-open");
     if (!pic || !onProject(pic) || pic.closest("a")) return;
-    const box = document.createElement("div");
-    box.className = "lightbox";
-    const image = document.createElement("img");
-    image.src = pic.currentSrc || pic.src;
-    image.alt = pic.alt;
-    box.append(image);
-    box.insertAdjacentHTML("beforeend", `<button class="lightbox-close" aria-label="Close">×</button>`);
-    const close = () => { box.remove(); document.removeEventListener("keydown", onKey); };
-    const onKey = ev => { if (ev.key === "Escape") close(); };
-    box.addEventListener("click", close);
-    document.addEventListener("keydown", onKey);
-    document.body.appendChild(box);
-  });
+    e.stopPropagation(); // the gallery's own viewer would only step through that one gallery
+    const all = [...pic.closest(".page").querySelectorAll(".split-media img, .lightbox-open")].filter(el => !el.closest("a"));
+    const items = all.map(el => el.matches("img")
+      ? { src: el.currentSrc || el.src, alt: el.alt }
+      : { src: el.dataset.src, alt: el.querySelector("img")?.alt || "" });
+    Blocks.lightbox(items, all.indexOf(pic));
+  }, true);
 
   // Full screen: click the photo to zoom in (to its full resolution, at least 2x) and follow the pointer.
   if (fine) {

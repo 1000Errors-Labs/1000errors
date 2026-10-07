@@ -578,10 +578,10 @@ window.SITE_CONTENT = {
         },
         {
           type: "split",
-          image: "assets/temple/ayahuasca-temple-jaguar-head-entrance.jpg",
+          image: "assets/temple/temple-jaguar-head-entrance.jpg",
           imageAlt: "The temple exterior, with the jaguar head entrance",
           title: "Architectural design in VR",
-          html: `<p>A commissioned design for an Ayahuasca temple, modelled in Maya and built as a real-time virtual reality
+          html: `<p>A commissioned design for a temple, modelled in Maya and built as a real-time virtual reality
             simulation in Unreal Engine, so the whole structure could be walked around at full scale.</p>`,
           buttons: [{ label: "See the temple design", href: "/architectural-design", style: "outline" }],
         },
@@ -592,17 +592,17 @@ window.SITE_CONTENT = {
     "architectural-design": {
       title: "Architectural Design",
       project: { order: 5, title: "Temple Design", types: ["Architecture", "3D & VR", "Commissions"], year: 2023, summary: "A commissioned temple design, modelled in Maya and explored at full scale in virtual reality." },
-      description: "A commissioned Ayahuasca temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine.",
+      description: "A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine.",
       blocks: [
         {
           type: "text",
           title: "Architectural Design",
-          html: `<p>In 2023 I was commissioned to design an Ayahuasca temple. Although the project never came to fruition, this is
+          html: `<p>In 2023 I was commissioned to design a temple. Although the project never came to fruition, this is
             the design I developed over the course of about a month.</p>`,
         },
         {
           type: "split",
-          image: "assets/temple/ayahuasca-temple-jaguar-head-entrance.jpg",
+          image: "assets/temple/temple-jaguar-head-entrance.jpg",
           imageAlt: "The temple exterior, with the jaguar head entrance",
           html: `<p>The design wasn't fully completed: I had planned to add more detail and make each of the seven outer sections
             completely unique. This is what I was able to accomplish within the limited time frame.</p>`,
@@ -612,16 +612,16 @@ window.SITE_CONTENT = {
           title: "Exterior",
           columns: 2,
           items: [
-            { src: "assets/temple/ayahuasca-temple-aerial-view.jpg", alt: "Aerial view of the temple and its seven outer sections" },
-            { src: "assets/temple/ayahuasca-temple-seven-pointed-star-roof.jpg", alt: "Top-down view of the seven-pointed star roof" },
-            { src: "assets/temple/ayahuasca-temple-jaguar-entrance-side.jpg", alt: "Side view of the jaguar head entrance" },
-            { src: "assets/temple/ayahuasca-temple-jaguar-mouth.jpg", alt: "Looking up into the jaguar's mouth at the entrance" },
+            { src: "assets/temple/temple-aerial-view.jpg", alt: "Aerial view of the temple and its seven outer sections" },
+            { src: "assets/temple/temple-seven-pointed-star-roof.jpg", alt: "Top-down view of the seven-pointed star roof" },
+            { src: "assets/temple/temple-jaguar-entrance-side.jpg", alt: "Side view of the jaguar head entrance" },
+            { src: "assets/temple/temple-jaguar-mouth.jpg", alt: "Looking up into the jaguar's mouth at the entrance" },
           ],
         },
         {
           type: "split",
           reverse: true,
-          image: "assets/temple/ayahuasca-temple-entrance-walkthrough.jpg",
+          image: "assets/temple/temple-entrance-walkthrough.jpg",
           imageAlt: "Walking through the entrance towards the inner archway",
           title: "Built to walk through",
           html: `<p>All the images are screenshots from a real-time virtual reality simulation I created. The 3D modelling was done
@@ -633,15 +633,15 @@ window.SITE_CONTENT = {
           title: "Interior",
           columns: 3,
           items: [
-            { src: "assets/temple/ayahuasca-temple-inner-archway.jpg", alt: "The inner archway and patterned floor" },
-            { src: "assets/temple/ayahuasca-temple-ceiling.jpg", alt: "The ceiling above the inner archway" },
-            { src: "assets/temple/ayahuasca-temple-star-window-archway.jpg", alt: "The inner archway with its seven-pointed star window" },
-            { src: "assets/temple/ayahuasca-temple-inlaid-star-floor.jpg", alt: "The inlaid star pattern on the floor" },
-            { src: "assets/temple/ayahuasca-temple-ceiling-lantern.jpg", alt: "The central ceiling lantern" },
-            { src: "assets/temple/ayahuasca-temple-carved-pillars.jpg", alt: "Carved pillars" },
-            { src: "assets/temple/ayahuasca-temple-ouroboros-altar-wall.jpg", alt: "The ouroboros altar wall" },
-            { src: "assets/temple/ayahuasca-temple-ouroboros-seed-of-life-altar.jpg", alt: "The ouroboros and seed of life altar" },
-            { src: "assets/temple/ayahuasca-temple-lattice-detail.jpg", alt: "Close-up of the interlaced lattice" },
+            { src: "assets/temple/temple-inner-archway.jpg", alt: "The inner archway and patterned floor" },
+            { src: "assets/temple/temple-ceiling.jpg", alt: "The ceiling above the inner archway" },
+            { src: "assets/temple/temple-star-window-archway.jpg", alt: "The inner archway with its seven-pointed star window" },
+            { src: "assets/temple/temple-inlaid-star-floor.jpg", alt: "The inlaid star pattern on the floor" },
+            { src: "assets/temple/temple-ceiling-lantern.jpg", alt: "The central ceiling lantern" },
+            { src: "assets/temple/temple-carved-pillars.jpg", alt: "Carved pillars" },
+            { src: "assets/temple/temple-ouroboros-altar-wall.jpg", alt: "The ouroboros altar wall" },
+            { src: "assets/temple/temple-ouroboros-seed-of-life-altar.jpg", alt: "The ouroboros and seed of life altar" },
+            { src: "assets/temple/temple-lattice-detail.jpg", alt: "Close-up of the interlaced lattice" },
           ],
         },
         { type: "buttons", items: [HIRE, { label: "Virtual reality work", href: "/virtual-reality", style: "outline" }] },
@@ -821,7 +821,7 @@ window.SITE_CONTENT = {
 
     "lasercut-art/room-divider": {
       title: "Room Divider",
-      project: { order: 3, types: ["Lasercut", "Commissions"], year: 2023, image: "assets/room-divider/laser-cut-room-divider-patterned-shadows.jpg", summary: "Islamic patterns, sacred geometry and stained glass in three layers of laser cut wood.",
+      project: { order: 3, types: ["Lasercut", "Commissions"], year: 2023, image: "assets/room-divider/laser-cut-room-divider-patterned-shadows.jpg", summary: "A bespoke room divider for a client’s home, combining the aesthetics of Islamic patterns and Christian church windows in three layers of laser cut wood.",
         href: "https://parabolicarts.uk/architectural-room-divider-installation", ...PARABOLIC },
     },
 

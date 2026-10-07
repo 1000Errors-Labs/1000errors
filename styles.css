@@ -275,6 +275,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .lightbox-close { position: absolute; top: 12px; right: 18px; background: none; border: 0; color: #fff; font-size: 2.4rem; }
+.lightbox-prev, .lightbox-next {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; width: 52px; height: 52px; border-radius: 50%;
+  border: 0; background: rgba(0,0,0,.45); color: #fff; font-size: 2.4rem; line-height: 1; cursor: pointer;
+}
+.lightbox-prev { left: 14px; }
+.lightbox-next { right: 14px; }
+.lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,.18); }
 
 .features { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px 32px; }
 .features li { position: relative; padding-left: 22px; }
