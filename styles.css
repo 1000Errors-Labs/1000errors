@@ -205,6 +205,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .prose { max-width: 760px; }
 .prose.center { margin: 0 auto; text-align: center; }
 .prose h1 { font-size: clamp(2rem, 5vw, 3rem); }
+.prose .project-meta { margin: -.25em 0 1.25em; }
 .prose p, .prose li { color: var(--text); }
 .prose img { border-radius: var(--radius); height: auto; margin: 16px 0; }
 .prose a:not(.button) { color: var(--accent); }

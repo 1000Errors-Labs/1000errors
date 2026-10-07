@@ -304,9 +304,14 @@ function createRender({ site = {}, base = "/" } = {}) {
       ];
     }
     if (!page.project) return blocks;
+    // The project's year and types go under its title, as on its card (so write-ups needn't mention the year).
+    const [first, ...rest] = blocks;
+    const meta = [page.project.year, ...(page.project.types || [])].filter(Boolean).map(String);
+    const top = first?.type === "text" && first.title && !first.meta ? [{ ...first, meta }] : first ? [first] : [];
     return [
       { type: "html", className: "project-back", html: `<a class="back-link" href="${esc(link(projectsPage))}">← Projects</a>` },
-      ...blocks,
+      ...top,
+      ...rest,
       ...(page.project.related === false ? [] : [{ type: "projects", title: "More projects", related: path, limit: 3, filters: false }]),
     ];
   }

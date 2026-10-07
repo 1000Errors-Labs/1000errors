@@ -20,13 +20,14 @@
 //   categories  title                                  (one tile per shop category)
 //   contact     title, text                            (form emailed to SITE_CONFIG.contactEmail; ?piece=… pre-fills the message)
 //   signup      title, text, button, tags              (mailing list sign-up, see mailingList in site.config.js)
-//   projects    title, text, filters, columns, limit, only, related
+//   projects    title, text, filters, columns, limit, only, related, under
 //               A filterable grid of every page that has a `project` field, e.g.
 //                 "wedding-archway": { title: "Wedding Archway",
 //                   project: { types: ["Lasercut", "Commissions"], summary: "…", image: "assets/…", imageAlt: "…", year: 2019, order: 1 },
 //                   blocks: [ … ] }
 //               filters: the order of the filter buttons (types not listed come after), or false to hide them.
 //               only: show just one type, e.g. "Lasercut". related: a page path, shows projects sharing its types.
+//               under: a page path, shows just the projects whose address starts with it, e.g. "animation" for animation/….
 //               A project that lives on another website: give it href (and site, the other site's name) and no blocks.
 //               Its card links there instead, and its address here just forwards visitors on. siteNote: a line
 //               under the card explaining the other site, e.g.
@@ -124,6 +125,7 @@ const Blocks = (() => {
   register("text", (b, ctx) => `
     <div class="prose ${b.align === "center" ? "center" : ""}">
       ${b.title ? `<h1>${ctx.esc(b.title)}</h1>` : ""}
+      ${b.meta?.length ? `<div class="project-types project-meta">${b.meta.map(m => `<span>${ctx.esc(m)}</span>`).join("")}</div>` : ""}
       ${b.html || ""}
     </div>`);
 
@@ -409,7 +411,10 @@ const Blocks = (() => {
         .sort((x, y) => y.score - x.score || x.rank - y.rank);
     }
     if (b.only) list = list.filter(p => p.types.some(t => ctx.slugify(t) === ctx.slugify(b.only)));
-    if (b.limit) list = list.slice(0, b.limit);
+    if (b.under) list = list.filter(p => p.path.startsWith(b.under.replace(/^\/|\/$/g, "") + "/"));
+    // Related projects: build in a few spares (hidden), so the page script can swap out ones already viewed.
+    const show = b.related && b.limit ? b.limit : 0;
+    if (b.limit) list = list.slice(0, show ? b.limit + 7 : b.limit);
     if (!list.length) return "";
 
     // Filter buttons: the order given in `filters`, then any other types alphabetically.
@@ -425,9 +430,9 @@ const Blocks = (() => {
           <button type="button" class="active" data-filter="">All</button>
           ${types.map(t => `<button type="button" data-filter="${ctx.esc(ctx.slugify(t))}">${ctx.esc(t)}</button>`).join("")}
         </nav>` : ""}
-      <div class="projects"${cols(b.columns)}>
-        ${list.map(p => `
-          <a class="project-card${p.href ? " project-external" : ""}" ${p.href ? `${ctx.linkAttrs(p.href)} data-site="${ctx.esc(p.site)}" data-site-note="${ctx.esc(p.siteNote)}"` : `href="${ctx.esc(ctx.link("/" + p.path))}"`} data-types="${ctx.esc(p.types.map(ctx.slugify).join(" "))}">
+      <div class="projects"${cols(b.columns)}${show ? ` data-show="${show}"` : ""}>
+        ${list.map((p, i) => `
+          <a class="project-card${p.href ? " project-external" : ""}" ${p.href ? `${ctx.linkAttrs(p.href)} data-site="${ctx.esc(p.site)}" data-site-note="${ctx.esc(p.siteNote)}"` : `href="${ctx.esc(ctx.link("/" + p.path))}"`} data-path="${ctx.esc(p.path)}" data-types="${ctx.esc(p.types.map(ctx.slugify).join(" "))}"${show && i >= show ? " hidden" : ""}>
             <div class="project-img">${p.image ? `<img loading="lazy" src="${ctx.esc(p.image)}" alt="${ctx.esc(p.imageAlt || p.title)}">` : ""}</div>
             <div class="project-body">
               <h3>${ctx.esc(p.title)}</h3>
@@ -442,6 +447,23 @@ const Blocks = (() => {
       ${showFilters ? `<p class="muted empty" hidden>No projects of this type yet.</p>` : ""}`;
   },
   (root, ctx) => {
+    // "More projects": remember project pages viewed in this tab, and suggest ones not seen yet
+    // (most shared types first). Once everything's been seen, the top picks show as normal.
+    let seen = [];
+    try { seen = JSON.parse(sessionStorage.getItem("seenProjects")) || []; } catch {}
+    const here = ctx.path();
+    if (ctx.pages[here]?.project && !seen.includes(here)) {
+      seen.push(here);
+      try { sessionStorage.setItem("seenProjects", JSON.stringify(seen)); } catch {}
+    }
+    root.querySelectorAll(".projects[data-show]").forEach(grid => {
+      const cards = [...grid.querySelectorAll(".project-card")];
+      const picks = [...cards.filter(c => !seen.includes(c.dataset.path)), ...cards.filter(c => seen.includes(c.dataset.path))]
+        .slice(0, Number(grid.dataset.show));
+      cards.forEach(c => { c.hidden = !picks.includes(c); });
+      picks.forEach(c => grid.appendChild(c)); // keep them in ranked order
+    });
+
     // Cards for projects on another website: explain where the link goes before leaving this site.
     root.querySelectorAll(".project-external").forEach(card => card.addEventListener("click", e => {
       if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return; // opening in a new tab on purpose

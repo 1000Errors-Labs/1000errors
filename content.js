@@ -39,6 +39,27 @@ const vjPack = ({ title, intro, video, features, extras = [], buy }) => ({
   ],
 });
 
+// One project from a series page (Animation, Interactive Art, 3D Modelling): a single video or 3D model with its
+// write-up. The card summary is the first sentence of the write-up unless `summary` is given.
+const seriesProject = ({ title, url, text = "", summary, types, year, image, order, links = [], back }) => ({
+  title,
+  ...(text ? { description: text } : {}),
+  project: {
+    title, types, order,
+    summary: summary ?? text.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? text,
+    ...(year ? { year } : {}),
+    ...(image ? { image } : {}),
+  },
+  blocks: [
+    { type: "text", title, html: text ? `<p>${text}</p>` : "" },
+    { type: "video", url },
+    { type: "buttons", items: [HIRE, ...links, back] },
+  ],
+});
+const BACK_TO_ANIMATION = { label: "More animation", href: "/animation", style: "outline" };
+const BACK_TO_INTERACTIVE = { label: "More interactive art", href: "/interactive-art", style: "outline" };
+const BACK_TO_3D = { label: "More 3D models", href: "/3d-modelling", style: "outline" };
+
 window.SITE_CONTENT = {
   home: [
     {
@@ -479,7 +500,6 @@ window.SITE_CONTENT = {
 
     "animation": {
       title: "Animation",
-      project: { order: 4, title: "Animation & Projection Mapping", types: ["Animation", "Projection Mapping"], image: "assets/projects/3d-animation-projection-mapping-render.jpg", summary: "Bespoke 3D animation for projection mapping at light festivals, trade shows and events." },
       description: "Featured animation work, mostly bespoke content for video projection mapping at light festivals, trade shows and advertising.",
       blocks: [
         {
@@ -489,44 +509,90 @@ window.SITE_CONTENT = {
             at light festivals, trade shows and advertising.</p>`,
         },
         { type: "buttons", items: [HIRE] },
-        {
-          type: "videos",
-          items: [
-            { title: "Building Transformation", url: vimeo(287969585),
-              text: "As part of a larger project I 3D modelled, textured and animated this building from a single photograph, aligning the model to match the perspective." },
-            { title: "Sacred Geometry Shadowplay", url: vimeo(260922871),
-              text: "A personal experiment with depth based illusions and semi procedural animation. The icosahedron emits light that casts shadows on the geometry behind it, and the bricks change size based on how close the icosahedron is." },
-            { title: "TMG, World Publishers Expo", url: vimeo(109335673),
-              text: "Projected above a booth at the 2014 World Publishers Expo, on two sides of a huge rectangular box. I used the shape to create a sense of depth, with the animations appearing to be inside the box." },
-            { title: "From Chaos Comes Order", url: vimeo(260921044) },
-            { title: "Stena Boat Mapping", url: vimeo(157117968),
-              text: "Video projection mapping onto a Stena Drillmax boat, following the client's brief to show everyone involved in the company alongside 3D illusionary animations of the boat being built." },
-          ],
-        },
-        {
-          type: "videos",
-          title: "More projection mapping and VJ work",
-          items: [
-            { title: "Halloween Face Projection", url: vimeoPlain(144041807),
-              text: "For a Halloween VJ show projected onto a large 3D face sculpture. Using a 3D model and photogrammetry head scan, the depth based animations appear to peer inside the head as the face breaks apart to reveal the skull, then the eyes and brain." },
-            { title: "Face Sculpture Animation Tests", url: vimeoPlain(167272327),
-              text: "Test animations for one of the projection mapped face sculptures, trying out different materials and lighting techniques.",
-              href: "/sculptural-work", label: "See the sculptures" },
-            { title: "3D Illusion VJ Loop Pack", url: vimeoPlain(296706643),
-              text: "A promo for one of my VJ packs: 45 looping animations that create 3D projection mapping illusions on a flat screen, with no special 3D objects needed.",
-              href: "/vj-shop", label: "Visit the VJ Shop" },
-            { title: "Mayan Pyramid Visual Show", url: vimeoPlain(49673486),
-              text: "Animations for a Mayan pyramid themed VJ show celebrating the end of the world in 2012." },
-            { title: "Projection Mapped Cube Installation", url: vimeoPlain(57330169),
-              text: "An early personal project creating and testing 3D animation and projection mapping techniques on simple geometry." },
-            { title: "DJ Character Animation", url: vimeoPlain(107583598),
-              text: "A couple of animations created for a DJ, featuring character animation and rigging of a model." },
-            { title: "Shpongletron DJ Booth Visuals", url: vimeoPlain(28653533),
-              text: "Some of my earliest animation work: visuals for the custom DJ booth on Shpongle's 2011 North American tour." },
-          ],
-        },
+        { type: "projects", under: "animation", filters: false },
       ],
     },
+
+    // Animation projects, listed on /animation. Their cards sit where the old Animation card was (order 4.x).
+    "animation/building-transformation": seriesProject({
+      title: "Building Transformation", url: vimeo(287969585),
+      text: "As part of a larger project I 3D modelled, textured and animated this building from a single photograph, aligning the model to match the perspective.",
+      types: ["Animation", "Projection Mapping"], order: 4.1, back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/sacred-geometry-shadowplay": seriesProject({
+      title: "Sacred Geometry Shadowplay", url: vimeo(260922871),
+      text: "A personal experiment with depth based illusions and semi procedural animation. The icosahedron emits light that casts shadows on the geometry behind it, and the bricks change size based on how close the icosahedron is.",
+      types: ["Animation"], order: 4.2, image: "assets/projects/3d-animation-projection-mapping-render.jpg", back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/tmg-world-publishers-expo": seriesProject({
+      title: "TMG, World Publishers Expo", url: vimeo(109335673),
+      text: "Projected above a booth at the World Publishers Expo, on two sides of a huge rectangular box. I used the shape to create a sense of depth, with the animations appearing to be inside the box.",
+      types: ["Projection Mapping", "Animation"], order: 4.3, year: 2014, back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/from-chaos-comes-order": seriesProject({
+      title: "From Chaos Comes Order", url: vimeo(260921044),
+      types: ["Animation"], order: 4.4, back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/stena-boat-mapping": seriesProject({
+      title: "Stena Boat Mapping", url: vimeo(157117968),
+      text: "Video projection mapping onto a Stena Drillmax boat, following the client's brief to show everyone involved in the company alongside 3D illusionary animations of the boat being built.",
+      types: ["Projection Mapping", "Animation"], order: 4.5, year: 2016, image: "assets/projects/stena-drillmax-boat-projection-mapping.jpg", back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/halloween-face-projection": seriesProject({
+      title: "Halloween Face Projection", url: vimeoPlain(144041807),
+      text: "For a Halloween VJ show projected onto a large 3D face sculpture. Using a 3D model and photogrammetry head scan, the depth based animations appear to peer inside the head as the face breaks apart to reveal the skull, then the eyes and brain.",
+      types: ["Projection Mapping", "Animation"], order: 4.6, year: 2013,
+      back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/face-sculpture-animation-tests": seriesProject({
+      title: "Face Sculpture Animation Tests", url: vimeoPlain(167272327),
+      text: "Test animations for one of the projection mapped face sculptures, trying out different materials and lighting techniques.",
+      types: ["Projection Mapping", "Animation"], order: 4.7,
+      links: [{ label: "See the sculptures", href: "/sculptural-work", style: "outline" }],
+      back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/3d-illusion-vj-loop-pack": seriesProject({
+      title: "3D Illusion VJ Loop Pack", url: vimeoPlain(296706643),
+      text: "A promo for one of my VJ packs: 45 looping animations that create 3D projection mapping illusions on a flat screen, with no special 3D objects needed.",
+      types: ["Projection Mapping", "Animation"], order: 4.8,
+      links: [{ label: "Get the VJ pack", href: "/vj-shop/thinking-inside-the-box-volume-1" }],
+      back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/mayan-pyramid-visual-show": seriesProject({
+      title: "Mayan Pyramid Visual Show", url: vimeoPlain(49673486),
+      text: "Animations for a Mayan pyramid themed VJ show celebrating the end of the world in 2012.",
+      types: ["Animation"], order: 4.9, year: 2012, image: "assets/projects/mayan-pyramid-visual-show.jpg",
+      back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/projection-mapped-cube-installation": seriesProject({
+      title: "Projection Mapped Cube Installation", url: vimeoPlain(57330169),
+      text: "An early personal project creating and testing 3D animation and projection mapping techniques on simple geometry.",
+      types: ["Projection Mapping", "Animation"], order: 4.10, year: 2013, image: "assets/projects/projection-mapped-cube-installation.jpg",
+      back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/dj-character-animation": seriesProject({
+      title: "DJ Character Animation", url: vimeoPlain(107583598),
+      text: "A couple of animations created for a DJ, featuring character animation and rigging of a model.",
+      types: ["Animation"], order: 4.11,
+      back: BACK_TO_ANIMATION,
+    }),
+
+    "animation/shpongletron-dj-booth-visuals": seriesProject({
+      title: "Shpongletron DJ Booth Visuals", url: vimeoPlain(28653533),
+      text: "Some of my earliest animation work: visuals for the custom DJ booth on Shpongle's North American tour.",
+      types: ["Animation"], order: 4.12, year: 2011, image: "assets/projects/shpongletron-dj-booth-visuals.jpg",
+      back: BACK_TO_ANIMATION,
+    }),
 
     "showreel": {
       title: "Showreel",
@@ -597,7 +663,7 @@ window.SITE_CONTENT = {
         {
           type: "text",
           title: "Architectural Design",
-          html: `<p>In 2023 I was commissioned to design a temple. Although the project never came to fruition, this is
+          html: `<p>I was commissioned to design a temple. Although the project never came to fruition, this is
             the design I developed over the course of about a month.</p>`,
         },
         {
@@ -650,7 +716,6 @@ window.SITE_CONTENT = {
 
     "interactive-art": {
       title: "Interactive Art",
-      project: { order: 9, types: ["Interactive"], year: "2012–2014", image: "assets/projects/kinect-interactive-visuals-demo.jpg", summary: "Kinect motion tracking, MIDI controllers and Ableton Live driving real-time 3D visuals and sound." },
       description: "Experiments in interactive, real-time audio-visual art using Kinect motion tracking, MIDI controllers and Ableton Live.",
       blocks: [
         {
@@ -660,31 +725,50 @@ window.SITE_CONTENT = {
             the Xbox Kinect sensor, MIDI from controllers and MIDI routed from Ableton Live for some audio-visual fun.
             They were made between 2012 and 2014, so the graphics are of their time.</p>`,
         },
-        {
-          type: "videos",
-          columns: 2,
-          items: [
-            { title: "Kinect Controlling 3D Geometry and Sound", url: vimeoPlain(35310732),
-              text: "My right hand moves the cube through 3D space. My left hand sets how fast it spins and sweeps the synth's filter, and changes its colour. My head's position controls a feedback effect and the pitch of the sound. Built with Synapse for Kinect, Max for Live and Ableton Live, routing the same MIDI signals into VDMX and a Quartz Composer patch. Thanks to Ryan Challinor for the original Synapse software." },
-            { title: "Real-time 3D Experiment #5: Hand Tracking", url: vimeoPlain(96156572),
-              text: "The fifth in a series of experiments in real-time, interactive 3D visuals. The Kinect depth camera tracks the user's hands: the right hand moves the first sphere, the left hand controls the trails effect. Geometry made in Maya, composed in Quartz Composer, tracked with NI mate." },
-            { title: "Crystal Visual Show: Development Preview", url: vimeoPlain(96164767, "ccb74964a9"),
-              text: "A work-in-progress preview of our interactive real-time 3D visual show: dynamic lighting controlled by MIDI, OSC or sound, projection mapping of the real-time visuals, and interactive video textures mapped onto the geometry." },
-            { title: "Real-time 3D Experiment #4: MIDI Control", url: vimeoPlain(96133741),
-              text: "The fourth in the series: a MIDI controller manipulates the 3D geometry in real time. Geometry made in Maya, composed in Quartz Composer." },
-            { title: "Xbox Controller Sphere", url: vimeoPlain(106208685),
-              text: "A Quartz Composer piece where an Xbox controller moves a sphere through 3D space. The small sphere also moves the scene's light and triggers shatter effects on the larger sphere as it gets close." },
-            { title: "Projection Mapping Controlled by Ableton Live", url: vimeoPlain(15593783),
-              text: "An early proof of concept: images warped to fit the geometry being projected onto, with playback triggered in real time by MIDI sequenced in Ableton Live and sent to Resolume Avenue." },
-          ],
-        },
+        { type: "projects", under: "interactive-art", filters: false },
         { type: "buttons", items: [HIRE] },
       ],
     },
 
+    // Interactive art projects, listed on /interactive-art.
+    "interactive-art/kinect-3d-geometry-and-sound": seriesProject({
+      title: "Kinect Controlling 3D Geometry and Sound", url: vimeoPlain(35310732),
+      text: "My right hand moves the cube through 3D space. My left hand sets how fast it spins and sweeps the synth's filter, and changes its colour. My head's position controls a feedback effect and the pitch of the sound. Built with Synapse for Kinect, Max for Live and Ableton Live, routing the same MIDI signals into VDMX and a Quartz Composer patch. Thanks to Ryan Challinor for the original Synapse software.",
+      types: ["Interactive"], order: 9.1, year: 2012, image: "assets/projects/kinect-interactive-visuals-demo.jpg", back: BACK_TO_INTERACTIVE,
+    }),
+
+    "interactive-art/hand-tracking-experiment": seriesProject({
+      title: "Real-time 3D Experiment #5: Hand Tracking", url: vimeoPlain(96156572),
+      text: "The fifth in a series of experiments in real-time, interactive 3D visuals. The Kinect depth camera tracks the user's hands: the right hand moves the first sphere, the left hand controls the trails effect. Geometry made in Maya, composed in Quartz Composer, tracked with NI mate.",
+      types: ["Interactive"], order: 9.2, back: BACK_TO_INTERACTIVE,
+    }),
+
+    "interactive-art/crystal-visual-show": seriesProject({
+      title: "Crystal Visual Show: Development Preview", url: vimeoPlain(96164767, "ccb74964a9"),
+      text: "A work-in-progress preview of our interactive real-time 3D visual show: dynamic lighting controlled by MIDI, OSC or sound, projection mapping of the real-time visuals, and interactive video textures mapped onto the geometry.",
+      types: ["Interactive", "Projection Mapping"], order: 9.3, back: BACK_TO_INTERACTIVE,
+    }),
+
+    "interactive-art/midi-control-experiment": seriesProject({
+      title: "Real-time 3D Experiment #4: MIDI Control", url: vimeoPlain(96133741),
+      text: "The fourth in the series: a MIDI controller manipulates the 3D geometry in real time. Geometry made in Maya, composed in Quartz Composer.",
+      types: ["Interactive"], order: 9.4, back: BACK_TO_INTERACTIVE,
+    }),
+
+    "interactive-art/xbox-controller-sphere": seriesProject({
+      title: "Xbox Controller Sphere", url: vimeoPlain(106208685),
+      text: "A Quartz Composer piece where an Xbox controller moves a sphere through 3D space. The small sphere also moves the scene's light and triggers shatter effects on the larger sphere as it gets close.",
+      types: ["Interactive"], order: 9.5, year: 2014, back: BACK_TO_INTERACTIVE,
+    }),
+
+    "interactive-art/ableton-live-projection-mapping": seriesProject({
+      title: "Projection Mapping Controlled by Ableton Live", url: vimeoPlain(15593783),
+      text: "An early proof of concept: images warped to fit the geometry being projected onto, with playback triggered in real time by MIDI sequenced in Ableton Live and sent to Resolume Avenue.",
+      types: ["Interactive", "Projection Mapping"], order: 9.6, year: 2010, image: "assets/projects/ableton-live-projection-mapping-test.jpg", back: BACK_TO_INTERACTIVE,
+    }),
+
     "3d-modelling": {
       title: "3D Modelling & Photogrammetry",
-      project: { order: 11, types: ["3D & VR"], image: "assets/projects/torus-temple-3d-model.jpg", summary: "Interactive 3D models: VR sculpting, architectural visualisation and photogrammetry." },
       description: "Interactive 3D models: VR sculpting, architectural visualisation, product previsualisation and photogrammetry.",
       blocks: [
         {
@@ -693,27 +777,47 @@ window.SITE_CONTENT = {
           html: `<p>A few examples of my 3D modelling and photogrammetry work. These are interactive 3D models: drag to turn them
             around on screen, or view them in virtual reality with a headset.</p>`,
         },
-        {
-          type: "videos",
-          columns: 2,
-          items: [
-            { title: "Alien Squidboy", url: sketchfab("02dd8b47c8074beda067337d6f92ece5"),
-              text: "A character I designed in virtual reality using voxel based sculpting." },
-            { title: "Torus Temple", url: sketchfab("6676d2ca1ee24ca3b85d42298d5a8734"),
-              text: "Architectural visualisation of an immersive space for a music festival, built with hard surface modelling in Maya and voxel sculpting with Oculus Medium in VR." },
-            { title: "Light 01", url: sketchfab("e446786f868343af82195205ee5c0278"),
-              text: "A lamp I designed, fully previsualised in 3D before being built for real." },
-            { title: "Office Chair", url: sketchfab("c1173cc219634b9393d4773a62f0ffa6"),
-              text: "A model of my office chair, showing accurate 3D modelling of a real object." },
-            { title: "Romanesco Broccoli", url: sketchfab("289764f617bd43c79350a258d3ee2677"),
-              text: "A photogrammetry capture showing the level of detail I can capture from real objects, useful for VR experiences and previsualisation." },
-            { title: "Hindu Head", url: sketchfab("9f51bcee73584940adf70b36e6198cbe"),
-              text: "Captured with photogrammetry, then reduced from 1.5 million polygons to 5,000 while keeping the detail in the textures: an optimised, game-engine ready asset from a real object." },
-          ],
-        },
+        { type: "projects", under: "3d-modelling", filters: false },
         { type: "buttons", items: [HIRE, { label: "Virtual reality work", href: "/virtual-reality", style: "outline" }] },
       ],
     },
+
+    // 3D modelling and photogrammetry projects (Sketchfab models), listed on /3d-modelling.
+    "3d-modelling/alien-squidboy": seriesProject({
+      title: "Alien Squidboy", url: sketchfab("02dd8b47c8074beda067337d6f92ece5"),
+      text: "A character I designed in virtual reality using voxel based sculpting.",
+      types: ["3D & VR"], order: 11.1, image: "assets/projects/alien-squidboy-vr-sculpt.jpg", back: BACK_TO_3D,
+    }),
+
+    "3d-modelling/torus-temple": seriesProject({
+      title: "Torus Temple", url: sketchfab("6676d2ca1ee24ca3b85d42298d5a8734"),
+      text: "Architectural visualisation of an immersive space for a music festival, built with hard surface modelling in Maya and voxel sculpting with Oculus Medium in VR.",
+      types: ["3D & VR", "Architecture"], order: 11.2, image: "assets/projects/torus-temple-3d-model.jpg", back: BACK_TO_3D,
+    }),
+
+    "3d-modelling/light-01": seriesProject({
+      title: "Light 01", url: sketchfab("e446786f868343af82195205ee5c0278"),
+      text: "A lamp I designed, fully previsualised in 3D before being built for real.",
+      types: ["3D & VR"], order: 11.3, image: "assets/projects/light-01-lamp-design.jpg", back: BACK_TO_3D,
+    }),
+
+    "3d-modelling/office-chair": seriesProject({
+      title: "Office Chair", url: sketchfab("c1173cc219634b9393d4773a62f0ffa6"),
+      text: "A model of my office chair, showing accurate 3D modelling of a real object.",
+      types: ["3D & VR"], order: 11.4, image: "assets/projects/office-chair-3d-model.jpg", back: BACK_TO_3D,
+    }),
+
+    "3d-modelling/romanesco-broccoli": seriesProject({
+      title: "Romanesco Broccoli", url: sketchfab("289764f617bd43c79350a258d3ee2677"),
+      text: "A photogrammetry capture showing the level of detail I can capture from real objects, useful for VR experiences and previsualisation.",
+      types: ["3D & VR"], order: 11.5, image: "assets/projects/romanesco-broccoli-photogrammetry.jpg", back: BACK_TO_3D,
+    }),
+
+    "3d-modelling/hindu-head": seriesProject({
+      title: "Hindu Head", url: sketchfab("9f51bcee73584940adf70b36e6198cbe"),
+      text: "Captured with photogrammetry, then reduced from 1.5 million polygons to 5,000 while keeping the detail in the textures: an optimised, game-engine ready asset from a real object.",
+      types: ["3D & VR"], order: 11.6, image: "assets/projects/hindu-head-photogrammetry.jpg", back: BACK_TO_3D,
+    }),
 
     "light-installations": {
       title: "Light Installations",
