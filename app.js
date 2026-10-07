@@ -286,7 +286,13 @@
       buyBtn.href = url || "#";
       buyBtn.classList.toggle("disabled", !url);
     }
-    buyBtn.addEventListener("click", e => { if (buyBtn.classList.contains("disabled")) e.preventDefault(); });
+    buyBtn.addEventListener("click", e => {
+      if (buyBtn.classList.contains("disabled")) return e.preventDefault();
+      // Analytics event (only if analytics.umamiId is set in site.config.js).
+      const v = currentVariant();
+      window.umami?.track("Buy now", { product: p.title, ...(v && v.title !== "Default Title" ? { variant: v.title } : {}),
+        ...(v?.price ? { price: Number(v.price.amount) } : {}) });
+    });
 
     refresh();
   }

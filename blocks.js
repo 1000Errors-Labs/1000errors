@@ -280,6 +280,7 @@ const Blocks = (() => {
         if (!res.ok) throw new Error(res.statusText);
         form.reset();
         status.textContent = "Thanks — your message has been sent.";
+        window.umami?.track("Contact form sent", { page: location.pathname });
       } catch {
         status.innerHTML = `Sorry, that didn't send. Please email <a href="mailto:${ctx.esc(email)}">${ctx.esc(email)}</a>.`;
       }

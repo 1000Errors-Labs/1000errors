@@ -81,7 +81,7 @@ window.SITE_CONFIG = {
 
   // The contact form is emailed here (via formsubmit.co). The first message triggers a
   // one-time activation email from FormSubmit to this address — click the link in it once.
-  contactEmail: "",
+  contactEmail: "ollybalsomat1000errors@gmail.com",
 
   // A line at the bottom of the shop and category pages.
   shopNote: {
@@ -135,10 +135,19 @@ window.SITE_CONFIG = {
     ownerJobTitle: "Light installation artist, VJ and stage designer",
     location: { town: "Bristol", country: "GB" },    // town and country only, no street address
     areaServed: "Worldwide",
+    // Website ownership tags. For Google Search Console, choose "URL prefix", then "HTML tag", and add the
+    // content="…" code here as "google-site-verification": "…", then publish.
     verify: { "p:domain_verify": "f71c7614d74e7ed4854f7b5b6bbbbb04" }, // Pinterest website claim
     knowsAbout: ["Light installations", "Laser cutting", "LED lighting", "Sacred geometry", "Stage design",
       "Projection mapping", "VJing", "3D animation", "Festival installations"],
     shareImage: "assets/sacred-geometry-flower-garden-festival-night.jpg", // used when a page has no picture of its own
+  },
+
+  // Visitor stats (Umami Cloud, free, no cookie banner needed). Add the site at cloud.umami.is, copy its
+  // Website ID (Settings → Websites → Edit) here, then publish. "Buy now" clicks and sent contact forms
+  // show up under Events.
+  analytics: {
+    umamiId: "",
   },
 
   // Your own domain for GitHub Pages, e.g. "1000errors.com" (then run npm run sync). Share links,

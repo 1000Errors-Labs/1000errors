@@ -166,6 +166,9 @@ function headHtml(page) {
     seo.twitter ? `<meta name="twitter:site" content="${esc(seo.twitter)}" />` : "",
     // seo.verify: ownership tags from Pinterest, Google etc., e.g. { "p:domain_verify": "abc123" }. Homepage only.
     ...(page.path === "" ? Object.entries(seo.verify || {}) : []).map(([k, v]) => `<meta name="${esc(k)}" content="${esc(v)}" />`),
+    // analytics.umamiId: Umami Cloud visitor stats (cookieless, so no cookie banner). Only counts visits on
+    // customDomain, so previews on your own computer aren't recorded.
+    SITE.analytics?.umamiId ? `<script defer src="https://cloud.umami.is/script.js" data-website-id="${esc(SITE.analytics.umamiId)}"${SITE.customDomain ? ` data-domains="${esc(SITE.customDomain)}"` : ""}></script>` : "",
     ...(page.jsonld || []).filter(Boolean).map(data =>
       `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, "\\u003c")}</script>`),
   ];
