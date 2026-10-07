@@ -147,7 +147,7 @@ window.SITE_CONFIG = {
   // Website ID (Settings → Websites → Edit) here, then publish. "Buy now" clicks and sent contact forms
   // show up under Events.
   analytics: {
-    umamiId: "",
+    umamiId: "5b55d92f-c523-4951-a3f6-80aaf9e5c3aa",
   },
 
   // Your own domain for GitHub Pages, e.g. "1000errors.com" (then run npm run sync). Share links,
