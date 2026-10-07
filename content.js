@@ -20,7 +20,7 @@ const BESPOKE_VISUALS = {
 // Wedding décor and interior work lives on my sister site. Its project cards here link there and explain where they go.
 const PARABOLIC = {
   site: "Parabolic Arts",
-  siteNote: "Parabolic Arts is my sister studio for wedding décor and interior installations for homes and businesses.",
+  siteNote: "Parabolic Arts is my sister studio for wedding décor and bespoke interior installations for businesses.",
 };
 const FORMATS = "Includes DXV3, HAP and QuickTime versions of all videos";
 
@@ -93,7 +93,7 @@ window.SITE_CONTENT = {
             down into flight cases, so they can travel to festivals, clubs and venues anywhere in the world.</p>
             <p>Along the way the work has also covered 3D animation, virtual reality and a range of printed clothing and
             laser-engraved leather goods.</p>
-            <p>Wedding décor and interior installations for homes and businesses now have their own home at my sister studio,
+            <p>Wedding décor and bespoke interior installations for businesses now have their own home at my sister studio,
             <a href="https://parabolicarts.uk" target="_blank" rel="noopener">Parabolic Arts</a>.</p>`,
           buttons: [{ label: "Commissions & hire", href: "/commissions" }, { label: "Get in touch", href: "/contact", style: "outline" }],
         },
@@ -110,7 +110,7 @@ window.SITE_CONTENT = {
         },
         {
           type: "text",
-          html: `<p>Planning a wedding, or looking for a piece for your home, hotel, restaurant or office? Visit my sister studio,
+          html: `<p>Planning a wedding, or a bespoke installation for a hotel, restaurant or office? Visit my sister studio,
             <a href="https://parabolicarts.uk" target="_blank" rel="noopener">Parabolic Arts →</a></p>`,
         },
       ],
@@ -149,7 +149,7 @@ window.SITE_CONTENT = {
         },
         {
           type: "text",
-          html: `<p>Planning a wedding, or decorating a home, hotel, restaurant or office? That work lives at my sister studio,
+          html: `<p>Planning a wedding, or a bespoke installation for a hotel, restaurant or office? That work lives at my sister studio,
             <a href="https://parabolicarts.uk" target="_blank" rel="noopener">Parabolic Arts →</a></p>`,
         },
         {
@@ -230,7 +230,7 @@ window.SITE_CONTENT = {
         summary: "Wedding décor and interior installations for homes and businesses now have their own home at Parabolic Arts.",
         image: "assets/blog/parabolic-arts/parabolic-arts-card.jpg",
       },
-      description: "Wedding décor and interior installations for homes and businesses now have their own website, my sister studio Parabolic Arts.",
+      description: "Wedding décor and bespoke interior installations for businesses now have their own website, my sister studio Parabolic Arts.",
       blocks: [
         {
           type: "text",
