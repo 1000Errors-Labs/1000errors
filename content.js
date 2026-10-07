@@ -227,7 +227,7 @@ window.SITE_CONTENT = {
       post: {
         date: "2026-10-04",
         tags: ["News"],
-        summary: "Wedding décor and interior installations for homes and businesses now have their own home at Parabolic Arts.",
+        summary: "Wedding décor and bespoke interior installations for businesses now have their own home at Parabolic Arts.",
         image: "assets/blog/parabolic-arts/parabolic-arts-card.jpg",
       },
       description: "Wedding décor and bespoke interior installations for businesses now have their own website, my sister studio Parabolic Arts.",
