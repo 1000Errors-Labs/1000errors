@@ -377,6 +377,14 @@
 
   // Follow links inside the site without reloading the page.
   function initLinks() {
+    // Analytics event for links to other websites, e.g. "Link to parabolicarts.uk" with the page it was clicked on.
+    // Skips "Buy now" (tracked separately) and cards that only open a "this is on another site" pop-up.
+    document.addEventListener("click", e => {
+      const a = e.target.closest("a[href]");
+      if (!a || e.defaultPrevented || a.id === "buyNow" || !/^https?:/.test(a.protocol)) return;
+      const url = new URL(a.href, location.href);
+      if (url.origin !== location.origin) window.umami?.track(`Link to ${url.hostname.replace(/^www\./, "")}`, { page: location.pathname });
+    });
     document.addEventListener("click", e => {
       const a = e.target.closest("a[href]");
       if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
