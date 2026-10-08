@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Squircles: 3D Printed Shadow Lamp Design</title>
+    <link>https://1000errors.uk/blog/shadow-lamp-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=squircles-blender-addon-room-shadows</link>
+    <description>Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">squircles-blender-addon-room-shadows</guid>
+    <pubDate>Thu, 08 Oct 2026 06:00:00 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/squircles-blender-addon-room-shadows.jpg" length="75443" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/squircles-blender-addon-room-shadows.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Layered Laser Cut Beetle Art</title>
     <link>https://1000errors.uk/blog/layered-beetles/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=beetle-laser-cut-card-silhouette</link>
     <description>Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.</description>
