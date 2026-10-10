@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Laser Cut Eurorack Case Design</title>
+    <link>https://1000errors.uk/blog/eurorack-case-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=eurorack-case-designer-tall-case-3d</link>
+    <description>A standalone, parametric app for designing curved Eurorack cases for modular synthesizers, with native exports for CNC and laser cutting. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">eurorack-case-designer-tall-case-3d</guid>
+    <pubDate>Sat, 10 Oct 2026 06:00:00 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/eurorack-case-designer-tall-case-3d.jpg" length="44973" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/eurorack-case-designer-tall-case-3d.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Squircles: 3D Printed Shadow Lamp Design</title>
     <link>https://1000errors.uk/blog/shadow-lamp-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=squircles-blender-addon-room-shadows</link>
     <description>Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.</description>
