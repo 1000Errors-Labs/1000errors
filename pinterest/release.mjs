@@ -2,6 +2,8 @@
 // Run every morning by .github/workflows/pinterest.yml. Releases the next pins from queue.json into one RSS feed
 // per board (pinterest/<board>.xml), which Pinterest reads daily and posts as new pins.
 // Works out everything from the date, so running it twice in a day changes nothing.
+// Each pin is dated when it first appears in the feed (not 06:00, as GitHub often runs the job hours late), so it's
+// never older than Pinterest's last read of the feed; pins already in the feed keep their date.
 // When a board runs out of pins it starts again from its first one.
 import fs from "node:fs";
 import path from "node:path";
@@ -31,12 +33,16 @@ for (let i = 0; i < queue.perDay * (today + 1); i++) {
   const day = Math.floor(i / queue.perDay);
   if (day <= today - KEEP_DAYS) continue;
   const round = Math.floor(n / pins.length);
-  released[key].push({ ...pins[n % pins.length], guid: pins[n % pins.length].id + (round ? `-r${round}` : ""), date: new Date(start + day * DAY + 6 * 3600000) });
+  released[key].push({ ...pins[n % pins.length], guid: pins[n % pins.length].id + (round ? `-r${round}` : "") });
 }
 
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 for (const key of keys) {
   const board = queue.boards[key];
+  const file = path.join(here, `${key}.xml`);
+  const old = fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+  const dates = Object.fromEntries([...old.matchAll(/<guid[^>]*>([^<]*)<\/guid>\s*<pubDate>([^<]*)<\/pubDate>/g)].map(m => [m[1], m[2]]));
+  const now = new Date().toUTCString();
   const items = released[key].reverse().map(p => {
     const link = `${p.link}?utm_source=pinterest&utm_medium=social&utm_campaign=${key}&utm_content=${p.guid}`;
     return `  <item>
@@ -44,7 +50,7 @@ for (const key of keys) {
     <link>${esc(link)}</link>
     <description>${esc(p.description)}</description>
     <guid isPermaLink="false">${esc(p.guid)}</guid>
-    <pubDate>${p.date.toUTCString()}</pubDate>
+    <pubDate>${dates[esc(p.guid)] || now}</pubDate>
     <enclosure url="${esc(p.image)}" length="${p.bytes}" type="image/jpeg" />
     <media:content url="${esc(p.image)}" medium="image" type="image/jpeg" />
   </item>`;
@@ -60,7 +66,6 @@ ${items.join("\n")}
 </channel>
 </rss>
 `;
-  const file = path.join(here, `${key}.xml`);
-  if (!fs.existsSync(file) || fs.readFileSync(file, "utf8") !== xml) fs.writeFileSync(file, xml);
+  if (old !== xml) fs.writeFileSync(file, xml);
   console.log(`  ${key.padEnd(22)} ${items.length} pins in the feed`);
 }
