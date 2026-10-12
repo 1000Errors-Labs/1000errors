@@ -157,21 +157,47 @@ window.SITE_CONTENT = {
             around 20 years, including Boom, Ozora and Shambala, VJing at Modem Festival, and bespoke visual shows for Shpongle.</p>`,
         },
         {
-          type: "features",
+          type: "tiles",
           title: "What I can make for you",
           items: [
-            "Bespoke LED light installations and illuminated sculptures for clubs, bars and venues",
-            "Festival installations, stage design and DJ booth decor",
-            "Laser cut sacred geometry wall art, room dividers and lighting for homes and businesses",
-            "Wedding archways and event decor, through my sister studio Parabolic Arts",
-            "Bespoke visual shows, VJ content and projection mapping",
-            "Laser cutting and engraving: layered wooden logos and signs, photo engraving, names and personalised pieces",
+            { title: "Club & venue installations", text: "Bespoke LED light installations and illuminated sculptures for clubs, bars and venues", href: "/lasercut-art", image: "assets/lasercut/olly-balsom-hexstatic-illuminated-wall-art.jpg", imageAlt: "Illuminated laser cut hexagon wall art" },
+            { title: "Festival & stage design", text: "Festival installations, stage design and DJ booth decor", href: "/light-installations", image: "assets/flower-garden/colour-changing-led-flower-mandalas.jpg", imageAlt: "Colour-changing LED flower mandalas at a festival" },
+            { title: "Wall art & room dividers", text: "Laser cut sacred geometry wall art, room dividers and lighting for homes and businesses", href: "https://parabolicarts.uk/architectural-room-divider-installation", image: "assets/room-divider/room-divider-stained-glass-colours.jpg", imageAlt: "Laser cut room divider with stained glass colours" },
+            { title: "Wedding archways & event decor", text: "Through my sister studio Parabolic Arts", href: "https://parabolicarts.uk/geometric-archway", image: "assets/archway/illuminated-wedding-archway-candles.jpg", imageAlt: "Illuminated laser cut wedding archway with candles" },
+            { title: "Visuals & projection mapping", text: "Bespoke visual shows, VJ content and projection mapping", href: "/animation", image: "assets/projects/shpongletron-dj-booth-visuals.jpg", imageAlt: "Projection mapped visuals on the Shpongletron DJ booth" },
+            { title: "Laser cutting & engraving", text: "Layered wooden logos and signs, photo engraving, names and personalised pieces", href: "https://parabolicarts.uk/laser-cutting-engraving", image: "assets/lasercut/hexagon-flower-mandala-wood.jpg", imageAlt: "Laser cut hexagon flower mandala in wood" },
           ],
         },
         {
-          type: "text",
-          html: `<p>Planning a wedding, or a bespoke installation for a hotel, restaurant or office? That work lives at my sister studio,
-            <a href="https://parabolicarts.uk" target="_blank" rel="noopener">Parabolic Arts →</a></p>`,
+          type: "split",
+          image: "assets/flower-garden/flower-garden-festival-visitors-night.jpg",
+          imageAlt: "Festival visitors walking among the illuminated Sacred Geometry Flower Garden at night",
+          title: "Available to hire",
+          html: `<p>The Sacred Geometry Flower Garden, the illuminated wedding archway and a range of light sculptures are
+            available to hire for festivals, events and weddings in the UK and abroad.</p>`,
+          buttons: [{ label: "The Flower Garden", href: "/light-installations", style: "outline" }, { label: "Light sculptures", href: "/lasercut-art", style: "outline" }],
+        },
+        { type: "projects", title: "Selected work", limit: 3, filters: false },
+        {
+          type: "split",
+          reverse: true,
+          image: "assets/archway/wedding-archway-pieces-packed-in-suitcase.jpg",
+          imageAlt: "A 9ft laser cut wedding archway packed down into a suitcase",
+          title: "Built to travel",
+          html: `<p>Pieces are designed from the start to pack down into flight cases, so they can be shipped or flown to festivals
+            and venues anywhere in the world and assembled on site.</p>
+            <p>My 9ft wedding archway packed into a single suitcase and was checked in as luggage on a plane.</p>`,
+          buttons: [{ label: "See the archway", href: "https://parabolicarts.uk/geometric-archway", style: "outline" }],
+        },
+        {
+          type: "split",
+          image: "assets/blog/eurorack-case/eurorack-case-designer-rows-and-arc.jpg",
+          imageAlt: "Custom parametric design software showing a curved case design in 2D and 3D",
+          title: "Designed in my own software",
+          html: `<p>I write my own design tools, so a piece can be shaped around your space, your stage or your flight case, then
+            previewed in 3D and sent straight to the laser cutter. That means truly bespoke designs without starting from
+            scratch every time.</p>`,
+          buttons: [{ label: "Read about the tools", href: "/blog", style: "outline" }],
         },
         {
           type: "split",
@@ -185,37 +211,17 @@ window.SITE_CONTENT = {
           buttons: [{ label: "Laser cutting & engraving", href: "https://parabolicarts.uk/laser-cutting-engraving", style: "outline" }],
         },
         {
-          type: "split",
-          image: "assets/archway/wedding-archway-pieces-packed-in-suitcase.jpg",
-          imageAlt: "A 9ft laser cut wedding archway packed down into a suitcase",
-          title: "Built to travel",
-          html: `<p>Pieces are designed from the start to pack down into flight cases, so they can be shipped or flown to festivals
-            and venues anywhere in the world and assembled on site.</p>
-            <p>My 9ft wedding archway packed into a single suitcase and was checked in as luggage on a plane.</p>`,
-          buttons: [{ label: "See the archway", href: "https://parabolicarts.uk/geometric-archway", style: "outline" }],
+          type: "text",
+          html: `<p>Planning a wedding, or a bespoke installation for a hotel, restaurant or office? That work lives at my sister studio,
+            <a href="https://parabolicarts.uk" target="_blank" rel="noopener">Parabolic Arts →</a></p>`,
         },
         {
-          type: "split",
-          reverse: true,
-          image: "assets/blog/eurorack-case/eurorack-case-designer-rows-and-arc.jpg",
-          imageAlt: "Custom parametric design software showing a curved case design in 2D and 3D",
-          title: "Designed in my own software",
-          html: `<p>I write my own design tools, so a piece can be shaped around your space, your stage or your flight case, then
-            previewed in 3D and sent straight to the laser cutter. That means truly bespoke designs without starting from
-            scratch every time.</p>`,
-          buttons: [{ label: "Read about the tools", href: "/blog", style: "outline" }],
+          type: "text",
+          align: "center",
+          html: `<h2>Got an event or space in mind?</h2>
+            <p>Tell me about the venue, dates and budget and I'll get back to you with ideas.</p>`,
         },
-        {
-          type: "split",
-          image: "assets/flower-garden/flower-garden-festival-visitors-night.jpg",
-          imageAlt: "Festival visitors walking among the illuminated Sacred Geometry Flower Garden at night",
-          title: "Available to hire",
-          html: `<p>The Sacred Geometry Flower Garden, the illuminated wedding archway and a range of light sculptures are
-            available to hire for festivals, events and weddings in the UK and abroad.</p>`,
-          buttons: [{ label: "The Flower Garden", href: "/light-installations", style: "outline" }, { label: "Light sculptures", href: "/lasercut-art", style: "outline" }],
-        },
-        { type: "projects", title: "Selected work", limit: 6, filters: false },
-        { type: "buttons", align: "center", items: [{ label: "Get in touch", href: "/contact" }, { label: "All projects", href: "/projects", style: "outline" }] },
+        { type: "buttons", align: "center", items: [{ label: "Start a project", href: "/contact" }, { label: "All projects", href: "/projects", style: "outline" }] },
       ],
     },
 
