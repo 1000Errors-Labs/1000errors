@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Sacred Geometry Flower Garden LED Light Installation</title>
+    <link>https://1000errors.uk/light-installations/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=flower-garden-festival-visitors-night</link>
+    <description>Visitors walking among the illuminated flowers at night. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">flower-garden-festival-visitors-night</guid>
+    <pubDate>Thu, 15 Oct 2026 10:48:13 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/flower-garden-festival-visitors-night.jpg" length="90748" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/flower-garden-festival-visitors-night.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Temple Architectural Design</title>
     <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-aerial-view</link>
     <description>Aerial view of the temple and its seven outer sections. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Fri, 09 Oct 2026 06:00:00 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/temple-jaguar-head-entrance.jpg" length="82066" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/temple-jaguar-head-entrance.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Projection Mapped Face Sculpture for Festival Stages</title>
-    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=projection-mapped-face-sculpture-stage</link>
-    <description>The larger face with additional details projected onto it. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">projection-mapped-face-sculpture-stage</guid>
-    <pubDate>Thu, 08 Oct 2026 06:00:00 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/projection-mapped-face-sculpture-stage.jpg" length="75202" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/projection-mapped-face-sculpture-stage.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>

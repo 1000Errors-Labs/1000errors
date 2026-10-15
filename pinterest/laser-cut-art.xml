@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Platonic Energy Circle, LED Sacred Geometry Wall Mandala</title>
+    <link>https://1000errors.uk/p/platonic-energy-circle/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=platonic-energy-circle-1</link>
+    <description>Platonic Energy Circle wooden mandala LED wall light sculpture glowing red. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">platonic-energy-circle-1</guid>
+    <pubDate>Thu, 15 Oct 2026 10:48:13 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/platonic-energy-circle-1.jpg" length="212297" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/platonic-energy-circle-1.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Sacred Geometry Christmas Ornaments, Laser Cut Birch Set of 10</title>
     <link>https://1000errors.uk/p/sacred-geometry-xmas-tree-ornament-set/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=sacred-geometry-xmas-tree-ornament-set-1</link>
     <description>Set of laser cut wooden sacred geometry Christmas tree ornaments laid out around a star. Ten laser cut and engraved birch Christmas tree ornaments: a 20cm star plus nine 6.5cm sacred geometry pieces. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
@@ -49,15 +58,6 @@
     <pubDate>Sat, 10 Oct 2026 06:00:00 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/eurorack-case-designer-tall-case-3d.jpg" length="44973" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/eurorack-case-designer-tall-case-3d.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Squircles: 3D Printed Shadow Lamp Design</title>
-    <link>https://1000errors.uk/blog/shadow-lamp-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=squircles-blender-addon-room-shadows</link>
-    <description>Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.</description>
-    <guid isPermaLink="false">squircles-blender-addon-room-shadows</guid>
-    <pubDate>Thu, 08 Oct 2026 06:00:00 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/squircles-blender-addon-room-shadows.jpg" length="75443" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/squircles-blender-addon-room-shadows.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
