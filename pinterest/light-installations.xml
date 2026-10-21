@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Projection Mapped Face Sculpture for Festival Stages</title>
+    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-early-3d-prototype</link>
+    <description>Another early 3D prototype, used to work out how much of the face to include so the projections would not distort when projected from too steep an angle. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">face-sculpture-early-3d-prototype</guid>
+    <pubDate>Wed, 21 Oct 2026 11:05:42 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-early-3d-prototype.jpg" length="76002" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-early-3d-prototype.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Light Installation Commissions for Clubs &amp; Festivals</title>
     <link>https://1000errors.uk/commissions/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=eurorack-case-designer-rows-and-arc</link>
     <description>Bespoke LED light installations, laser cut sculptures and stage design for clubs, festivals and events. Designed and built in Bristol, UK, made to tour worldwide. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -58,15 +67,6 @@
     <pubDate>Thu, 15 Oct 2026 10:48:13 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/flower-garden-festival-visitors-night.jpg" length="90748" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/flower-garden-festival-visitors-night.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Temple Architectural Design</title>
-    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-aerial-view</link>
-    <description>Aerial view of the temple and its seven outer sections. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">temple-aerial-view</guid>
-    <pubDate>Wed, 14 Oct 2026 11:06:32 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/temple-aerial-view.jpg" length="105075" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/temple-aerial-view.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
