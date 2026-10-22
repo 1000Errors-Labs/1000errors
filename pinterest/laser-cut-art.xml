@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Laser Cut Eurorack Case Design</title>
+    <link>https://1000errors.uk/blog/eurorack-case-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=eurorack-case-designer-countersunk-holes-close-up</link>
+    <description>A standalone, parametric app for designing curved Eurorack cases for modular synthesizers, with native exports for CNC and laser cutting. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">eurorack-case-designer-countersunk-holes-close-up</guid>
+    <pubDate>Thu, 22 Oct 2026 11:05:56 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/eurorack-case-designer-countersunk-holes-close-up.jpg" length="53968" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/eurorack-case-designer-countersunk-holes-close-up.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Squircles: 3D Printed Shadow Lamp Design</title>
     <link>https://1000errors.uk/blog/shadow-lamp-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=squircles-sphere-preview</link>
     <description>Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.</description>
@@ -49,15 +58,6 @@
     <pubDate>Fri, 16 Oct 2026 10:37:11 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-6.jpg" length="195260" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-6.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Platonic Energy Circle, LED Sacred Geometry Wall Mandala</title>
-    <link>https://1000errors.uk/p/platonic-energy-circle/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=platonic-energy-circle-1</link>
-    <description>Platonic Energy Circle wooden mandala LED wall light sculpture glowing red. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
-    <guid isPermaLink="false">platonic-energy-circle-1</guid>
-    <pubDate>Thu, 15 Oct 2026 10:48:13 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/platonic-energy-circle-1.jpg" length="212297" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/platonic-energy-circle-1.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
