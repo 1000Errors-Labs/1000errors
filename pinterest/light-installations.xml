@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Sacred Geometry Flower Garden LED Light Installation</title>
+    <link>https://1000errors.uk/light-installations/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=colour-changing-led-flower-mandalas</link>
+    <description>The mandala flowers in different LED colours, with festival crowds. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">colour-changing-led-flower-mandalas</guid>
+    <pubDate>Sat, 24 Oct 2026 10:13:28 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/colour-changing-led-flower-mandalas.jpg" length="247260" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/colour-changing-led-flower-mandalas.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Temple Architectural Design</title>
     <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-jaguar-entrance-side</link>
     <description>Side view of the jaguar head entrance. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Sun, 18 Oct 2026 10:19:35 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/temple-seven-pointed-star-roof.jpg" length="85663" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/temple-seven-pointed-star-roof.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Projection Mapped Face Sculpture for Festival Stages</title>
-    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-3d-printed-prototype</link>
-    <description>A further developed small scale prototype that combines 3D printing and multiple layers of laser cut wood. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">face-sculpture-3d-printed-prototype</guid>
-    <pubDate>Sat, 17 Oct 2026 10:05:59 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-3d-printed-prototype.jpg" length="74633" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-3d-printed-prototype.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
