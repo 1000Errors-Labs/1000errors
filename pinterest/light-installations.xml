@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Projection Mapped Face Sculpture for Festival Stages</title>
+    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-miniature-test-projection</link>
+    <description>An early test projection on the miniature scale model, making sure everything worked well. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">face-sculpture-miniature-test-projection</guid>
+    <pubDate>Sun, 25 Oct 2026 10:38:29 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-miniature-test-projection.jpg" length="73351" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-miniature-test-projection.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Sacred Geometry Flower Garden LED Light Installation</title>
     <link>https://1000errors.uk/light-installations/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=colour-changing-led-flower-mandalas</link>
     <description>The mandala flowers in different LED colours, with festival crowds. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Mon, 19 Oct 2026 12:00:23 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/sacred-geometry-flower-rainbow-led.jpg" length="241144" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/sacred-geometry-flower-rainbow-led.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Temple Architectural Design</title>
-    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-seven-pointed-star-roof</link>
-    <description>Top-down view of the seven-pointed star roof. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">temple-seven-pointed-star-roof</guid>
-    <pubDate>Sun, 18 Oct 2026 10:19:35 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/temple-seven-pointed-star-roof.jpg" length="85663" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/temple-seven-pointed-star-roof.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
