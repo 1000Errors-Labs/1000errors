@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Temple Architectural Design</title>
+    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-jaguar-mouth</link>
+    <description>Looking up into the jaguar's mouth at the entrance. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">temple-jaguar-mouth</guid>
+    <pubDate>Mon, 26 Oct 2026 12:11:27 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/temple-jaguar-mouth.jpg" length="100776" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/temple-jaguar-mouth.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-miniature-test-projection</link>
     <description>An early test projection on the miniature scale model, making sure everything worked well. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Tue, 20 Oct 2026 10:53:09 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/eurorack-case-designer-rows-and-arc.jpg" length="44732" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/eurorack-case-designer-rows-and-arc.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Sacred Geometry Flower Garden LED Light Installation</title>
-    <link>https://1000errors.uk/light-installations/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=sacred-geometry-flower-rainbow-led</link>
-    <description>A mandala flower glowing in rainbow colours. The Sacred Geometry Flower Garden: a walk-through LED light installation of laser cut mandala flowers, shown at Boom Festival and available to hire. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">sacred-geometry-flower-rainbow-led</guid>
-    <pubDate>Mon, 19 Oct 2026 12:00:23 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/sacred-geometry-flower-rainbow-led.jpg" length="241144" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/sacred-geometry-flower-rainbow-led.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
