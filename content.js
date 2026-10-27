@@ -170,7 +170,7 @@ window.SITE_CONTENT = {
             { title: "Wall art & room dividers", text: "Laser cut sacred geometry wall art, room dividers and lighting for homes and businesses", href: "https://parabolicarts.uk/architectural-room-divider-installation", image: "assets/room-divider/room-divider-stained-glass-colours.jpg", imageAlt: "Laser cut room divider with stained glass colours" },
             { title: "Wedding archways & event decor", text: "Through my sister studio Parabolic Arts", href: "https://parabolicarts.uk/geometric-archway", image: "assets/archway/illuminated-wedding-archway-candles.jpg", imageAlt: "Illuminated laser cut wedding archway with candles" },
             { title: "Visuals & projection mapping", text: "Bespoke visual shows, VJ content and projection mapping", href: "/projects?type=projection-mapping", image: "assets/projects/shpongletron-dj-booth-visuals.jpg", imageAlt: "Projection mapped visuals on the Shpongletron DJ booth" },
-            { title: "Laser cutting & engraving", text: "Layered wooden logos and signs, photo engraving, names and personalised pieces", href: "https://parabolicarts.uk/laser-cutting-engraving", image: "assets/lasercut/hexagon-flower-mandala-wood.jpg", imageAlt: "Laser cut hexagon flower mandala in wood" },
+            { title: "Laser cutting & engraving", text: "Layered wooden logos and signs, photo engraving, names and personalised pieces", href: "https://parabolicarts.uk/laser-cutting-engraving", image: "assets/lasercut/laser-cutter-cutting-plywood-spiral-pieces.jpg", imageAlt: "Industrial laser cutter cutting spiral pieces from a sheet of plywood" },
           ],
         },
         {
