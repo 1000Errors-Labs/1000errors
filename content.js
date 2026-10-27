@@ -207,8 +207,8 @@ window.SITE_CONTENT = {
         {
           type: "split",
           reverse: true,
-          image: "assets/lasercut/layered-hexagon-pattern-wood-detail.jpg",
-          imageAlt: "Close-up of layered laser cut wood in a hexagon pattern",
+          image: "assets/lasercut/laser-cutter-cutting-plywood-spiral-pieces.jpg",
+          imageAlt: "Industrial laser cutter cutting spiral pieces from a sheet of plywood",
           title: "Laser cutting & engraving",
           html: `<p>I also offer a laser cutting and engraving service on an industrial laser cutter with a 120 × 85 cm cutting area.
             With a background in graphic design, I can create a logo for you or take an existing one and separate it into layers
