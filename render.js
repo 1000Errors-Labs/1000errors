@@ -304,9 +304,9 @@ function createRender({ site = {}, base = "/" } = {}) {
       ];
     }
     if (!page.project) return blocks;
-    // The project's year and types go under its title, as on its card (so write-ups needn't mention the year).
+    // The project's types go under its title, as on its card. Its year isn't shown (it only goes to search engines).
     const [first, ...rest] = blocks;
-    const meta = [page.project.year, ...(page.project.types || [])].filter(Boolean).map(String);
+    const meta = (page.project.types || []).map(String);
     const top = first?.type === "text" && first.title && !first.meta ? [{ ...first, meta }] : first ? [first] : [];
     return [
       { type: "html", className: "project-back", html: `<a class="back-link" href="${esc(link(projectsPage))}">← Projects</a>` },

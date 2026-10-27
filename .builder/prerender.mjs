@@ -372,9 +372,10 @@ function renderFile(page, categories) {
 
 // A small page for a project that now lives on another website. It forwards visitors straight there and
 // tells search engines where the project went (not listed in sitemap.xml).
-// A product's old address (e.g. after two listings were combined): forwards to its new page, for visitors and search engines.
-function productRedirectFile(to) {
-  const href = absolute("/p/" + to) || R.link("/p/" + to);
+// An old address (e.g. a product after two listings were combined, or a page that was removed): forwards to its
+// new place, for visitors and search engines.
+function redirectFile(to, text = "This page has moved here.") {
+  const href = absolute(to) || R.link(to);
   return `<!doctype html>
 <html lang="${R.esc(SITE.locale || "en-GB")}">
 <head>
@@ -384,7 +385,7 @@ function productRedirectFile(to) {
 <link rel="canonical" href="${R.esc(href)}">
 <meta http-equiv="refresh" content="0; url=${R.esc(href)}">
 </head>
-<body><p><a href="${R.esc(href)}">This product has moved here.</a></p></body>
+<body><p><a href="${R.esc(href)}">${R.esc(text)}</a></p></body>
 </html>
 `;
 }
@@ -422,6 +423,7 @@ async function main() {
 
   const pages = [];
   const moved = []; // projects that live on another website: their address here just forwards visitors on
+  const redirects = []; // [old page path, where it now forwards to]
   if (CONTENT.home) pages.push(await contentPage("", { blocks: CONTENT.home, description: SITE.description }, products, categories));
   else pages.push({
     path: "", title: pageTitle(""), description: SITE.description || "", main: R.listingHtml(products, categories, null, { isHome: true }),
@@ -430,6 +432,7 @@ async function main() {
   });
   for (const [pagePath, page] of Object.entries(PAGES)) {
     if (page.project?.href && !page.blocks) { moved.push([pagePath, page]); continue; } // lives on another website
+    if (page.redirect) { redirects.push([pagePath, page.redirect]); continue; } // removed page that forwards elsewhere
     if (RESERVED.has(pagePath.split("/")[0]) || /[^a-z0-9/_-]/i.test(pagePath)) {
       console.warn(`  ! Skipped page "${pagePath}": that address can't be used for a page.`);
       continue;
@@ -453,8 +456,9 @@ async function main() {
   for (const page of pages) write(pageFile(page.path), renderFile(page, categories));
   for (const [pagePath, page] of moved) write(pageFile(pagePath), movedFile(page));
   for (const [from, to] of Object.entries(PRODUCT_REDIRECTS)) {
-    if (!PRODUCTS.some(p => p.handle === from)) write(pageFile(`p/${from}`), productRedirectFile(to));
+    if (!PRODUCTS.some(p => p.handle === from)) write(pageFile(`p/${from}`), redirectFile("/p/" + to, "This product has moved here."));
   }
+  for (const [pagePath, to] of redirects) write(pageFile(pagePath), redirectFile(to));
   if (ours("404.html")) {
     write("404.html", renderFile({ path: "", noindex: true, title: pageTitle("Page not found"), description: SITE.description || "" }, categories));
   }

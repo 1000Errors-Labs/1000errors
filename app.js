@@ -366,6 +366,7 @@
       else if (!path && CONTENT.home) await showPage({ title: "", description: SITE.description, blocks: CONTENT.home });
       else if (!path) await showListing("", { isHome: true });
       else if (PAGES[path]?.project?.href && !PAGES[path].blocks) location.replace(PAGES[path].project.href); // moved to another site
+      else if (PAGES[path]?.redirect) location.replace(link(PAGES[path].redirect)); // removed page that forwards elsewhere
       else if (PAGES[path]) await showPage(PAGES[path]);
       else showNotFound();
       if (!location.hash) window.scrollTo(0, 0);

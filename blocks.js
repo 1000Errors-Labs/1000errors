@@ -103,7 +103,18 @@ const Blocks = (() => {
     return u;
   }
 
-  const videoFrame = (url, title, ctx) => `
+  // YouTube shows the video's title across the top of its player, and an embed can't turn that off. So YouTube
+  // videos start as their thumbnail with a play button; the player only loads (and starts) when it's clicked.
+  const youtubeId = url => String(url || "").match(/(?:youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/)?.[1];
+  const videoFrame = (url, title, ctx) => youtubeId(url) ? `
+    <div class="video-frame">
+      <button type="button" class="video-cover" data-src="${ctx.esc(embedUrl(url))}" data-title="${ctx.esc(title || "Video")}" aria-label="Play video${title ? ": " + ctx.esc(title) : ""}">
+        <img loading="lazy" src="https://i.ytimg.com/vi/${youtubeId(url)}/maxresdefault.jpg" alt=""
+          onload="if(this.naturalWidth<200)this.src=this.src.replace('maxresdefault','hqdefault')"
+          onerror="this.onerror=null;this.src=this.src.replace('maxresdefault','hqdefault')">
+        <span class="video-play" aria-hidden="true"></span>
+      </button>
+    </div>` : `
     <div class="video-frame">
       <iframe src="${ctx.esc(embedUrl(url))}" title="${ctx.esc(title || "Video")}" loading="lazy"
         allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
@@ -172,7 +183,17 @@ const Blocks = (() => {
   register("video", (b, ctx) => `
     ${heading(b.title, ctx)}
     ${videoFrame(b.url, b.title, ctx)}
-    ${b.text ? `<p class="video-caption muted">${ctx.esc(b.text)}</p>` : ""}`);
+    ${b.text ? `<p class="video-caption muted">${ctx.esc(b.text)}</p>` : ""}`,
+  root => { // YouTube covers (used by the "video" and "videos" blocks): swap in the player when clicked
+    root.querySelectorAll(".video-cover").forEach(cover => cover.addEventListener("click", () => {
+      const frame = document.createElement("iframe");
+      frame.src = cover.dataset.src + "?autoplay=1&rel=0";
+      frame.title = cover.dataset.title;
+      frame.allow = "autoplay; fullscreen; picture-in-picture";
+      frame.allowFullscreen = true;
+      cover.replaceWith(frame);
+    }));
+  });
 
   register("gallery", (b, ctx) => `
     ${heading(b.title, ctx, b.text)}
@@ -388,7 +409,6 @@ const Blocks = (() => {
         title: page.project.title || page.title,
         summary: page.project.summary || page.description || "",
         types: page.project.types || [],
-        year: page.project.year || "",
         image: page.project.image || firstImage(page.blocks),
         imageAlt: page.project.imageAlt || "",
         rank: page.project.order ?? 1000 + order,
@@ -438,7 +458,6 @@ const Blocks = (() => {
               <h3>${ctx.esc(p.title)}</h3>
               ${p.summary ? `<p class="muted">${ctx.esc(p.summary)}</p>` : ""}
               <div class="project-types">
-                ${p.year ? `<span>${ctx.esc(p.year)}</span>` : ""}
                 ${p.types.map(t => `<span>${ctx.esc(t)}</span>`).join("")}
               </div>
             </div>

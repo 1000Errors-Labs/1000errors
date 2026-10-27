@@ -112,3 +112,6 @@ body { overflow-x: clip; } /* edge-to-edge sections use 100vw, which on Windows 
 /* Homepage category tiles zoom in close on hover and follow the pointer (custom.js), like the product cards. */
 @media (hover: hover) and (pointer: fine) { .page-home .tile { cursor: zoom-in; } }
 .page-home .tile.zooming img { transition: transform .25s ease-out; }
+
+/* Wedding Archway card: crop from the top so the top of the archway stays in view. */
+.project-card[data-path="lasercut-art/wedding-archway"] .project-img img { object-position: top; }
