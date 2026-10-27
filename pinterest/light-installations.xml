@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Projection Mapped Face Sculpture for Festival Stages</title>
+    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-interlocking-wood-prototype</link>
+    <description>Software turned the 3D mesh into a series of interlocking pieces of wood, laser cut and slotted together. This was a small scale prototype. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">face-sculpture-interlocking-wood-prototype</guid>
+    <pubDate>Tue, 27 Oct 2026 11:32:50 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-interlocking-wood-prototype.jpg" length="126291" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-interlocking-wood-prototype.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Temple Architectural Design</title>
     <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-jaguar-mouth</link>
     <description>Looking up into the jaguar's mouth at the entrance. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Wed, 21 Oct 2026 11:05:42 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-early-3d-prototype.jpg" length="76002" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-early-3d-prototype.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Light Installation Commissions for Clubs &amp; Festivals</title>
-    <link>https://1000errors.uk/commissions/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=eurorack-case-designer-rows-and-arc</link>
-    <description>Bespoke LED light installations, laser cut sculptures and stage design for clubs, festivals and events. Designed and built in Bristol, UK, made to tour worldwide. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">eurorack-case-designer-rows-and-arc</guid>
-    <pubDate>Tue, 20 Oct 2026 10:53:09 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/eurorack-case-designer-rows-and-arc.jpg" length="44732" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/eurorack-case-designer-rows-and-arc.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
