@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Hexstatic LED Light Sculpture, Flower of Life Wood Mandala</title>
+    <link>https://1000errors.uk/p/hexstatic-illuminated-wall-art/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=hexstatic-illuminated-wall-art-7</link>
+    <description>Olly Balsom holding the Hexstatic hexagonal light sculpture glowing pink. Flower of Life inspired mandala in hexagon layers, laser cut from birch, hand painted and lit with adjustable LEDs. 35–70cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">hexstatic-illuminated-wall-art-7</guid>
+    <pubDate>Wed, 28 Oct 2026 12:03:04 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-7.jpg" length="150917" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/hexstatic-illuminated-wall-art-7.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Platonic Energy Circle, LED Sacred Geometry Wall Mandala</title>
     <link>https://1000errors.uk/p/platonic-energy-circle/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=platonic-energy-circle-2</link>
     <description>Platonic Energy Circle wooden mandala wall sculpture lit in blue. Three-layer laser cut birch wall mandala featuring the five platonic solids, with colour-changing LED lighting. 60cm or 89cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
@@ -58,15 +67,6 @@
     <pubDate>Thu, 22 Oct 2026 11:05:56 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/eurorack-case-designer-countersunk-holes-close-up.jpg" length="53968" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/eurorack-case-designer-countersunk-holes-close-up.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Squircles: 3D Printed Shadow Lamp Design</title>
-    <link>https://1000errors.uk/blog/shadow-lamp-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=squircles-sphere-preview</link>
-    <description>Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.</description>
-    <guid isPermaLink="false">squircles-sphere-preview</guid>
-    <pubDate>Wed, 21 Oct 2026 11:05:42 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/squircles-sphere-preview.jpg" length="140264" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/squircles-sphere-preview.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>

@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Temple Architectural Design</title>
+    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-entrance-walkthrough</link>
+    <description>A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">temple-entrance-walkthrough</guid>
+    <pubDate>Wed, 28 Oct 2026 12:03:04 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/temple-entrance-walkthrough.jpg" length="104008" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/temple-entrance-walkthrough.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-interlocking-wood-prototype</link>
     <description>Software turned the 3D mesh into a series of interlocking pieces of wood, laser cut and slotted together. This was a small scale prototype. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Fri, 23 Oct 2026 10:57:22 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/temple-jaguar-entrance-side.jpg" length="94852" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/temple-jaguar-entrance-side.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Projection Mapped Face Sculpture for Festival Stages</title>
-    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-early-3d-prototype</link>
-    <description>Another early 3D prototype, used to work out how much of the face to include so the projections would not distort when projected from too steep an angle. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">face-sculpture-early-3d-prototype</guid>
-    <pubDate>Wed, 21 Oct 2026 11:05:42 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-early-3d-prototype.jpg" length="76002" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-early-3d-prototype.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
