@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Temple Architectural Design</title>
+    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-inner-archway</link>
+    <description>The inner archway and patterned floor. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">temple-inner-archway</guid>
+    <pubDate>Fri, 30 Oct 2026 12:04:10 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/temple-inner-archway.jpg" length="121176" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/temple-inner-archway.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-chicken-wire-frame</link>
     <description>On the full size version, chicken wire bridged the gaps between the wood. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -58,15 +67,6 @@
     <pubDate>Sat, 24 Oct 2026 10:13:28 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/colour-changing-led-flower-mandalas.jpg" length="247260" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/colour-changing-led-flower-mandalas.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Temple Architectural Design</title>
-    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-jaguar-entrance-side</link>
-    <description>Side view of the jaguar head entrance. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">temple-jaguar-entrance-side</guid>
-    <pubDate>Fri, 23 Oct 2026 10:57:22 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/temple-jaguar-entrance-side.jpg" length="94852" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/temple-jaguar-entrance-side.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
