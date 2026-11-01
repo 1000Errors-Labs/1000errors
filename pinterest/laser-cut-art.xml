@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Layered Laser Cut Beetle Art</title>
+    <link>https://1000errors.uk/blog/layered-beetles/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=beetle-tunnel-layers-3d-preview</link>
+    <description>3D preview of the beetle sunk into a tunnel of rainbow coloured layers. Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">beetle-tunnel-layers-3d-preview</guid>
+    <pubDate>Sun, 01 Nov 2026 12:37:09 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/beetle-tunnel-layers-3d-preview.jpg" length="70976" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/beetle-tunnel-layers-3d-preview.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Sacred Geometry Laser Cut Light Art</title>
     <link>https://1000errors.uk/lasercut-art/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=hexagon-mandala-laser-cut-wood</link>
     <description>A hexagonal sacred geometry mandala in layered laser cut wood, held up outdoors. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.</description>
@@ -49,15 +58,6 @@
     <pubDate>Mon, 26 Oct 2026 12:11:27 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/sacred-geometry-xmas-tree-ornament-set-2.jpg" length="204415" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/sacred-geometry-xmas-tree-ornament-set-2.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Quintessence LED Light Sculpture, 5-Layer Wood Mandala</title>
-    <link>https://1000errors.uk/p/quintessence-light-sculpture/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=quintessence-light-sculpture-1</link>
-    <description>Quintessence wooden mandala light sculpture glowing red on its stand. Five-fold sacred geometry light sculpture in 5 layers of laser cut wood, with colour-changing LEDs and a stand. Numbered first run. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
-    <guid isPermaLink="false">quintessence-light-sculpture-1</guid>
-    <pubDate>Sun, 25 Oct 2026 10:38:29 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/quintessence-light-sculpture-1.jpg" length="218720" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/quintessence-light-sculpture-1.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
