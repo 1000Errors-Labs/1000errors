@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Temple Architectural Design</title>
+    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-star-window-archway</link>
+    <description>The inner archway with its seven-pointed star window. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">temple-star-window-archway</guid>
+    <pubDate>Wed, 04 Nov 2026 13:43:23 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/temple-star-window-archway.jpg" length="139425" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/temple-star-window-archway.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-wireframe-projection-test</link>
     <description>A wireframe image of the digital model projection mapped onto the physical sculpture to test for discrepancies. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Thu, 29 Oct 2026 12:13:26 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-chicken-wire-frame.jpg" length="146655" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-chicken-wire-frame.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Temple Architectural Design</title>
-    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-entrance-walkthrough</link>
-    <description>A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">temple-entrance-walkthrough</guid>
-    <pubDate>Wed, 28 Oct 2026 12:03:04 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/temple-entrance-walkthrough.jpg" length="104008" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/temple-entrance-walkthrough.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
