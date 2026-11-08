@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Temple Architectural Design</title>
+    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-ceiling-lantern</link>
+    <description>The central ceiling lantern. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">temple-ceiling-lantern</guid>
+    <pubDate>Sun, 08 Nov 2026 12:41:18 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/temple-ceiling-lantern.jpg" length="116938" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/temple-ceiling-lantern.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-digital-model-comparison</link>
     <description>The capture imported into the modelling software, to compare the two and make small adjustments to the animation model. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,24 +58,6 @@
     <pubDate>Tue, 03 Nov 2026 13:33:43 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-wireframe-projection-test.jpg" length="66979" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-wireframe-projection-test.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Temple Architectural Design</title>
-    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-ceiling</link>
-    <description>The ceiling above the inner archway. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">temple-ceiling</guid>
-    <pubDate>Sun, 01 Nov 2026 12:37:09 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/temple-ceiling.jpg" length="135038" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/temple-ceiling.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Projection Mapped Face Sculpture for Festival Stages</title>
-    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-papier-mache-layer</link>
-    <description>A layer of papier-mâché was then built up over the chicken wire. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">face-sculpture-papier-mache-layer</guid>
-    <pubDate>Sun, 01 Nov 2026 12:37:09 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-papier-mache-layer.jpg" length="72148" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-papier-mache-layer.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
