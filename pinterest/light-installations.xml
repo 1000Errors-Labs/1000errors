@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Temple Architectural Design</title>
+    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-carved-pillars</link>
+    <description>Carved pillars. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">temple-carved-pillars</guid>
+    <pubDate>Tue, 10 Nov 2026 14:15:32 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/temple-carved-pillars.jpg" length="112786" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/temple-carved-pillars.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-side-view-comparison</link>
     <description>A side view comparing the physical sculpture and the original digital model. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -58,15 +67,6 @@
     <pubDate>Wed, 04 Nov 2026 13:43:23 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/temple-star-window-archway.jpg" length="139425" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/temple-star-window-archway.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Projection Mapped Face Sculpture for Festival Stages</title>
-    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-wireframe-projection-test</link>
-    <description>A wireframe image of the digital model projection mapped onto the physical sculpture to test for discrepancies. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">face-sculpture-wireframe-projection-test</guid>
-    <pubDate>Tue, 03 Nov 2026 13:33:43 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-wireframe-projection-test.jpg" length="66979" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-wireframe-projection-test.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
