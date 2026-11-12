@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Projection Mapped Face Sculpture for Festival Stages</title>
+    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-detail-sections</link>
+    <description>Separating the face into sections by level of detail allowed more pieces of wood to be used where the detail was finer. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">face-sculpture-detail-sections</guid>
+    <pubDate>Thu, 12 Nov 2026 14:33:40 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-detail-sections.jpg" length="73241" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-detail-sections.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Temple Architectural Design</title>
     <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-carved-pillars</link>
     <description>Carved pillars. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Fri, 06 Nov 2026 13:41:27 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/temple-inlaid-star-floor.jpg" length="108673" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/temple-inlaid-star-floor.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Projection Mapped Face Sculpture for Festival Stages</title>
-    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-photogrammetry-capture</link>
-    <description>A photogrammetry capture of the physical sculpture, so it could be compared closely with the digital version used for animation. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">face-sculpture-photogrammetry-capture</guid>
-    <pubDate>Thu, 05 Nov 2026 13:55:53 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-photogrammetry-capture.jpg" length="72403" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-photogrammetry-capture.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>

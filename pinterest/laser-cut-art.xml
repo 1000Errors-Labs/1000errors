@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Squircles: 3D Printed Shadow Lamp Design</title>
+    <link>https://1000errors.uk/blog/shadow-lamp-designer/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=squircles-outdoor-floor-shadows</link>
+    <description>The lamp hanging over an endless floor at night, casting its bottom cap pattern below it. Squircles, a standalone app for designing 3D printed lamps that cast patterned shadows, which began as a Blender add-on. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">squircles-outdoor-floor-shadows</guid>
+    <pubDate>Thu, 12 Nov 2026 14:33:40 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/squircles-outdoor-floor-shadows.jpg" length="96319" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/squircles-outdoor-floor-shadows.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Layered Laser Cut Beetle Art</title>
     <link>https://1000errors.uk/blog/layered-beetles/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=beetle-tunnel-layers-3d-close-up</link>
     <description>Close-up of the stepped rainbow layers in the 3D preview. Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.</description>
@@ -49,15 +58,6 @@
     <pubDate>Fri, 06 Nov 2026 13:41:27 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/platonic-energy-circle-3.jpg" length="233322" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/platonic-energy-circle-3.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Quintessence LED Light Sculpture, 5-Layer Wood Mandala</title>
-    <link>https://1000errors.uk/p/quintessence-light-sculpture/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=quintessence-light-sculpture-2</link>
-    <description>Side view of the Quintessence light sculpture on its wooden stand. Five-fold sacred geometry light sculpture in 5 layers of laser cut wood, with colour-changing LEDs and a stand. Numbered first run. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
-    <guid isPermaLink="false">quintessence-light-sculpture-2</guid>
-    <pubDate>Thu, 05 Nov 2026 13:55:53 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/quintessence-light-sculpture-2.jpg" length="40202" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/quintessence-light-sculpture-2.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
