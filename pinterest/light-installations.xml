@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Projection Mapped Face Sculpture for Festival Stages</title>
+    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-high-detail-wood-pieces</link>
+    <description>The higher detail areas, built from more pieces of wood. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">face-sculpture-high-detail-wood-pieces</guid>
+    <pubDate>Sat, 14 Nov 2026 12:55:01 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-high-detail-wood-pieces.jpg" length="104381" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-high-detail-wood-pieces.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Temple Architectural Design</title>
     <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-ouroboros-altar-wall</link>
     <description>The ouroboros altar wall. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Sun, 08 Nov 2026 12:41:18 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/temple-ceiling-lantern.jpg" length="116938" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/temple-ceiling-lantern.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Projection Mapped Face Sculpture for Festival Stages</title>
-    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-digital-model-comparison</link>
-    <description>The capture imported into the modelling software, to compare the two and make small adjustments to the animation model. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">face-sculpture-digital-model-comparison</guid>
-    <pubDate>Sat, 07 Nov 2026 12:22:43 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-digital-model-comparison.jpg" length="68862" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-digital-model-comparison.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
