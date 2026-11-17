@@ -6,6 +6,15 @@
   <description>Light Installations by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Temple Architectural Design</title>
+    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-lattice-detail</link>
+    <description>Close-up of the interlaced lattice. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">temple-lattice-detail</guid>
+    <pubDate>Tue, 17 Nov 2026 15:27:06 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/temple-lattice-detail.jpg" length="128036" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/temple-lattice-detail.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=face-sculpture-hessian-clay-features</link>
     <description>A layer of hessian, then a mix of clay and papier-mâché, used to create these features. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
@@ -49,15 +58,6 @@
     <pubDate>Thu, 12 Nov 2026 14:33:40 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-detail-sections.jpg" length="73241" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-detail-sections.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Temple Architectural Design</title>
-    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-carved-pillars</link>
-    <description>Carved pillars. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">temple-carved-pillars</guid>
-    <pubDate>Tue, 10 Nov 2026 14:15:32 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/temple-carved-pillars.jpg" length="112786" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/temple-carved-pillars.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
