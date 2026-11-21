@@ -6,6 +6,15 @@
   <description>Laser Cut Art &amp; Light Sculptures by 1000 Errors.</description>
   <atom:link href="https://1000errors.uk/pinterest/laser-cut-art.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Layered Laser Cut Beetle Art</title>
+    <link>https://1000errors.uk/blog/layered-beetles/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=beetle-layered-card-test-cut</link>
+    <description>Building an app to add three-dimensional depth to beetle paintings with stacked, laser cut layers of card. Designed and made by 1000 Errors in Bristol, UK.</description>
+    <guid isPermaLink="false">beetle-layered-card-test-cut</guid>
+    <pubDate>Sat, 21 Nov 2026 14:08:23 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/beetle-layered-card-test-cut.jpg" length="250635" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/beetle-layered-card-test-cut.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
     <title>Sacred Geometry Laser Cut Light Art</title>
     <link>https://1000errors.uk/lasercut-art/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=seed-of-life-light-sculpture</link>
     <description>The Seed of Life light sculpture, illuminated on its stand. Sacred geometry light art, laser cut from layered wood and illuminated with LEDs. Designed and made by 1000 Errors in Bristol, UK.</description>
@@ -49,15 +58,6 @@
     <pubDate>Sun, 15 Nov 2026 13:23:25 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/quintessence-light-sculpture-3.jpg" length="50094" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/quintessence-light-sculpture-3.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Seed of Life LED Light Sculpture, Laser Cut Birch Mandala</title>
-    <link>https://1000errors.uk/p/seed-of-life-light-sculpture/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=laser-cut-art&amp;utm_content=seed-of-life-light-sculpture-2</link>
-    <description>Olly Balsom holding the Seed of Life light sculpture glowing warm orange. Seed of Life sacred geometry light sculpture, laser cut from layered birch and hand painted, with adjustable LED lighting. 30–80cm. Made in Bristol, UK. Designed and made by 1000 Errors in Bristol, UK.</description>
-    <guid isPermaLink="false">seed-of-life-light-sculpture-2</guid>
-    <pubDate>Sat, 14 Nov 2026 12:55:01 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-2.jpg" length="239948" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/seed-of-life-light-sculpture-2.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
