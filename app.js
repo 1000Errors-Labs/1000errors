@@ -248,7 +248,9 @@
       variants.find(v => v.selectedOptions.every(o => selected[o.name] === o.value));
 
     const buyBtn = $("buyNow");
+    const addBtn = $("addToBasket");
     const statusEl = $("productStatus");
+    if (addBtn && !Basket.on) addBtn.hidden = true; // no checkout online yet: "Buy now" uses the size's own Stripe link
 
     function refresh() {
       const v = currentVariant();
@@ -265,12 +267,13 @@
       if (visibleThumbs.length && !visibleThumbs.some(t => t.dataset.src === selectedUrl)) showImage(visibleThumbs[0].dataset.src);
       if (!v) {
         $("productPrice").textContent = "";
-        setBuy(null, "Unavailable");
+        setBuy(false, "Unavailable");
         return;
       }
       $("productPrice").innerHTML = R.priceHtml(v);
-      setBuy(v.availableForSale ? v.checkoutUrl : null, v.availableForSale ? "Buy now" : "Sold out");
-      if ($("soldOutBox")) $("soldOutBox").hidden = v.availableForSale;
+      const onSale = v.availableForSale && (Basket.on || !!v.checkoutUrl);
+      setBuy(onSale, onSale ? "Buy now" : "Sold out", v.checkoutUrl);
+      if ($("soldOutBox")) $("soldOutBox").hidden = onSale;
       if (v.image) showImage(v.image.url);
     }
 
@@ -280,22 +283,260 @@
       refresh();
     }));
 
-    // "Buy now" goes straight to the secure checkout page for the chosen size/colour.
-    function setBuy(url, label) {
+    // With the basket: "Add to basket", and "Buy now" checks out just this one item.
+    // Without it: "Buy now" goes straight to the size's own Stripe Payment Link.
+    function setBuy(onSale, label, url) {
       buyBtn.textContent = label;
-      buyBtn.href = url || "#";
-      buyBtn.classList.toggle("disabled", !url);
+      buyBtn.href = onSale && !Basket.on ? url : "#";
+      buyBtn.classList.toggle("disabled", !onSale);
+      if (addBtn && Basket.on) {
+        addBtn.textContent = onSale ? "Add to basket" : "Sold out";
+        addBtn.classList.toggle("disabled", !onSale);
+        buyBtn.hidden = !onSale; // one "Sold out" button is enough
+      }
     }
+
+    // The answers to questions like the plug type; null (and a prompt) if one is missing.
+    function answers() {
+      const out = {};
+      for (const sel of mainEl.querySelectorAll("select.question")) {
+        if (!sel.value) {
+          statusEl.textContent = `Please choose the ${sel.labels[0]?.textContent.toLowerCase() || "option"} first.`;
+          sel.focus();
+          return null;
+        }
+        out[sel.dataset.question] = sel.value;
+      }
+      return out;
+    }
+    mainEl.querySelectorAll("select.question").forEach(sel => sel.addEventListener("change", () => { statusEl.textContent = ""; }));
+
+    // Analytics events (only if analytics.umamiId is set in site.config.js).
+    const track = (event, v) => window.umami?.track(event, { product: p.title, ...(v && v.title !== "Default Title" ? { variant: v.title } : {}),
+      ...(v?.price ? { price: Number(v.price.amount) } : {}) });
+
+    addBtn?.addEventListener("click", () => {
+      const v = currentVariant();
+      if (addBtn.classList.contains("disabled") || !v) return;
+      const a = answers();
+      if (!a) return;
+      const added = Basket.add(v.id, a);
+      statusEl.textContent = added ? "" : "That's all we have of this one, and it's already in your basket.";
+      if (added) { track("Add to basket", v); Basket.open(); }
+    });
+
     buyBtn.addEventListener("click", e => {
       if (buyBtn.classList.contains("disabled")) return e.preventDefault();
-      // Analytics event (only if analytics.umamiId is set in site.config.js).
       const v = currentVariant();
-      window.umami?.track("Buy now", { product: p.title, ...(v && v.title !== "Default Title" ? { variant: v.title } : {}),
-        ...(v?.price ? { price: Number(v.price.amount) } : {}) });
+      if (Basket.on) {
+        e.preventDefault();
+        const a = answers();
+        if (!a) return;
+        track("Buy now", v);
+        Basket.checkout([{ id: v.id, qty: 1, answers: a }], buyBtn, statusEl);
+        return;
+      }
+      track("Buy now", v);
     });
 
     refresh();
   }
+
+  // ---------- basket ----------
+
+  // A basket kept in this browser (localStorage), checked out in one go through the checkout in site.config.js
+  // ("checkout": see checkout/README.md). On localhost the preview server's own checkout is used (npm run dev).
+  // Stored lines: { id: "<handle>/<variant number>", qty, answers: { plug: "…" } }.
+  const Basket = (() => {
+    const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+    const endpoint = SITE.checkout ? (local ? location.origin + "/api/checkout" : SITE.checkout.endpoint || "") : "";
+    const on = !!endpoint;
+    const KEY = "basket";
+    const byId = new Map();
+    for (const p of window.PRODUCTS || []) for (const v of p.variants.nodes) byId.set(v.id, { p, v });
+
+    // Drop anything that's no longer for sale (or belongs to another site previewed on localhost).
+    const valid = l => !!byId.get(l?.id)?.v.availableForSale && Number(l.qty) >= 1;
+    const read = text => { try { const x = JSON.parse(text || "[]"); return Array.isArray(x) ? x.filter(valid) : []; } catch { return []; } };
+    let lines = [];
+    try { lines = read(localStorage.getItem(KEY)); } catch {}
+
+    const max = v => Math.min(10, Number.isInteger(v.stock) ? v.stock : 10);
+    const same = (a, b) => JSON.stringify(a || {}) === JSON.stringify(b || {});
+    const count = () => lines.reduce((n, l) => n + l.qty, 0);
+    const othersOf = i => lines.filter((l, j) => j !== i && l.id === lines[i].id).reduce((n, l) => n + l.qty, 0);
+
+    let box, itemsEl, totalEl, statusEl, checkoutBtn;
+
+    function save() {
+      try { localStorage.setItem(KEY, JSON.stringify(lines)); } catch {}
+      draw();
+    }
+
+    function add(id, answers) {
+      const { v } = byId.get(id) || {};
+      if (!v) return false;
+      const already = lines.filter(l => l.id === id).reduce((n, l) => n + l.qty, 0);
+      if (already >= max(v)) return false;
+      const line = lines.find(l => l.id === id && same(l.answers, answers));
+      if (line) line.qty++;
+      else lines.push({ id, qty: 1, answers });
+      save();
+      return true;
+    }
+
+    function setQty(i, qty) {
+      const line = lines[i];
+      if (!line) return;
+      line.qty = Math.max(0, Math.min(qty, max(byId.get(line.id).v) - othersOf(i)));
+      if (!line.qty) lines.splice(i, 1);
+      save();
+    }
+
+    function clear() { lines = []; save(); }
+
+    function build() {
+      box = document.createElement("div");
+      box.className = "basket-backdrop";
+      box.hidden = true;
+      box.innerHTML = `
+        <aside class="basket" role="dialog" aria-modal="true" aria-labelledby="basketTitle">
+          <div class="basket-head">
+            <h2 id="basketTitle">Your basket</h2>
+            <button class="basket-close" type="button" aria-label="Close">×</button>
+          </div>
+          <div class="basket-items"></div>
+          <div class="basket-foot">
+            <div class="basket-total"><span>Subtotal</span><strong></strong></div>
+            <p class="muted small">Delivery and discount codes are added at checkout.</p>
+            <button class="button button-primary button-block" type="button">Checkout</button>
+            <p class="status small" role="status"></p>
+          </div>
+        </aside>`;
+      document.body.appendChild(box);
+      itemsEl = box.querySelector(".basket-items");
+      totalEl = box.querySelector(".basket-total strong");
+      statusEl = box.querySelector(".basket-foot .status");
+      checkoutBtn = box.querySelector(".basket-foot .button");
+      box.querySelector(".basket-close").addEventListener("click", close);
+      box.addEventListener("click", e => { if (e.target === box) close(); });
+      document.addEventListener("keydown", e => { if (e.key === "Escape" && !box.hidden) close(); });
+      checkoutBtn.addEventListener("click", () => {
+        window.umami?.track("Checkout", { items: count() });
+        checkout(lines, checkoutBtn, statusEl);
+      });
+      itemsEl.addEventListener("click", e => {
+        if (e.target.closest("a")) { close(); return; }
+        const b = e.target.closest("[data-act]");
+        if (!b) return;
+        const i = Number(b.closest("[data-line]").dataset.line);
+        if (b.dataset.act === "plus") setQty(i, lines[i].qty + 1);
+        if (b.dataset.act === "minus") setQty(i, lines[i].qty - 1);
+        if (b.dataset.act === "remove") setQty(i, 0);
+      });
+    }
+
+    function draw() {
+      const n = count();
+      const countEl = $("basketCount");
+      if (countEl) { countEl.textContent = n; countEl.hidden = !n; }
+      $("basketToggle")?.setAttribute("aria-label", n ? `Basket, ${n} item${n === 1 ? "" : "s"}` : "Basket");
+      if (!box) return;
+      let total = 0, currency = "GBP";
+      itemsEl.innerHTML = lines.length ? lines.map((l, i) => {
+        const { p, v } = byId.get(l.id);
+        total += Number(v.price.amount) * l.qty;
+        currency = v.price.currencyCode;
+        const pic = v.image || p.featuredImage;
+        const href = esc(link("/p/" + encodeURIComponent(p.handle)));
+        const notes = [v.title !== "Default Title" ? v.title : "", ...Object.values(l.answers || {})].filter(Boolean);
+        const full = l.qty >= max(v) - othersOf(i);
+        return `
+          <div class="basket-line" data-line="${i}">
+            <a href="${href}" class="basket-pic">${pic ? `<img src="${esc(img(pic.url, 600))}" alt="">` : ""}</a>
+            <div class="basket-info">
+              <a href="${href}" class="basket-name">${esc(p.title)}</a>
+              ${notes.map(t => `<div class="muted small">${esc(t)}</div>`).join("")}
+              <div class="basket-row">
+                <div class="qty">
+                  <button type="button" data-act="minus" aria-label="One fewer">−</button>
+                  <span aria-label="Quantity">${l.qty}</span>
+                  <button type="button" data-act="plus" aria-label="One more"${full ? " disabled" : ""}>+</button>
+                </div>
+                <button type="button" class="link small" data-act="remove">Remove</button>
+                <span class="basket-price">${esc(money({ amount: Number(v.price.amount) * l.qty, currencyCode: v.price.currencyCode }))}</span>
+              </div>
+            </div>
+          </div>`;
+      }).join("") : `<p class="muted basket-empty">Your basket is empty.</p>`;
+      totalEl.textContent = money({ amount: total, currencyCode: currency });
+      box.querySelector(".basket-foot").hidden = !lines.length;
+    }
+
+    function open() {
+      if (!box) build();
+      statusEl.textContent = "";
+      draw();
+      box.hidden = false;
+      document.body.classList.add("basket-open");
+      box.querySelector(".basket-close").focus({ preventScroll: true });
+    }
+    function close() {
+      if (!box || box.hidden) return;
+      box.hidden = true;
+      document.body.classList.remove("basket-open");
+    }
+
+    // Opens Stripe's checkout page for these lines (the whole basket, or one item from "Buy now").
+    async function checkout(items, button, status) {
+      if (!items.length || button.classList.contains("busy")) return;
+      const label = button.textContent;
+      button.classList.add("busy", "disabled");
+      button.textContent = "Opening secure checkout…";
+      status.textContent = "";
+      const done = () => { button.classList.remove("busy", "disabled"); button.textContent = label; };
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ site: location.origin + BASE, items, back: location.href }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && data.url) {
+          location.href = data.url;
+          window.addEventListener("pageshow", done, { once: true }); // coming back with the browser's Back button
+          return;
+        }
+        // Sold out, or fewer left than wanted: make the basket match.
+        if (data.id && items === lines && "left" in data) {
+          let left = data.left;
+          for (const l of lines) if (l.id === data.id) { l.qty = Math.min(l.qty, left); left -= l.qty; }
+          lines = lines.filter(l => l.qty > 0);
+          save();
+        }
+        status.textContent = data.error || "The checkout couldn't be opened. Please try again in a minute.";
+      } catch {
+        status.textContent = "Couldn't reach the checkout. Please check your connection and try again.";
+      }
+      done();
+    }
+
+    function init() {
+      if (!on) return;
+      const toggle = $("basketToggle");
+      if (toggle) { toggle.hidden = false; toggle.addEventListener("click", open); }
+      // Back from a successful payment: empty the basket.
+      if (currentPath() === "thank-you" && currentQuery().get("paid")) clear();
+      draw();
+      // Another tab changed the basket.
+      window.addEventListener("storage", e => {
+        if (e.key !== KEY) return;
+        lines = read(e.newValue);
+        draw();
+      });
+    }
+
+    return { on, add, open, close, checkout, init };
+  })();
 
   // ---------- content pages ----------
 
@@ -354,6 +595,7 @@
 
   async function route() {
     document.body.classList.remove("nav-open");
+    Basket.close();
     navEl.querySelectorAll(".nav-item.open").forEach(x => x.classList.remove("open"));
     const path = currentPath();
     const [first, second] = path.split("/");
@@ -455,5 +697,6 @@
   initCardZoom();
   initLinks();
   initPopup();
+  Basket.init();
   route();
 })();

@@ -279,8 +279,18 @@ function createRender({ site = {}, base = "/" } = {}) {
                 `).join("")}
               </div>
             </div>`).join("")}
-          <a class="button button-primary button-block${v?.availableForSale ? "" : " disabled"}" id="buyNow"
-            href="${esc(v?.availableForSale ? v.checkoutUrl : "#")}">${v?.availableForSale ? "Buy now" : "Sold out"}</a>
+          ${(p.questions || []).map(q => `
+            <div class="option">
+              <label class="option-name" for="question-${esc(q.key)}">${esc(q.label)}</label>
+              <select class="question" id="question-${esc(q.key)}" data-question="${esc(q.key)}" required>
+                <option value="">Choose…</option>
+                ${q.options.map(o => `<option>${esc(o)}</option>`).join("")}
+              </select>
+            </div>`).join("")}
+          ${site.checkout ? `
+            <button type="button" class="button button-primary button-block${v?.availableForSale ? "" : " disabled"}" id="addToBasket">${v?.availableForSale ? "Add to basket" : "Sold out"}</button>` : ""}
+          <a class="button ${site.checkout ? "button-secondary" : "button-primary"} button-block${v?.availableForSale ? "" : " disabled"}" id="buyNow"
+            href="${esc(v?.availableForSale ? v.checkoutUrl || "#" : "#")}"${site.checkout && !v?.availableForSale ? " hidden" : ""}>${v?.availableForSale ? "Buy now" : "Sold out"}</a>
           <p class="status small" id="productStatus"></p>
           ${soldOutHtml(p, v)}
           <div class="description">${description}</div>

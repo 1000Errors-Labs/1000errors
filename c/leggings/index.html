@@ -28,6 +28,10 @@
 <body>
   <header class="site-header">
     <a class="brand" href="/" id="brand"><img src="assets/logo-light.png" alt="1000 Errors"></a>
+    <button class="basket-toggle" id="basketToggle" type="button" aria-label="Basket" hidden>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <span class="basket-count" id="basketCount" hidden></span>
+    </button>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="nav" id="nav"><a href="/shop/" class="active">Shop</a><a href="/projects/" class="">Projects</a><a href="/commissions/" class="">Commissions</a><a href="/vj-shop/" class="">VJ Shop</a><a href="/blog/" class="">Blog</a><a href="/about/" class="">About</a><a href="/contact/" class="">Contact</a></nav>
   </header>

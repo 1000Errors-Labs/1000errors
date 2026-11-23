@@ -150,6 +150,19 @@ window.SITE_CONFIG = {
     umamiId: "5b55d92f-c523-4951-a3f6-80aaf9e5c3aa",
   },
 
+  // The basket checkout (see checkout/README.md). With this set, product pages get "Add to basket" and a basket in the
+  // header, and everything is paid for in one Stripe checkout. endpoint: the checkout's address on Cloudflare once
+  // it's online; until then the basket only works in the preview (npm run dev). Remove this to go back to one
+  // Stripe link per size.
+  checkout: {
+    endpoint: "https://1000errors-checkout.headless-shopify-site-builder.workers.dev",
+  },
+
+  // Returns policy, given to Google with each product (run npm run sync after changing it).
+  // days: how long after delivery a buyer can send it back (0 = no returns). buyerPaysPostage: who pays to post it back.
+  // page: optional link to a page explaining the policy, e.g. "/returns".
+  returns: { days: 14, buyerPaysPostage: true, page: "" },
+
   // Your own domain for GitHub Pages, e.g. "1000errors.com" (then run npm run sync). Share links,
   // canonical tags and sitemap.xml use it. (Not decided yet: .com or .uk.)
   customDomain: "1000errors.uk",

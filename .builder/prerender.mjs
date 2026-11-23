@@ -44,6 +44,46 @@ const Blocks = vm.runInContext("Blocks", sandbox);
 const createRender = vm.runInContext("createRender", sandbox);
 const PAGES = { ...createRender({ site: SITE }).builtInPages(), ...(CONTENT.pages || {}) };
 
+// Shipping rates for Google's product structured data, taken from checkout.json (what Stripe actually charges).
+// Delivery days there are the total quoted to customers; we post within 3 working days, so the rest is transit.
+const CHECKOUT = exists("checkout.json") ? JSON.parse(read("checkout.json")) : null;
+function shippingDetails() {
+  if (!CHECKOUT?.shipping?.length || !CHECKOUT.countries?.length) return null;
+  const currency = (CHECKOUT.currency || "gbp").toUpperCase();
+  const days = (min, max) => ({ "@type": "QuantitativeValue", minValue: min, maxValue: max, unitCode: "DAY" });
+  return CHECKOUT.shipping.flatMap(rate => CHECKOUT.countries.map(country => {
+    const handling = Math.min(3, rate.minDays ?? 3);
+    return {
+      "@type": "OfferShippingDetails",
+      shippingRate: { "@type": "MonetaryAmount", value: Number(rate.amount).toFixed(2), currency },
+      shippingDestination: { "@type": "DefinedRegion", addressCountry: country },
+      deliveryTime: {
+        "@type": "ShippingDeliveryTime",
+        handlingTime: days(0, handling),
+        transitTime: days(Math.max(0, (rate.minDays ?? handling) - handling), Math.max(0, (rate.maxDays ?? handling) - handling)),
+      },
+    };
+  }));
+}
+const SHIPPING_DETAILS = shippingDetails();
+
+// Returns policy for Google's product structured data, from SITE.returns in site.config.js.
+function returnPolicy() {
+  const r = SITE.returns;
+  if (!r) return null;
+  const countries = CHECKOUT?.countries?.length ? CHECKOUT.countries : undefined;
+  const base = { "@type": "MerchantReturnPolicy", ...(countries ? { applicableCountry: countries.length === 1 ? countries[0] : countries } : {}) };
+  if (r.page) base.merchantReturnLink = absolute(r.page);
+  if (!r.days) return { ...base, returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted" };
+  return {
+    ...base,
+    returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+    merchantReturnDays: r.days,
+    returnMethod: "https://schema.org/ReturnByMail",
+    returnFees: r.buyerPaysPostage ? "https://schema.org/ReturnFeesCustomerResponsibility" : "https://schema.org/FreeReturn",
+  };
+}
+
 // ---------- where the site lives ----------
 // siteUrl in site.config.js, else customDomain, else the GitHub Pages address from the git remote.
 
@@ -302,6 +342,9 @@ function productPage(p, categories) {
     "@type": "Offer", priceCurrency: currency, price: prices[0]?.toFixed(2),
     availability: availability(variants[0] || p), itemCondition: "https://schema.org/NewCondition", ...(offerUrl ? { url: offerUrl } : {}),
   };
+  if (SHIPPING_DETAILS) offers.shippingDetails = SHIPPING_DETAILS.length === 1 ? SHIPPING_DETAILS[0] : SHIPPING_DETAILS;
+  const returns = returnPolicy();
+  if (returns) offers.hasMerchantReturnPolicy = returns;
   const description = clip(p.seo?.description || text(p.descriptionHtml) || `${p.title} by ${SITE.name}.`);
   return {
     path: pagePath,
