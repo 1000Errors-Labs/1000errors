@@ -233,17 +233,25 @@ function createRender({ site = {}, base = "/", delivery = null } = {}) {
   }
 
   // "UK delivery £3.50 (1–2 working days) · Rest of the world £12.00" under the price, for the chosen size.
+  // "UK delivery: £3.90 (1–2 working days) · Worldwide from £9.95" under the price, for the chosen size.
   function deliveryLineHtml(v) {
     if (!delivery || !v?.delivery) return "";
     const pounds = p => money({ amount: p / 100, currencyCode: v.price?.currencyCode || "GBP" });
-    const sent = delivery.regions.filter(r => delivery.categories[v.delivery]?.[r.id]);
-    const parts = sent.map(r => {
-      const rate = delivery.categories[v.delivery][r.id];
+    const cat = delivery.categories[v.delivery] || {};
+    const [home, ...abroad] = delivery.regions;
+    const rate = home && cat[home.id];
+    const parts = [];
+    if (rate) {
       const days = rate.minDays && rate.maxDays ? ` (${rate.minDays}–${rate.maxDays} working days)` : "";
-      const label = r === delivery.regions[0] ? `${r.label} delivery` : r.label;
-      return `${esc(label)}: ${rate.price ? esc(pounds(rate.price)) : "free"}${esc(days)}`;
-    });
-    if (sent.length === 1) parts.push(`${esc(sent[0].label)} only`);
+      parts.push(`${esc(home.label)} delivery: ${rate.price ? esc(pounds(rate.price)) : "free"}${esc(days)}`);
+    }
+    const away = abroad.map(r => cat[r.id]).filter(Boolean);
+    if (away.length) {
+      const min = Math.min(...away.map(r => r.price));
+      parts.push(away.length === abroad.length ? `Worldwide delivery ${min ? `from ${esc(pounds(min))}` : "available"}`
+        : `International delivery ${min ? `from ${esc(pounds(min))}` : "available"} to some countries`);
+    } else if (rate && abroad.length) parts.push(`${esc(home.label)} only`);
+    else if (rate) parts.push(`${esc(home.label)} only`);
     return parts.join(" · ");
   }
 
