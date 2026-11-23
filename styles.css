@@ -388,7 +388,7 @@ select.question {
 }
 select.question:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 
-.basket-toggle { order: 3; position: relative; display: inline-flex; align-items: center; background: none; border: 0; padding: 4px; color: var(--text); cursor: pointer; }
+.basket-toggle { order: 3; justify-self: end; position: relative; display: inline-flex; align-items: center; background: none; border: 0; padding: 4px; color: var(--text); cursor: pointer; }
 .basket-toggle[hidden] { display: none; }
 .basket-count {
   position: absolute; top: -4px; right: -6px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px;
@@ -422,9 +422,25 @@ select.question:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .basket-foot { padding: 16px 20px 20px; border-top: 1px solid var(--border); }
 .basket-foot[hidden] { display: none; }
 .basket-foot p.muted { margin: 4px 0 6px; }
-.basket-total { display: flex; justify-content: space-between; font-size: 1.05rem; }
+.basket-total { display: flex; justify-content: space-between; font-size: 1.05rem; margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--border); }
+.basket-sum { display: flex; justify-content: space-between; color: var(--muted); font-size: .95rem; margin: 2px 0; }
+.basket-region { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; font-size: .95rem; }
+.basket-region select { padding: 8px 10px; font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.basket-warning { color: #ff8a80; margin: 8px 0 0; }
+.delivery-line { margin: -4px 0 18px; }
+.checkout-region { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 16px; }
+.checkout-region .pill { padding: 8px 16px; border: 1px solid var(--border); border-radius: 999px; background: none; color: var(--text); font: inherit; cursor: pointer; }
+.checkout-region .pill.active { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
 
 @media (max-width: 760px) {
   .basket-toggle { order: 1; }
   .basket { max-width: none; border-left: 0; }
 }
+
+/* ---------- checkout page (Stripe's payment form inside the site) ---------- */
+
+.checkout-page { max-width: 1000px; margin: 0 auto; }
+.checkout-page h1 { margin: 8px 0 20px; }
+.checkout-form { min-height: 420px; border-radius: var(--radius); overflow: hidden; }
+.checkout-note { text-align: center; margin-top: 16px; }
+.checkout-error { margin: 0 0 12px; }

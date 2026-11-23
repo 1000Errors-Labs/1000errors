@@ -2,7 +2,27 @@
 // written by `npm run sync` match what the live site shows. Pure functions only: no page/DOM access here.
 // Shared by every site — edit in core/, then `npm run sync`.
 
-function createRender({ site = {}, base = "/" } = {}) {
+// The delivery charge for a basket (also in checkout/worker.js: keep the two the same).
+// delivery: window.DELIVERY / checkout.json "delivery". lines: [{ category, price (pence each), qty, name }].
+// Returns { price, name, minDays, maxDays, free } in pence, or { blocked: [lines that can't go to this region] }.
+function deliveryQuote(delivery, lines, region) {
+  if (!delivery) return null;
+  const blocked = lines.filter(l => !delivery.categories[l.category]?.[region]);
+  if (blocked.length) return { blocked };
+  const rates = [...new Set(lines.map(l => l.category))].map(c => delivery.categories[c][region]);
+  const top = rates.reduce((a, b) => (b.price > a.price ? b : a), rates[0] || { price: 0, name: "" });
+  const subtotal = lines.reduce((n, l) => n + l.price * l.qty, 0);
+  const threshold = delivery.freeOver?.[region];
+  const free = threshold !== null && threshold !== undefined && subtotal >= threshold;
+  const days = key => Math.max(0, ...rates.map(r => r[key] || 0)) || undefined;
+  return {
+    price: free ? 0 : delivery.combine === "add" ? rates.reduce((n, r) => n + r.price, 0) : top.price,
+    name: free ? "Free delivery" : (delivery.combine === "add" && rates.length > 1 ? "Delivery" : top.name || "Delivery"),
+    minDays: days("minDays"), maxDays: days("maxDays"), free,
+  };
+}
+
+function createRender({ site = {}, base = "/", delivery = null } = {}) {
   function esc(value) {
     return String(value ?? "").replace(/[&<>"']/g, c => (
       { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
@@ -212,6 +232,21 @@ function createRender({ site = {}, base = "/" } = {}) {
     return esc(money(v.price)) + (onSale ? ` <s class="muted">${esc(money(v.compareAtPrice))}</s>` : "");
   }
 
+  // "UK delivery £3.50 (1–2 working days) · Rest of the world £12.00" under the price, for the chosen size.
+  function deliveryLineHtml(v) {
+    if (!delivery || !v?.delivery) return "";
+    const pounds = p => money({ amount: p / 100, currencyCode: v.price?.currencyCode || "GBP" });
+    const sent = delivery.regions.filter(r => delivery.categories[v.delivery]?.[r.id]);
+    const parts = sent.map(r => {
+      const rate = delivery.categories[v.delivery][r.id];
+      const days = rate.minDays && rate.maxDays ? ` (${rate.minDays}–${rate.maxDays} working days)` : "";
+      const label = r === delivery.regions[0] ? `${r.label} delivery` : r.label;
+      return `${esc(label)}: ${rate.price ? esc(pounds(rate.price)) : "free"}${esc(days)}`;
+    });
+    if (sent.length === 1) parts.push(`${esc(sent[0].label)} only`);
+    return parts.join(" · ");
+  }
+
   // Under a sold-out product: sign up to hear about the next run (mailingList in site.config.js), and/or
   // a link to commission one (commissionLink). app.js shows or hides it as the chosen variant changes.
   function soldOutHtml(p, v) {
@@ -270,6 +305,7 @@ function createRender({ site = {}, base = "/" } = {}) {
         <div class="product-info">
           <h1>${esc(p.title)}</h1>
           <p class="product-price" id="productPrice">${priceHtml(v)}</p>
+          ${delivery ? `<p class="delivery-line muted small" id="deliveryLine">${deliveryLineHtml(v)}</p>` : ""}
           ${realOptions.map(o => `
             <div class="option">
               <div class="option-name">${esc(o.name)}</div>
@@ -336,6 +372,11 @@ function createRender({ site = {}, base = "/" } = {}) {
       ? `<p>Any questions? Email <a href="mailto:${esc(site.contactEmail)}">${esc(site.contactEmail)}</a>.</p>`
       : `<p>Any questions? Just reply to your receipt email.</p>`;
     return {
+      // Where the basket's payment form opens (app.js fills it in), for sites with checkout.publishableKey.
+      ...(site.checkout?.publishableKey ? { checkout: {
+        title: "Checkout", hidden: true,
+        blocks: [{ type: "html", html: `<section class="checkout-page"><h1>Checkout</h1><p class="muted loading">Loading the secure payment form…</p></section>` }],
+      } } : {}),
       "thank-you": {
         title: t.title || "Thank you for your order",
         hidden: true,
@@ -356,7 +397,7 @@ function createRender({ site = {}, base = "/" } = {}) {
   return {
     esc, money, slugify, cleanTypeName, img, link, isExternal, linkAttrs,
     buildCategories, productsIn, categoryOf, menuItems, navHtml,
-    productCard, renderGrid, categoryBar, listingHtml, firstVariant, priceHtml, matches, selectedOf, productHtml,
+    productCard, renderGrid, categoryBar, listingHtml, firstVariant, priceHtml, deliveryLineHtml, matches, selectedOf, productHtml,
     pageBlocks, builtInPages, pageWrap,
   };
 }

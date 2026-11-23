@@ -30,7 +30,7 @@
   const BASE = new URL(document.baseURI).pathname.replace(/[^/]*$/, "");
 
   // Markup helpers shared with the page builder (render.js), so pre-built pages match the live site.
-  const R = createRender({ site: SITE, base: BASE });
+  const R = createRender({ site: SITE, base: BASE, delivery: window.DELIVERY || null });
   const { esc, money, slugify, img, link, linkAttrs, productCard, renderGrid } = R;
 
   // "/projects?type=lasercut" -> path "projects", query { type: "lasercut" }
@@ -271,6 +271,7 @@
         return;
       }
       $("productPrice").innerHTML = R.priceHtml(v);
+      if ($("deliveryLine")) $("deliveryLine").innerHTML = R.deliveryLineHtml(v);
       const onSale = v.availableForSale && (Basket.on || !!v.checkoutUrl);
       setBuy(onSale, onSale ? "Buy now" : "Sold out", v.checkoutUrl);
       if ($("soldOutBox")) $("soldOutBox").hidden = onSale;
@@ -368,6 +369,27 @@
 
     let box, itemsEl, totalEl, statusEl, checkoutBtn;
 
+    // Where the order is going (UK / rest of the world), remembered in this browser.
+    const DELIVERY = window.DELIVERY || null;
+    let regionId = DELIVERY?.regions[0]?.id || "";
+    try { const r = localStorage.getItem("deliverTo"); if (DELIVERY?.regions.some(x => x.id === r)) regionId = r; } catch {}
+    const region = () => regionId;
+    function setRegion(id) {
+      if (!DELIVERY?.regions.some(r => r.id === id)) return;
+      regionId = id;
+      try { localStorage.setItem("deliverTo", id); } catch {}
+    }
+    const regionLabel = id => DELIVERY?.regions.find(r => r.id === id)?.label || "";
+    // The delivery charge for some lines (see deliveryQuote in render.js).
+    function quote(list) {
+      return deliveryQuote(DELIVERY, list.map(l => {
+        const { p, v } = byId.get(l.id);
+        return { category: v.delivery, price: Math.round(Number(v.price.amount) * 100), qty: l.qty, name: p.title };
+      }), regionId);
+    }
+    const blockedMessage = blocked => `${[...new Set(blocked.map(l => l.name))].join(" and ")} can't be delivered ${
+      regionId === DELIVERY?.regions[0]?.id ? "to the " + regionLabel(regionId) : "outside the " + regionLabel(DELIVERY.regions[0].id)} at the moment.`;
+
     function save() {
       try { localStorage.setItem(KEY, JSON.stringify(lines)); } catch {}
       draw();
@@ -407,8 +429,13 @@
           </div>
           <div class="basket-items"></div>
           <div class="basket-foot">
-            <div class="basket-total"><span>Subtotal</span><strong></strong></div>
-            <p class="muted small">Delivery and discount codes are added at checkout.</p>
+            ${DELIVERY?.regions.length > 1 ? `<label class="basket-region"><span>Delivering to</span>
+              <select>${DELIVERY.regions.map(r => `<option value="${esc(r.id)}">${esc(r.label)}</option>`).join("")}</select></label>` : ""}
+            <div class="basket-sum"><span>Subtotal</span><span class="basket-subtotal"></span></div>
+            ${DELIVERY ? `<div class="basket-sum"><span>Delivery${DELIVERY.regions.length === 1 ? ` (${esc(DELIVERY.regions[0].label)} only)` : ""}</span><span class="basket-delivery"></span></div>` : ""}
+            <div class="basket-total"><span>Total</span><strong></strong></div>
+            <p class="basket-warning small" hidden></p>
+            <p class="muted small">Discount codes can be added at checkout.</p>
             <button class="button button-primary button-block" type="button">Checkout</button>
             <p class="status small" role="status"></p>
           </div>
@@ -418,10 +445,13 @@
       totalEl = box.querySelector(".basket-total strong");
       statusEl = box.querySelector(".basket-foot .status");
       checkoutBtn = box.querySelector(".basket-foot .button");
+      const regionSel = box.querySelector(".basket-region select");
+      if (regionSel) regionSel.addEventListener("change", () => { setRegion(regionSel.value); draw(); });
       box.querySelector(".basket-close").addEventListener("click", close);
       box.addEventListener("click", e => { if (e.target === box) close(); });
       document.addEventListener("keydown", e => { if (e.key === "Escape" && !box.hidden) close(); });
       checkoutBtn.addEventListener("click", () => {
+        if (checkoutBtn.classList.contains("disabled")) return;
         window.umami?.track("Checkout", { items: count() });
         checkout(lines, checkoutBtn, statusEl);
       });
@@ -469,7 +499,18 @@
             </div>
           </div>`;
       }).join("") : `<p class="muted basket-empty">Your basket is empty.</p>`;
-      totalEl.textContent = money({ amount: total, currencyCode: currency });
+      const q = quote(lines);
+      const fmt = pence => money({ amount: pence / 100, currencyCode: currency });
+      box.querySelector(".basket-subtotal").textContent = money({ amount: total, currencyCode: currency });
+      const regionSel = box.querySelector(".basket-region select");
+      if (regionSel) regionSel.value = region();
+      const deliveryEl = box.querySelector(".basket-delivery");
+      const warn = box.querySelector(".basket-warning");
+      warn.hidden = !q?.blocked;
+      if (q?.blocked) warn.textContent = blockedMessage(q.blocked);
+      if (deliveryEl) deliveryEl.textContent = !q || q.blocked ? "–" : q.free ? "Free" : fmt(q.price);
+      totalEl.textContent = money({ amount: total + (q && !q.blocked ? q.price / 100 : 0), currencyCode: currency });
+      checkoutBtn.classList.toggle("disabled", !!q?.blocked);
       box.querySelector(".basket-foot").hidden = !lines.length;
     }
 
@@ -487,45 +528,74 @@
       document.body.classList.remove("basket-open");
     }
 
-    // Opens Stripe's checkout page for these lines (the whole basket, or one item from "Buy now").
-    async function checkout(items, button, status) {
-      if (!items.length || button.classList.contains("busy")) return;
-      const label = button.textContent;
-      button.classList.add("busy", "disabled");
-      button.textContent = "Opening secure checkout…";
-      status.textContent = "";
-      const done = () => { button.classList.remove("busy", "disabled"); button.textContent = label; };
+    // Asks the checkout (checkout/worker.js) for a Stripe checkout for these lines. Returns its reply, or
+    // { error } with a message for the buyer. If something has sold out, the basket is corrected to match.
+    async function session(items, embedded) {
       try {
         const res = await fetch(endpoint, {
           method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ site: location.origin + BASE, items, back: location.href }),
+          body: JSON.stringify({ site: location.origin + BASE, items, region: regionId, back: location.href, embedded }),
         });
         const data = await res.json().catch(() => ({}));
-        if (res.ok && data.url) {
-          location.href = data.url;
-          window.addEventListener("pageshow", done, { once: true }); // coming back with the browser's Back button
-          return;
-        }
-        // Sold out, or fewer left than wanted: make the basket match.
-        if (data.id && items === lines && "left" in data) {
+        if (res.ok && (data.url || data.clientSecret)) return data;
+        if (data.id && "left" in data && items.every(i => lines.some(l => l.id === i.id))) {
           let left = data.left;
           for (const l of lines) if (l.id === data.id) { l.qty = Math.min(l.qty, left); left -= l.qty; }
           lines = lines.filter(l => l.qty > 0);
           save();
         }
-        status.textContent = data.error || "The checkout couldn't be opened. Please try again in a minute.";
+        return { error: data.error || "The checkout couldn't be opened. Please try again in a minute." };
       } catch {
-        status.textContent = "Couldn't reach the checkout. Please check your connection and try again.";
+        return { error: "Couldn't reach the checkout. Please check your connection and try again." };
       }
+    }
+
+    // Pays for these lines (the whole basket, or one item from "Buy now"). With a Stripe publishable key in
+    // site.config.js the payment form opens on this site's /checkout page; without one, on Stripe's own page.
+    const embedded = !!SITE.checkout?.publishableKey;
+    async function checkout(items, button, status) {
+      if (!items.length || button.classList.contains("busy")) return;
+      if (embedded) {
+        try { sessionStorage.setItem("checkoutItems", JSON.stringify(items === lines ? "basket" : items)); } catch {}
+        close();
+        history.pushState(null, "", link("/checkout"));
+        route();
+        return;
+      }
+      const label = button.textContent;
+      button.classList.add("busy", "disabled");
+      button.textContent = "Opening secure checkout…";
+      status.textContent = "";
+      const done = () => { button.classList.remove("busy", "disabled"); button.textContent = label; };
+      const data = await session(items, false);
+      if (data.url) {
+        location.href = data.url;
+        window.addEventListener("pageshow", done, { once: true }); // coming back with the browser's Back button
+        return;
+      }
+      status.textContent = data.error;
       done();
+    }
+
+    // What's being paid for: the basket ("basket"), or the one item from "Buy now" (a list).
+    function saved() {
+      try { return JSON.parse(sessionStorage.getItem("checkoutItems") || '"basket"'); } catch { return "basket"; }
+    }
+    // The lines the /checkout page is paying for.
+    function pending() {
+      const s = saved();
+      return Array.isArray(s) ? s.filter(valid) : lines;
     }
 
     function init() {
       if (!on) return;
       const toggle = $("basketToggle");
       if (toggle) { toggle.hidden = false; toggle.addEventListener("click", open); }
-      // Back from a successful payment: empty the basket.
-      if (currentPath() === "thank-you" && currentQuery().get("paid")) clear();
+      // Back from a successful payment: empty the basket (unless only a "Buy now" item was paid for).
+      if (currentPath() === "thank-you" && currentQuery().get("paid")) {
+        if (!Array.isArray(saved())) clear();
+        try { sessionStorage.removeItem("checkoutItems"); } catch {}
+      }
       draw();
       // Another tab changed the basket.
       window.addEventListener("storage", e => {
@@ -535,8 +605,79 @@
       });
     }
 
-    return { on, add, open, close, checkout, init };
+    return { on, embedded, add, open, close, checkout, session, pending, init, region, setRegion, quote, blockedMessage, DELIVERY };
   })();
+
+  // ---------- checkout page ----------
+
+  // /checkout: Stripe's payment form inside this site (needs checkout.publishableKey in site.config.js).
+  let stripeForm = null; // the form on screen; Stripe allows one at a time
+  function closeCheckout() {
+    try { stripeForm?.destroy(); } catch {}
+    stripeForm = null;
+  }
+
+  let stripeJs = null;
+  function loadStripe() {
+    stripeJs ||= new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = "https://js.stripe.com/v3/";
+      s.onload = () => resolve(window.Stripe);
+      s.onerror = () => { stripeJs = null; reject(new Error("Stripe didn't load")); };
+      document.head.appendChild(s);
+    });
+    return stripeJs;
+  }
+
+  async function showCheckout() {
+    setTitle("Checkout");
+    const items = Basket.pending();
+    const back = `<a class="back-link" href="${esc(link("/shop"))}">← Continue shopping</a>`;
+    if (!items.length) {
+      mainEl.innerHTML = `${back}<section class="page-head"><h1>Checkout</h1><p class="muted">Your basket is empty.</p></section>`;
+      return;
+    }
+    mainEl.innerHTML = `
+      ${back}
+      <section class="checkout-page">
+        <h1>Checkout</h1>
+        ${Basket.DELIVERY?.regions.length > 1 ? `<div class="checkout-region" role="group" aria-label="Delivering to"><span class="muted small">Delivering to</span>
+          ${Basket.DELIVERY.regions.map(r => `<button type="button" class="pill${r.id === Basket.region() ? " active" : ""}" data-region="${esc(r.id)}">${esc(r.label)}</button>`).join("")}
+        </div>` : ""}
+        <div id="checkoutForm" class="checkout-form"><p class="muted loading">Loading the secure payment form…</p></div>
+        <p class="muted small checkout-note">Payments are handled securely by Stripe. Your card details never reach this website.</p>
+      </section>`;
+    const fail = (message, retry = true) => {
+      const box = $("checkoutForm");
+      if (!box) return;
+      box.innerHTML = `<p class="checkout-error">${esc(message)}</p>${retry ? `<button type="button" class="button" id="checkoutRetry">Try again</button>` : ""}`;
+      $("checkoutRetry")?.addEventListener("click", showCheckout);
+    };
+    mainEl.querySelectorAll(".checkout-region [data-region]").forEach(b => b.addEventListener("click", () => {
+      if (b.dataset.region === Basket.region()) return;
+      Basket.setRegion(b.dataset.region);
+      showCheckout();
+    }));
+    const q = Basket.quote(items);
+    if (q?.blocked) return fail(Basket.blockedMessage(q.blocked) + " Please choose another delivery area, or remove it from your basket.", false);
+    let Stripe;
+    try { Stripe = await loadStripe(); } catch { return fail("The payment form couldn't load. Please check your connection and try again."); }
+    const data = await Basket.session(items, true);
+    if (currentPath() !== "checkout" || !$("checkoutForm")) return; // moved on while it loaded
+    if (!data.clientSecret) return fail(data.error);
+    closeCheckout();
+    const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname); // the preview uses Stripe's test mode
+    const stripe = Stripe(local && SITE.checkout.testPublishableKey ? SITE.checkout.testPublishableKey : SITE.checkout.publishableKey);
+    const make = stripe.createEmbeddedCheckoutPage || stripe.initEmbeddedCheckout;
+    try {
+      stripeForm = await make.call(stripe, { clientSecret: data.clientSecret });
+      $("checkoutForm").innerHTML = "";
+      stripeForm.mount("#checkoutForm");
+    } catch (err) {
+      console.error(err);
+      fail("The payment form couldn't load. Please try again in a minute.");
+    }
+  }
 
   // ---------- content pages ----------
 
@@ -596,6 +737,7 @@
   async function route() {
     document.body.classList.remove("nav-open");
     Basket.close();
+    closeCheckout();
     navEl.querySelectorAll(".nav-item.open").forEach(x => x.classList.remove("open"));
     const path = currentPath();
     const [first, second] = path.split("/");
@@ -604,6 +746,7 @@
       if (first === "p" && window.PRODUCT_REDIRECTS?.[second]) location.replace(link("/p/" + window.PRODUCT_REDIRECTS[second]));
       else if (first === "p" && second) await showProduct(second);
       else if (first === "c" && second) await showListing(second);
+      else if (path === "checkout" && Basket.embedded && Basket.on) await showCheckout();
       else if (first === "shop" && !PAGES.shop) await showListing("");
       else if (!path && CONTENT.home) await showPage({ title: "", description: SITE.description, blocks: CONTENT.home });
       else if (!path) await showListing("", { isHome: true });

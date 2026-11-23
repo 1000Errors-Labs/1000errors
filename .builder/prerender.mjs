@@ -47,25 +47,39 @@ const PAGES = { ...createRender({ site: SITE }).builtInPages(), ...(CONTENT.page
 // Shipping rates for Google's product structured data, taken from checkout.json (what Stripe actually charges).
 // Delivery days there are the total quoted to customers; we post within 3 working days, so the rest is transit.
 const CHECKOUT = exists("checkout.json") ? JSON.parse(read("checkout.json")) : null;
-function shippingDetails() {
-  if (!CHECKOUT?.shipping?.length || !CHECKOUT.countries?.length) return null;
-  const currency = (CHECKOUT.currency || "gbp").toUpperCase();
+// With delivery categories (stripe.config.json "delivery"), each product gets the rate of its cheapest size's category,
+// free when that size alone reaches the free-delivery amount. Otherwise the old single rate list is used.
+function shippingDetails(p) {
+  const currency = (CHECKOUT?.currency || "gbp").toUpperCase();
   const days = (min, max) => ({ "@type": "QuantitativeValue", minValue: min, maxValue: max, unitCode: "DAY" });
-  return CHECKOUT.shipping.flatMap(rate => CHECKOUT.countries.map(country => {
-    const handling = Math.min(3, rate.minDays ?? 3);
+  const detail = (amount, minDays, maxDays, country) => {
+    const handling = Math.min(3, minDays ?? 3);
     return {
       "@type": "OfferShippingDetails",
-      shippingRate: { "@type": "MonetaryAmount", value: Number(rate.amount).toFixed(2), currency },
+      shippingRate: { "@type": "MonetaryAmount", value: Number(amount).toFixed(2), currency },
       shippingDestination: { "@type": "DefinedRegion", addressCountry: country },
       deliveryTime: {
         "@type": "ShippingDeliveryTime",
         handlingTime: days(0, handling),
-        transitTime: days(Math.max(0, (rate.minDays ?? handling) - handling), Math.max(0, (rate.maxDays ?? handling) - handling)),
+        transitTime: days(Math.max(0, (minDays ?? handling) - handling), Math.max(0, (maxDays ?? handling) - handling)),
       },
     };
-  }));
+  };
+  const D = CHECKOUT?.delivery;
+  if (D && p) {
+    const v = [...p.variants.nodes].sort((a, b) => Number(a.price.amount) - Number(b.price.amount))[0];
+    if (!v?.delivery) return null;
+    const out = D.regions.flatMap(r => {
+      const rate = D.categories[v.delivery]?.[r.id];
+      if (!rate) return [];
+      const free = D.freeOver?.[r.id] !== null && D.freeOver?.[r.id] !== undefined && Number(v.price.amount) * 100 >= D.freeOver[r.id];
+      return [detail(free ? 0 : rate.price / 100, rate.minDays, rate.maxDays, r.countries.length === 1 ? r.countries[0] : r.countries)];
+    });
+    return out.length ? out : null;
+  }
+  if (!CHECKOUT?.shipping?.length || !CHECKOUT.countries?.length) return null;
+  return CHECKOUT.shipping.flatMap(rate => CHECKOUT.countries.map(country => detail(rate.amount, rate.minDays, rate.maxDays, country)));
 }
-const SHIPPING_DETAILS = shippingDetails();
 
 // Returns policy for Google's product structured data, from SITE.returns in site.config.js.
 function returnPolicy() {
@@ -100,7 +114,7 @@ function siteAddress() {
   return { origin: url, base: url ? new URL(url).pathname.replace(/\/?$/, "/") : "/" };
 }
 const { origin, base } = siteAddress();
-const R = createRender({ site: SITE, base });
+const R = createRender({ site: SITE, base, delivery: sandbox.DELIVERY || null });
 const absolute = href => {
   if (!href) return "";
   if (/^https?:\/\//.test(href)) return href;
@@ -342,7 +356,8 @@ function productPage(p, categories) {
     "@type": "Offer", priceCurrency: currency, price: prices[0]?.toFixed(2),
     availability: availability(variants[0] || p), itemCondition: "https://schema.org/NewCondition", ...(offerUrl ? { url: offerUrl } : {}),
   };
-  if (SHIPPING_DETAILS) offers.shippingDetails = SHIPPING_DETAILS.length === 1 ? SHIPPING_DETAILS[0] : SHIPPING_DETAILS;
+  const shipping = shippingDetails(p);
+  if (shipping) offers.shippingDetails = shipping.length === 1 ? shipping[0] : shipping;
   const returns = returnPolicy();
   if (returns) offers.hasMerchantReturnPolicy = returns;
   const description = clip(p.seo?.description || text(p.descriptionHtml) || `${p.title} by ${SITE.name}.`);

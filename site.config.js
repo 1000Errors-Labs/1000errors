@@ -156,6 +156,11 @@ window.SITE_CONFIG = {
   // Stripe link per size.
   checkout: {
     endpoint: "https://1000errors-checkout.headless-shopify-site-builder.workers.dev",
+    // Stripe publishable keys (Stripe → Developers → API keys). They're public, not secret. With them, the payment
+    // form opens on this site's /checkout page; without them, on Stripe's own page. The live one is used on the real
+    // site (it must match the live key stored in Cloudflare); the test one in the preview (npm run dev, stripe.key).
+    publishableKey: "pk_live_51UN1iWKEQbqpdA13bYVthUYnh1UDO8KcUkixgh5L80EvZXuDlmEl59Em69P8Lnc71BIK7NYSclV3gyiFcZb9fhIX00D2QvV7wh",
+    testPublishableKey: "pk_test_51UMvBbGyqlS03NxEN4kSb1yOzm6XdwnV0ASteNQ0c5TZBoCetEpTebmsqKErPIS30oBZDGDDvXMz4tic6X1QHUVt00rl3l7cp2",
   },
 
   // Returns policy, given to Google with each product (run npm run sync after changing it).
