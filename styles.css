@@ -162,6 +162,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 .footer-links { display: flex; gap: 18px; }
+.footer-legal { flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 18px; color: var(--muted); padding-top: 12px; margin-top: 4px; border-top: 1px solid var(--border); }
+.footer-legal a { color: var(--muted); }
+.footer-legal a:hover { color: var(--text); }
+.footer-legal-links { display: flex; flex-wrap: wrap; gap: 6px 16px; }
 .footer-links a { color: var(--muted); text-decoration: none; }
 .footer-links a:hover { color: var(--text); }
 

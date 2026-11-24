@@ -99,6 +99,83 @@ window.SITE_CONTENT = {
   ],
 
   pages: {
+    // Legal pages for the shop (linked from the footer via SITE_CONFIG.legal).
+    "delivery-returns": {
+      title: "Delivery & Returns",
+      description: "Delivery prices and times for 1000 Errors orders in the UK and worldwide, and how to return or cancel an order.",
+      blocks: [
+        {
+          type: "text",
+          title: "Delivery & Returns",
+          html: `
+            <h2>Delivery</h2>
+            <p>Wooden pieces are made to order and posted in about 1 week, leather pieces in about 2 weeks. Printed clothing
+            and shoes are made to order by our print partner and take longer. The delivery price and estimated time for your
+            order are shown in your basket and at checkout.</p>
+            <ul>
+              <li><strong>UK:</strong> Royal Mail Tracked 24 or Express 24. Free on orders of £100 or more, and on all sculptures 45 cm and larger.</li>
+              <li><strong>Europe, USA &amp; Canada, Australia &amp; NZ and the rest of the world:</strong> tracked delivery, priced by size.
+              Import VAT or duties may be charged by your country on arrival and are paid by you.</li>
+              <li><strong>Printed clothing:</strong> 9–17 working days in the UK. <strong>Shoes:</strong> 18–23 working days.</li>
+            </ul>
+            <h2>Changed your mind?</h2>
+            <p>You can cancel any order within <strong>14 days of receiving it</strong>. Email us first, then send the item back unused
+            and in its original packaging within 14 days. Return postage is paid by you. We'll refund the item price and the standard
+            delivery cost within 14 days of receiving it back.</p>
+            <p>This doesn't apply to <strong>custom commissions</strong> or <strong>printed clothing and shoes</strong>, which are made
+            to order just for you, unless they arrive faulty.</p>
+            <h2>Damaged or faulty?</h2>
+            <p>If anything arrives damaged or develops a fault, email us within 30 days with a photo and we'll repair, replace or
+            refund it, including postage. The LED electronics have a 12-month guarantee.</p>
+            <p>Email: <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a></p>`,
+        },
+      ],
+    },
+    "terms": {
+      title: "Terms of sale",
+      description: "Terms of sale for the 1000 Errors online shop.",
+      blocks: [
+        {
+          type: "text",
+          title: "Terms of sale",
+          html: `
+            <p>1000 Errors is the trading name of <strong>Olly (Oliver) Balsom</strong>, Goodneston Road, Bristol BS16 3JX,
+            United Kingdom. Email: <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a>.</p>
+            <ul>
+              <li><strong>Orders:</strong> your order is accepted when payment goes through and you get a confirmation email. If something
+              turns out to be unavailable, we'll let you know and refund you in full.</li>
+              <li><strong>Prices</strong> are in pounds sterling. Delivery is shown before you pay.</li>
+              <li><strong>Payment</strong> is handled securely by Stripe. We never see your card details.</li>
+              <li><strong>Handmade pieces:</strong> each piece is cut and finished by hand, so small variations in wood grain and finish are
+              part of its character. LED pieces come with the plug type you choose.</li>
+              <li><strong>Delivery, cancellations and faulty items:</strong> see <a href="/delivery-returns">Delivery &amp; Returns</a>.
+              These don't affect your legal rights.</li>
+              <li>These terms are governed by the law of England and Wales.</li>
+            </ul>`,
+        },
+      ],
+    },
+    "privacy": {
+      title: "Privacy",
+      description: "How 1000 Errors uses the details you give when you order, get in touch or join the mailing list.",
+      blocks: [
+        {
+          type: "text",
+          title: "Privacy",
+          html: `
+            <p>We only collect what we need to run the shop:</p>
+            <ul>
+              <li><strong>Orders:</strong> your name, email, phone and delivery address, collected by Stripe at checkout, used to make
+              and post your order and kept for our tax records (6 years).</li>
+              <li><strong>Contact form:</strong> your name, email and message, sent to us by email through FormSubmit, used only to reply to you.</li>
+              <li><strong>Mailing list</strong> (if you join): your email, stored with Mailchimp. Unsubscribe any time from any email.</li>
+              <li><strong>Website stats:</strong> we use Umami, which counts visits without cookies and without identifying you.</li>
+            </ul>
+            <p>We never sell your details. To see or delete what we hold about you, email
+            <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a>.</p>`,
+        },
+      ],
+    },
     "about": {
       title: "About Olly Balsom",
       description: "Olly Balsom is a Bristol-based artist with 20 years of experience in light installations, laser cut art, stage design, projection mapping and VJing for festivals and clubs.",

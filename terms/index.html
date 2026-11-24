@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Page template: `npm run sync` fills in the {{…}} parts and writes one copy per page (see core/prerender.mjs). -->
+  <base href="/" />
+  <title>Terms of sale | 1000 Errors</title>
+  <meta name="description" content="Terms of sale for the 1000 Errors online shop." />
+  <link rel="canonical" href="https://1000errors.uk/terms/" />
+  <meta property="og:site_name" content="1000 Errors" />
+  <meta property="og:title" content="Terms of sale" />
+  <meta property="og:description" content="Terms of sale for the 1000 Errors online shop." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:url" content="https://1000errors.uk/terms/" />
+  <meta property="og:image" content="https://1000errors.uk/assets/sacred-geometry-flower-garden-festival-night.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="5b55d92f-c523-4951-a3f6-80aaf9e5c3aa" data-domains="1000errors.uk"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"1000 Errors","item":"https://1000errors.uk/"},{"@type":"ListItem","position":2,"name":"Terms of sale","item":"https://1000errors.uk/terms/"}]}</script>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>:root{--bg:#000000;--surface:#1a1a1f;--text:#f2f2f2;--muted:#9a9aa3;--accent:#f2f2f2;--accent-text:#000000;--border:#2a2a31;--radius:10px;--font-body:'Inter', sans-serif;--font-heading:'Inter', sans-serif}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" id="brand"><img src="assets/logo-light.png" alt="1000 Errors"></a>
+    <button class="basket-toggle" id="basketToggle" type="button" aria-label="Basket" hidden>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <span class="basket-count" id="basketCount" hidden></span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav"><a href="/shop/" class="">Shop</a><a href="/projects/" class="">Projects</a><a href="/commissions/" class="">Commissions</a><a href="/vj-shop/" class="">VJ Shop</a><a href="/blog/" class="">Blog</a><a href="/about/" class="">About</a><a href="/contact/" class="">Contact</a></nav>
+  </header>
+
+  <main class="main" id="main" data-prerendered="terms"><div class="page page-terms"><section class="block block-text">
+    <div class="prose ">
+      <h1>Terms of sale</h1>
+      
+      
+            <p>1000 Errors is the trading name of <strong>Olly (Oliver) Balsom</strong>, Goodneston Road, Bristol BS16 3JX,
+            United Kingdom. Email: <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a>.</p>
+            <ul>
+              <li><strong>Orders:</strong> your order is accepted when payment goes through and you get a confirmation email. If something
+              turns out to be unavailable, we'll let you know and refund you in full.</li>
+              <li><strong>Prices</strong> are in pounds sterling. Delivery is shown before you pay.</li>
+              <li><strong>Payment</strong> is handled securely by Stripe. We never see your card details.</li>
+              <li><strong>Handmade pieces:</strong> each piece is cut and finished by hand, so small variations in wood grain and finish are
+              part of its character. LED pieces come with the plug type you choose.</li>
+              <li><strong>Delivery, cancellations and faulty items:</strong> see <a href="/delivery-returns">Delivery &amp; Returns</a>.
+              These don't affect your legal rights.</li>
+              <li>These terms are governed by the law of England and Wales.</li>
+            </ul>
+    </div></section></div></main>
+
+  <footer class="footer" id="footer">
+      <div>© 2026 1000 Errors</div>
+      <div class="footer-links"><a href="https://www.instagram.com/1000_errors" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/1000ErrorsLaserCutArt" target="_blank" rel="noopener">Facebook</a></div>
+      <div class="muted small">Secure checkout</div>
+      <div class="footer-legal small"><span>1000 Errors · Goodneston Road, Bristol BS16 3JX, UK · <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a></span><span class="footer-legal-links"><a href="/delivery-returns/">Delivery &amp; Returns</a><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a></span></div></footer>
+
+  <!-- Order matters: config and content first, then the shared code, then this site's own additions. -->
+  <script src="products.js"></script>
+  <script src="site.config.js"></script>
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+  <script src="blocks.js"></script>
+  <script src="custom.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

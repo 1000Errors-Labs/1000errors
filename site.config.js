@@ -123,8 +123,25 @@ window.SITE_CONFIG = {
   // Shown on the /thank-you page after someone pays. printedMessage is used instead for printed-to-order
   // items ("printOnDemand": true in catalog/products.json: the hoodies, leggings, shirts, bikinis and shoes).
   thankYou: {
-    message: "Thanks for your order, and for supporting me as an artist, it means a lot! I'll pack it up and post it within 3 working days, and you'll get an email as soon as it's on its way.",
+    message: "Thanks for your order, and for supporting me as an artist, it means a lot! Your piece is made to order in our Bristol workshop and is usually posted within about 1 week. You'll get an email as soon as it's on its way.",
+    // Shown instead when the order includes a piece that takes longer to make (/thank-you/?item=2w, e.g. leather).
+    otherMessages: {
+      "2w": "Thanks for your order, and for supporting me as an artist, it means a lot! Your piece is made to order in our Bristol workshop and is usually posted within about 2 weeks. You'll get an email as soon as it's on its way.",
+    },
     printedMessage: "Thanks for your order! Your item is printed just for you, so please allow about a week before it ships. You'll get an email with tracking as soon as it's on its way.",
+  },
+
+  // Trader details and legal pages, shown at the bottom of every page (required for an online shop in the UK).
+  // The pages themselves are in content.js ("delivery-returns", "terms", "privacy").
+  legal: {
+    tradingAs: "1000 Errors",
+    address: "Goodneston Road, Bristol BS16 3JX, UK",
+    email: "ollybalsomat1000errors@gmail.com",
+    links: [
+      { label: "Delivery & Returns", href: "/delivery-returns" },
+      { label: "Terms", href: "/terms" },
+      { label: "Privacy", href: "/privacy" },
+    ],
   },
 
   // Search engines and link previews (Facebook, WhatsApp, iMessage…). Each page's own title, description
@@ -166,7 +183,7 @@ window.SITE_CONFIG = {
   // Returns policy, given to Google with each product (run npm run sync after changing it).
   // days: how long after delivery a buyer can send it back (0 = no returns). buyerPaysPostage: who pays to post it back.
   // page: optional link to a page explaining the policy, e.g. "/returns".
-  returns: { days: 14, buyerPaysPostage: true, page: "" },
+  returns: { days: 14, buyerPaysPostage: true, page: "/delivery-returns" },
 
   // Your own domain for GitHub Pages, e.g. "1000errors.com" (then run npm run sync). Share links,
   // canonical tags and sitemap.xml use it. (Not decided yet: .com or .uk.)

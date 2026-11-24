@@ -85,11 +85,7 @@
       ? `<img src="${esc(SITE.logo)}" alt="${esc(SITE.name)}">`
       : `<span>${esc(SITE.name)}</span>`;
 
-    const social = (SITE.social || []).map(s => `<a ${linkAttrs(s.href)}>${esc(s.label)}</a>`).join("");
-    $("footer").innerHTML = `
-      <div>${esc(SITE.footerText || `© ${new Date().getFullYear()} ${SITE.name}`)}</div>
-      ${social ? `<div class="footer-links">${social}</div>` : ""}
-      <div class="muted small">Secure checkout</div>`;
+    $("footer").innerHTML = R.footerHtml();
 
     $("navToggle").addEventListener("click", () => {
       const open = document.body.classList.toggle("nav-open");
@@ -384,7 +380,7 @@
     function quote(list) {
       return deliveryQuote(DELIVERY, list.map(l => {
         const { p, v } = byId.get(l.id);
-        return { category: v.delivery, price: Math.round(Number(v.price.amount) * 100), qty: l.qty, name: p.title };
+        return { category: v.delivery, price: Math.round(Number(v.price.amount) * 100), qty: l.qty, name: p.title, making: v.making };
       }), regionId);
     }
     const blockedMessage = blocked => `${[...new Set(blocked.map(l => l.name))].join(" and ")} can't be delivered ${

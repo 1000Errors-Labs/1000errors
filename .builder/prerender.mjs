@@ -52,8 +52,8 @@ const CHECKOUT = exists("checkout.json") ? JSON.parse(read("checkout.json")) : n
 function shippingDetails(p) {
   const currency = (CHECKOUT?.currency || "gbp").toUpperCase();
   const days = (min, max) => ({ "@type": "QuantitativeValue", minValue: min, maxValue: max, unitCode: "DAY" });
-  const detail = (amount, minDays, maxDays, country) => {
-    const handling = Math.min(3, minDays ?? 3);
+  const detail = (amount, minDays, maxDays, country, making = 0) => {
+    const handling = making || Math.min(3, minDays ?? 3);
     return {
       "@type": "OfferShippingDetails",
       shippingRate: { "@type": "MonetaryAmount", value: Number(amount).toFixed(2), currency },
@@ -61,7 +61,8 @@ function shippingDetails(p) {
       deliveryTime: {
         "@type": "ShippingDeliveryTime",
         handlingTime: days(0, handling),
-        transitTime: days(Math.max(0, (minDays ?? handling) - handling), Math.max(0, (maxDays ?? handling) - handling)),
+        transitTime: making ? days(minDays ?? 0, maxDays ?? 0)
+        : days(Math.max(0, (minDays ?? handling) - handling), Math.max(0, (maxDays ?? handling) - handling)),
       },
     };
   };
@@ -73,7 +74,7 @@ function shippingDetails(p) {
       const rate = D.categories[v.delivery]?.[r.id];
       if (!rate) return [];
       const free = D.freeOver?.[r.id] !== null && D.freeOver?.[r.id] !== undefined && Number(v.price.amount) * 100 >= D.freeOver[r.id];
-      return [detail(free ? 0 : rate.price / 100, rate.minDays, rate.maxDays, r.countries.length === 1 ? r.countries[0] : r.countries)];
+      return [detail(free ? 0 : rate.price / 100, rate.minDays, rate.maxDays, r.countries.length === 1 ? r.countries[0] : r.countries, v.making || 0)];
     });
     return out.length ? out : null;
   }
@@ -425,6 +426,7 @@ function renderFile(page, categories) {
     NAV: page.noindex ? "" : R.navHtml(categories, page.path, { onProject, projectsPage: SITE.projectsPage || "/projects" }),
     PATH: R.esc(page.noindex ? "-" : page.path),
     MAIN: page.main || "",
+    FOOTER: R.footerHtml(),
   });
 }
 

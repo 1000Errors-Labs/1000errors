@@ -3,7 +3,8 @@
 // Shared by every site — edit in core/, then `npm run sync`.
 
 // The delivery charge for a basket (also in checkout/worker.js: keep the two the same).
-// delivery: window.DELIVERY / checkout.json "delivery". lines: [{ category, price (pence each), qty, name }].
+// delivery: window.DELIVERY / checkout.json "delivery". lines: [{ category, price (pence each), qty, name, making }].
+// making: working days to make the piece before posting; the delivery estimate is making time + the rate's days.
 // Returns { price, name, minDays, maxDays, free } in pence, or { blocked: [lines that can't go to this region] }.
 function deliveryQuote(delivery, lines, region) {
   if (!delivery) return null;
@@ -14,7 +15,8 @@ function deliveryQuote(delivery, lines, region) {
   const subtotal = lines.reduce((n, l) => n + l.price * l.qty, 0);
   const threshold = delivery.freeOver?.[region];
   const free = threshold !== null && threshold !== undefined && subtotal >= threshold;
-  const days = key => Math.max(0, ...rates.map(r => r[key] || 0)) || undefined;
+  // The estimate is the slowest item: its making time plus its own delivery days (items are made side by side).
+  const days = key => Math.max(0, ...lines.map(l => (delivery.categories[l.category][region][key] || 0) + (l.making || 0))) || undefined;
   return {
     price: free ? 0 : delivery.combine === "add" ? rates.reduce((n, r) => n + r.price, 0) : top.price,
     name: free ? "Free delivery" : (delivery.combine === "add" && rates.length > 1 ? "Delivery" : top.name || "Delivery"),
@@ -241,8 +243,9 @@ function createRender({ site = {}, base = "/", delivery = null } = {}) {
     const [home, ...abroad] = delivery.regions;
     const rate = home && cat[home.id];
     const parts = [];
+    const making = v.making || 0;
     if (rate) {
-      const days = rate.minDays && rate.maxDays ? ` (${rate.minDays}–${rate.maxDays} working days)` : "";
+      const days = rate.minDays && rate.maxDays ? ` (${rate.minDays + making}–${rate.maxDays + making} working days)` : "";
       parts.push(`${esc(home.label)} delivery: ${rate.price ? esc(pounds(rate.price)) : "free"}${esc(days)}`);
     }
     const away = abroad.map(r => cat[r.id]).filter(Boolean);
@@ -252,7 +255,9 @@ function createRender({ site = {}, base = "/", delivery = null } = {}) {
         : `International delivery ${min ? `from ${esc(pounds(min))}` : "available"} to some countries`);
     } else if (rate && abroad.length) parts.push(`${esc(home.label)} only`);
     else if (rate) parts.push(`${esc(home.label)} only`);
-    return parts.join(" · ");
+    const weeks = Math.round(making / 5);
+    const made = making ? `<br>Made to order in our Bristol workshop: posted in about ${weeks <= 1 ? "1 week" : `${weeks} weeks`}.` : "";
+    return parts.join(" · ") + made;
   }
 
   // Under a sold-out product: sign up to hear about the next run (mailingList in site.config.js), and/or
@@ -393,11 +398,27 @@ function createRender({ site = {}, base = "/", delivery = null } = {}) {
             <p>Your payment has gone through and a receipt is on its way to your inbox.</p>
             <p class="thanks-message">${esc(t.message || "Thanks for your order, and for supporting me as an artist, it means a lot! I'll pack it up and post it within 3 working days, and you'll get an email as soon as it's on its way.")}</p>
             ${t.printedMessage ? `<p class="thanks-message" data-item="printed" hidden>${esc(t.printedMessage)}</p>` : ""}
+            ${Object.entries(t.otherMessages || {}).map(([k, m]) => `<p class="thanks-message" data-item="${esc(k)}" hidden>${esc(m)}</p>`).join("")}
             ${contact}` },
           { type: "buttons", align: "center", items: [{ label: "Back to the shop", href: "/shop" }] },
         ],
       },
     };
+  }
+
+  // Footer: copyright/footerText, social links, then the trader details and legal page links (site.legal) that
+  // UK distance-selling rules require on a shop.
+  function footerHtml() {
+    const social = (site.social || []).map(s => `<a ${linkAttrs(s.href)}>${esc(s.label)}</a>`).join("");
+    const legal = site.legal || {};
+    const details = [legal.tradingAs || site.name, legal.address, legal.email].filter(Boolean)
+      .map(x => /@/.test(x) ? `<a href="mailto:${esc(x)}">${esc(x)}</a>` : esc(x)).join(" · ");
+    const links = (legal.links || []).map(l => `<a ${linkAttrs(l.href)}>${esc(l.label)}</a>`).join("");
+    return `
+      <div>${esc(site.footerText || `© ${new Date().getFullYear()} ${site.name}`)}</div>
+      ${social ? `<div class="footer-links">${social}</div>` : ""}
+      <div class="muted small">Secure checkout</div>
+      ${details || links ? `<div class="footer-legal small">${details ? `<span>${details}</span>` : ""}${links ? `<span class="footer-legal-links">${links}</span>` : ""}</div>` : ""}`;
   }
 
   const pageWrap = (path, html) => `<div class="page page-${esc(slugify(path || "home"))}">${html}</div>`;
@@ -406,6 +427,6 @@ function createRender({ site = {}, base = "/", delivery = null } = {}) {
     esc, money, slugify, cleanTypeName, img, link, isExternal, linkAttrs,
     buildCategories, productsIn, categoryOf, menuItems, navHtml,
     productCard, renderGrid, categoryBar, listingHtml, firstVariant, priceHtml, deliveryLineHtml, matches, selectedOf, productHtml,
-    pageBlocks, builtInPages, pageWrap,
+    pageBlocks, builtInPages, pageWrap, footerHtml,
   };
 }
