@@ -292,15 +292,22 @@ const Blocks = (() => {
       if (!email) { status.textContent = "The contact form isn't set up yet (contactEmail in site.config.js)."; return; }
       const data = Object.fromEntries(new FormData(form));
       if (data._honey) return;
-      data._subject = `New message from ${ctx.site.name} website`;
+      delete data._honey;
+      const subject = `New message from ${ctx.site.name} website`;
+      // web3formsKey in site.config.js → Web3Forms (fast; key from web3forms.com, sent to the address it was made for).
+      // Without it the form falls back to FormSubmit (slow, ~15–20 s) using contactEmail.
+      const key = ctx.site.web3formsKey;
+      const url = key ? "https://api.web3forms.com/submit" : `https://formsubmit.co/ajax/${encodeURIComponent(email)}`;
+      const body = key ? { access_key: key, subject, from_name: ctx.site.name, ...data } : { _subject: subject, ...data };
       status.textContent = "Sending…";
       try {
-        const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(email)}`, {
+        const res = await fetch(url, {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
-          body: JSON.stringify(data),
+          body: JSON.stringify(body),
         });
-        if (!res.ok) throw new Error(res.statusText);
+        const json = await res.json().catch(() => ({}));
+        if (!res.ok || json.success === false || json.success === "false") throw new Error(json.message || res.statusText);
         form.reset();
         status.textContent = "Thanks — your message has been sent.";
         window.umami?.track("Contact form sent", { page: location.pathname });

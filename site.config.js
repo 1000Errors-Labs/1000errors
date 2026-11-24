@@ -82,6 +82,9 @@ window.SITE_CONFIG = {
   // The contact form is emailed here (via formsubmit.co). The first message triggers a
   // one-time activation email from FormSubmit to this address — click the link in it once.
   contactEmail: "contact@1000errors.uk",
+  // Web3Forms access key (made for contact@1000errors.uk). When set, the form sends through Web3Forms instead of
+  // FormSubmit (much faster). Leave "" to use FormSubmit.
+  web3formsKey: "c5570ab1-2a7e-4fce-8415-0fdc6476c046",
 
   // A line at the bottom of the shop and category pages.
   shopNote: {
