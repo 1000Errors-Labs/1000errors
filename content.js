@@ -127,7 +127,7 @@ window.SITE_CONTENT = {
             <h2>Damaged or faulty?</h2>
             <p>If anything arrives damaged or develops a fault, email us within 30 days with a photo and we'll repair, replace or
             refund it, including postage. The LED electronics have a 12-month guarantee.</p>
-            <p>Email: <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a></p>`,
+            <p>Email: <a href="mailto:hello@1000errors.uk">hello@1000errors.uk</a></p>`,
         },
       ],
     },
@@ -140,7 +140,7 @@ window.SITE_CONTENT = {
           title: "Terms of sale",
           html: `
             <p>1000 Errors is the trading name of <strong>Olly (Oliver) Balsom</strong>, Goodneston Road, Bristol BS16 3JX,
-            United Kingdom. Email: <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a>.</p>
+            United Kingdom. Email: <a href="mailto:hello@1000errors.uk">hello@1000errors.uk</a>.</p>
             <ul>
               <li><strong>Orders:</strong> your order is accepted when payment goes through and you get a confirmation email. If something
               turns out to be unavailable, we'll let you know and refund you in full.</li>
@@ -172,7 +172,7 @@ window.SITE_CONTENT = {
               <li><strong>Website stats:</strong> we use Umami, which counts visits without cookies and without identifying you.</li>
             </ul>
             <p>We never sell your details. To see or delete what we hold about you, email
-            <a href="mailto:ollybalsomat1000errors@gmail.com">ollybalsomat1000errors@gmail.com</a>.</p>`,
+            <a href="mailto:hello@1000errors.uk">hello@1000errors.uk</a>.</p>`,
         },
       ],
     },

@@ -81,7 +81,7 @@ window.SITE_CONFIG = {
 
   // The contact form is emailed here (via formsubmit.co). The first message triggers a
   // one-time activation email from FormSubmit to this address — click the link in it once.
-  contactEmail: "ollybalsomat1000errors@gmail.com",
+  contactEmail: "contact@1000errors.uk",
 
   // A line at the bottom of the shop and category pages.
   shopNote: {
@@ -136,7 +136,7 @@ window.SITE_CONFIG = {
   legal: {
     tradingAs: "1000 Errors",
     address: "Goodneston Road, Bristol BS16 3JX, UK",
-    email: "ollybalsomat1000errors@gmail.com",
+    email: "hello@1000errors.uk",
     links: [
       { label: "Delivery & Returns", href: "/delivery-returns" },
       { label: "Terms", href: "/terms" },

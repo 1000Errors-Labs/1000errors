@@ -381,8 +381,10 @@ function createRender({ site = {}, base = "/", delivery = null } = {}) {
   //                in site.config.js.
   function builtInPages() {
     const t = site.thankYou || {};
-    const contact = site.contactEmail
-      ? `<p>Any questions? Email <a href="mailto:${esc(site.contactEmail)}">${esc(site.contactEmail)}</a>.</p>`
+    // Customer questions go to the shop email (legal.email) when a site has one, else the contact form's address.
+    const shopEmail = (site.legal && site.legal.email) || site.contactEmail;
+    const contact = shopEmail
+      ? `<p>Any questions? Email <a href="mailto:${esc(shopEmail)}">${esc(shopEmail)}</a>.</p>`
       : `<p>Any questions? Just reply to your receipt email.</p>`;
     return {
       // Where the basket's payment form opens (app.js fills it in), for sites with checkout.publishableKey.
