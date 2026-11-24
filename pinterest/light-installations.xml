@@ -7,6 +7,15 @@
   <atom:link href="https://1000errors.uk/pinterest/light-installations.xml" rel="self" type="application/rss+xml" />
   <item>
     <title>Projection Mapped Face Sculpture for Festival Stages</title>
+    <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=small-projection-mapped-face-sculpture</link>
+    <description>The smaller of the two projection mapped face sculptures. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
+    <guid isPermaLink="false">small-projection-mapped-face-sculpture</guid>
+    <pubDate>Tue, 24 Nov 2026 16:55:09 GMT</pubDate>
+    <enclosure url="https://1000errors.uk/pinterest/img/small-projection-mapped-face-sculpture.jpg" length="77545" type="image/jpeg" />
+    <media:content url="https://1000errors.uk/pinterest/img/small-projection-mapped-face-sculpture.jpg" medium="image" type="image/jpeg" />
+  </item>
+  <item>
+    <title>Projection Mapped Face Sculpture for Festival Stages</title>
     <link>https://1000errors.uk/sculptural-work/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=projection-mapped-face-sculpture-performer</link>
     <description>The larger of the two faces with projections. The build process of two video projection mapped face sculptures, designed, built, animated and mapped for music festival visual shows. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
     <guid isPermaLink="false">projection-mapped-face-sculpture-performer</guid>
@@ -49,15 +58,6 @@
     <pubDate>Wed, 18 Nov 2026 15:01:37 GMT</pubDate>
     <enclosure url="https://1000errors.uk/pinterest/img/face-sculpture-inserted-features.jpg" length="89868" type="image/jpeg" />
     <media:content url="https://1000errors.uk/pinterest/img/face-sculpture-inserted-features.jpg" medium="image" type="image/jpeg" />
-  </item>
-  <item>
-    <title>Temple Architectural Design</title>
-    <link>https://1000errors.uk/architectural-design/?utm_source=pinterest&amp;utm_medium=social&amp;utm_campaign=light-installations&amp;utm_content=temple-lattice-detail</link>
-    <description>Close-up of the interlaced lattice. A commissioned temple design, modelled in Maya and explored as a walkable real-time VR simulation in Unreal Engine. By 1000 Errors, Bristol UK. Commissions and hire worldwide.</description>
-    <guid isPermaLink="false">temple-lattice-detail</guid>
-    <pubDate>Tue, 17 Nov 2026 15:27:06 GMT</pubDate>
-    <enclosure url="https://1000errors.uk/pinterest/img/temple-lattice-detail.jpg" length="128036" type="image/jpeg" />
-    <media:content url="https://1000errors.uk/pinterest/img/temple-lattice-detail.jpg" medium="image" type="image/jpeg" />
   </item>
 </channel>
 </rss>
