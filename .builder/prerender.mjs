@@ -82,6 +82,31 @@ function shippingDetails(p) {
   return CHECKOUT.shipping.flatMap(rate => CHECKOUT.countries.map(country => detail(rate.amount, rate.minDays, rate.maxDays, country)));
 }
 
+// UK delivery for one size in the product feed (Merchant Center's g:shipping), same rules as shippingDetails():
+// the size's own delivery category, free over the free-delivery amount, making days as handling time.
+function feedShipping(v, x) {
+  const D = CHECKOUT?.delivery;
+  const region = D?.regions.find(r => r.countries.length === 1 && r.countries[0] === "GB");
+  const rate = region && v.delivery && D.categories[v.delivery]?.[region.id];
+  if (!rate) return "";
+  const over = D.freeOver?.[region.id];
+  const free = over !== null && over !== undefined && Number(v.price.amount) * 100 >= over;
+  const making = v.making || 0;
+  const handling = making || Math.min(3, rate.minDays ?? 3);
+  const minT = making ? (rate.minDays ?? 0) : Math.max(0, (rate.minDays ?? handling) - handling);
+  const maxT = making ? (rate.maxDays ?? 0) : Math.max(0, (rate.maxDays ?? handling) - handling);
+  const currency = (CHECKOUT?.currency || "gbp").toUpperCase();
+  return `<g:shipping>
+      <g:country>GB</g:country>
+      <g:service>${x(rate.name || "Standard")}</g:service>
+      <g:price>${(free ? 0 : rate.price / 100).toFixed(2)} ${currency}</g:price>
+      <g:min_handling_time>${making ? Math.max(0, making - 2) : 0}</g:min_handling_time>
+      <g:max_handling_time>${handling}</g:max_handling_time>
+      <g:min_transit_time>${minT}</g:min_transit_time>
+      <g:max_transit_time>${maxT}</g:max_transit_time>
+    </g:shipping>`;
+}
+
 // Returns policy for Google's product structured data, from SITE.returns in site.config.js.
 function returnPolicy() {
   const r = SITE.returns;
@@ -257,6 +282,7 @@ function productFeed(products) {
     <g:brand>${x(SITE.name)}</g:brand>
     <g:condition>new</g:condition>
     <g:identifier_exists>no</g:identifier_exists>
+    ${feedShipping(v, x)}
     ${p.productType ? `<g:product_type>${x(p.productType)}</g:product_type>` : ""}
     ${variants.length > 1 ? `<g:item_group_id>${x(p.handle)}</g:item_group_id>` : ""}
     ${opt(/size/i) ? `<g:size>${x(opt(/size/i))}</g:size>` : ""}
