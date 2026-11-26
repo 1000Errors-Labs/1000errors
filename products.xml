@@ -6,10 +6,11 @@
   <description>Bespoke LED light installations, laser cut art and visuals for clubs, festivals and events, by Bristol-based artist Olly Balsom. Available worldwide.</description>
   <item>
     <g:id>cyber-serpent-belt-0</g:id>
-    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Small 20-28 Inches</g:title>
+    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Small 20-28 Inches / Black</g:title>
     <g:description>A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Precision laser engraving brings the artwork to life while letting the natural character of the leather show through. A distinctive statement piece for festivals, alternative fashion or everyday wear. Buckle is easily removable and can be replaced for custom buckle. When choosing your size be sure to measure your existing belt size as explained in the picture below.</g:description>
     <g:link>https://1000errors.uk/p/cyber-serpent-belt/</g:link>
     <g:image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-1-1600.webp</g:image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-4-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-2-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-3-1600.webp</g:additional_image_link>
     <g:availability>in_stock</g:availability>
@@ -29,13 +30,43 @@
     <g:product_type>Belt</g:product_type>
     <g:item_group_id>cyber-serpent-belt</g:item_group_id>
     <g:size>Small 20-28 Inches</g:size>
+    <g:color>Black</g:color>
   </item>
   <item>
     <g:id>cyber-serpent-belt-1</g:id>
-    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Medium 28-38 Inches</g:title>
+    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Small 20-28 Inches / Brown</g:title>
+    <g:description>A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Precision laser engraving brings the artwork to life while letting the natural character of the leather show through. A distinctive statement piece for festivals, alternative fashion or everyday wear. Buckle is easily removable and can be replaced for custom buckle. When choosing your size be sure to measure your existing belt size as explained in the picture below.</g:description>
+    <g:link>https://1000errors.uk/p/cyber-serpent-belt/</g:link>
+    <g:image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-4-1600.webp</g:image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-1-1600.webp</g:additional_image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-2-1600.webp</g:additional_image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-3-1600.webp</g:additional_image_link>
+    <g:availability>in_stock</g:availability>
+    <g:price>44.99 GBP</g:price>
+    <g:brand>1000 Errors</g:brand>
+    <g:condition>new</g:condition>
+    <g:identifier_exists>no</g:identifier_exists>
+    <g:shipping>
+      <g:country>GB</g:country>
+      <g:service>Royal Mail Tracked 24</g:service>
+      <g:price>5.00 GBP</g:price>
+      <g:min_handling_time>8</g:min_handling_time>
+      <g:max_handling_time>10</g:max_handling_time>
+      <g:min_transit_time>1</g:min_transit_time>
+      <g:max_transit_time>2</g:max_transit_time>
+    </g:shipping>
+    <g:product_type>Belt</g:product_type>
+    <g:item_group_id>cyber-serpent-belt</g:item_group_id>
+    <g:size>Small 20-28 Inches</g:size>
+    <g:color>Brown</g:color>
+  </item>
+  <item>
+    <g:id>cyber-serpent-belt-2</g:id>
+    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Medium 28-38 Inches / Black</g:title>
     <g:description>A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Precision laser engraving brings the artwork to life while letting the natural character of the leather show through. A distinctive statement piece for festivals, alternative fashion or everyday wear. Buckle is easily removable and can be replaced for custom buckle. When choosing your size be sure to measure your existing belt size as explained in the picture below.</g:description>
     <g:link>https://1000errors.uk/p/cyber-serpent-belt/</g:link>
     <g:image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-1-1600.webp</g:image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-4-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-2-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-3-1600.webp</g:additional_image_link>
     <g:availability>in_stock</g:availability>
@@ -55,13 +86,43 @@
     <g:product_type>Belt</g:product_type>
     <g:item_group_id>cyber-serpent-belt</g:item_group_id>
     <g:size>Medium 28-38 Inches</g:size>
+    <g:color>Black</g:color>
   </item>
   <item>
-    <g:id>cyber-serpent-belt-2</g:id>
-    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Large 38-48 Inches</g:title>
+    <g:id>cyber-serpent-belt-3</g:id>
+    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Medium 28-38 Inches / Brown</g:title>
+    <g:description>A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Precision laser engraving brings the artwork to life while letting the natural character of the leather show through. A distinctive statement piece for festivals, alternative fashion or everyday wear. Buckle is easily removable and can be replaced for custom buckle. When choosing your size be sure to measure your existing belt size as explained in the picture below.</g:description>
+    <g:link>https://1000errors.uk/p/cyber-serpent-belt/</g:link>
+    <g:image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-4-1600.webp</g:image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-1-1600.webp</g:additional_image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-2-1600.webp</g:additional_image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-3-1600.webp</g:additional_image_link>
+    <g:availability>in_stock</g:availability>
+    <g:price>44.99 GBP</g:price>
+    <g:brand>1000 Errors</g:brand>
+    <g:condition>new</g:condition>
+    <g:identifier_exists>no</g:identifier_exists>
+    <g:shipping>
+      <g:country>GB</g:country>
+      <g:service>Royal Mail Tracked 24</g:service>
+      <g:price>5.00 GBP</g:price>
+      <g:min_handling_time>8</g:min_handling_time>
+      <g:max_handling_time>10</g:max_handling_time>
+      <g:min_transit_time>1</g:min_transit_time>
+      <g:max_transit_time>2</g:max_transit_time>
+    </g:shipping>
+    <g:product_type>Belt</g:product_type>
+    <g:item_group_id>cyber-serpent-belt</g:item_group_id>
+    <g:size>Medium 28-38 Inches</g:size>
+    <g:color>Brown</g:color>
+  </item>
+  <item>
+    <g:id>cyber-serpent-belt-4</g:id>
+    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Large 38-48 Inches / Black</g:title>
     <g:description>A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Precision laser engraving brings the artwork to life while letting the natural character of the leather show through. A distinctive statement piece for festivals, alternative fashion or everyday wear. Buckle is easily removable and can be replaced for custom buckle. When choosing your size be sure to measure your existing belt size as explained in the picture below.</g:description>
     <g:link>https://1000errors.uk/p/cyber-serpent-belt/</g:link>
     <g:image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-1-1600.webp</g:image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-4-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-2-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-3-1600.webp</g:additional_image_link>
     <g:availability>in_stock</g:availability>
@@ -81,6 +142,35 @@
     <g:product_type>Belt</g:product_type>
     <g:item_group_id>cyber-serpent-belt</g:item_group_id>
     <g:size>Large 38-48 Inches</g:size>
+    <g:color>Black</g:color>
+  </item>
+  <item>
+    <g:id>cyber-serpent-belt-5</g:id>
+    <g:title>Cyber Serpent Leather Belt, Laser Engraved Psychedelic Design - Large 38-48 Inches / Brown</g:title>
+    <g:description>A high quality leather belt featuring intricate laser engraved psychedelic patterns inspired by the twisting form of a futuristic serpent. Organic curves, geometric details and hypnotic shapes flow around the belt, creating a bold design that feels part ancient creature, part cybernetic organism. Precision laser engraving brings the artwork to life while letting the natural character of the leather show through. A distinctive statement piece for festivals, alternative fashion or everyday wear. Buckle is easily removable and can be replaced for custom buckle. When choosing your size be sure to measure your existing belt size as explained in the picture below.</g:description>
+    <g:link>https://1000errors.uk/p/cyber-serpent-belt/</g:link>
+    <g:image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-4-1600.webp</g:image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-1-1600.webp</g:additional_image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-2-1600.webp</g:additional_image_link>
+    <g:additional_image_link>https://1000errors.uk/assets/products/cyber-serpent-belt/cyber-serpent-laser-engraved-leather-belt-3-1600.webp</g:additional_image_link>
+    <g:availability>in_stock</g:availability>
+    <g:price>44.99 GBP</g:price>
+    <g:brand>1000 Errors</g:brand>
+    <g:condition>new</g:condition>
+    <g:identifier_exists>no</g:identifier_exists>
+    <g:shipping>
+      <g:country>GB</g:country>
+      <g:service>Royal Mail Tracked 24</g:service>
+      <g:price>5.00 GBP</g:price>
+      <g:min_handling_time>8</g:min_handling_time>
+      <g:max_handling_time>10</g:max_handling_time>
+      <g:min_transit_time>1</g:min_transit_time>
+      <g:max_transit_time>2</g:max_transit_time>
+    </g:shipping>
+    <g:product_type>Belt</g:product_type>
+    <g:item_group_id>cyber-serpent-belt</g:item_group_id>
+    <g:size>Large 38-48 Inches</g:size>
+    <g:color>Brown</g:color>
   </item>
   <item>
     <g:id>septagram-light-sculpture-1-0</g:id>
@@ -4708,7 +4798,7 @@
   </item>
   <item>
     <g:id>hexstatic-illuminated-wall-art-1</g:id>
-    <g:title>Hexstatic LED Light Sculpture, Flower of Life Wood Mandala - 50cm</g:title>
+    <g:title>Hexstatic LED Light Sculpture, Flower of Life Wood Mandala - 60cm</g:title>
     <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. Hexstatic is a beautiful self illuminating wooden mandala light sculpture. The design principles for this piece are derived from sacred geometry in particular the flower of life pattern. I created this design by starting with the flower of life pattern but then replacing the circles with hexagons and then adjusting the size of those hexagons, whilst maintaining the 6 way radial symmetry to create the overall design of each individual layer. This piece has been meticulously designed with 100% geometric accuracy, precision cut with laser technology from multiple layers of Birch wood, and finally painted and assembled by hand. The integrated LED lighting can be adjusted with the use of the small controller and features a 3 meter long discrete white power cable and a choice of different international AC adapters.</g:description>
     <g:link>https://1000errors.uk/p/hexstatic-illuminated-wall-art/</g:link>
     <g:image_link>https://1000errors.uk/assets/products/hexstatic-illuminated-wall-art/hexstatic-wooden-mandala-led-wall-light-sculpture-1-1600.webp</g:image_link>
@@ -4733,7 +4823,7 @@
     </g:shipping>
     <g:product_type>Woodwork Art</g:product_type>
     <g:item_group_id>hexstatic-illuminated-wall-art</g:item_group_id>
-    <g:size>50cm</g:size>
+    <g:size>60cm</g:size>
   </item>
   <item>
     <g:id>hexstatic-illuminated-wall-art-2</g:id>
@@ -4766,8 +4856,8 @@
   </item>
   <item>
     <g:id>lotus-flower-of-life-lamp-0</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 38cm Wide/ 36cm Tall / Gold</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
+    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 38cm Wide/ 36cm Tall</g:title>
+    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. Finished in a rich brown wood stain. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
     <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
     <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
@@ -4790,26 +4880,25 @@
     <g:product_type>Woodwork Art</g:product_type>
     <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
     <g:size>38cm Wide/ 36cm Tall</g:size>
-    <g:color>Gold</g:color>
   </item>
   <item>
     <g:id>lotus-flower-of-life-lamp-1</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 38cm Wide/ 36cm Tall / Silver</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
+    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 76cm Wide/73cm Tall</g:title>
+    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. Finished in a rich brown wood stain. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
     <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
     <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-3-1600.webp</g:additional_image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-4-1600.webp</g:additional_image_link>
     <g:availability>in_stock</g:availability>
-    <g:price>99.99 GBP</g:price>
+    <g:price>214.99 GBP</g:price>
     <g:brand>1000 Errors</g:brand>
     <g:condition>new</g:condition>
     <g:identifier_exists>no</g:identifier_exists>
     <g:shipping>
       <g:country>GB</g:country>
-      <g:service>Royal Mail Tracked 24</g:service>
-      <g:price>6.75 GBP</g:price>
+      <g:service>Free delivery (Express 24)</g:service>
+      <g:price>0.00 GBP</g:price>
       <g:min_handling_time>3</g:min_handling_time>
       <g:max_handling_time>5</g:max_handling_time>
       <g:min_transit_time>1</g:min_transit_time>
@@ -4817,125 +4906,12 @@
     </g:shipping>
     <g:product_type>Woodwork Art</g:product_type>
     <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
-    <g:size>38cm Wide/ 36cm Tall</g:size>
-    <g:color>Silver</g:color>
+    <g:size>76cm Wide/73cm Tall</g:size>
   </item>
   <item>
     <g:id>lotus-flower-of-life-lamp-2</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 38cm Wide/ 36cm Tall / Natural Wood</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
-    <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
-    <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-3-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-4-1600.webp</g:additional_image_link>
-    <g:availability>in_stock</g:availability>
-    <g:price>99.99 GBP</g:price>
-    <g:brand>1000 Errors</g:brand>
-    <g:condition>new</g:condition>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>GB</g:country>
-      <g:service>Royal Mail Tracked 24</g:service>
-      <g:price>6.75 GBP</g:price>
-      <g:min_handling_time>3</g:min_handling_time>
-      <g:max_handling_time>5</g:max_handling_time>
-      <g:min_transit_time>1</g:min_transit_time>
-      <g:max_transit_time>2</g:max_transit_time>
-    </g:shipping>
-    <g:product_type>Woodwork Art</g:product_type>
-    <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
-    <g:size>38cm Wide/ 36cm Tall</g:size>
-    <g:color>Natural Wood</g:color>
-  </item>
-  <item>
-    <g:id>lotus-flower-of-life-lamp-3</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 76cm Wide/73cm Tall / Gold</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
-    <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
-    <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-3-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-4-1600.webp</g:additional_image_link>
-    <g:availability>in_stock</g:availability>
-    <g:price>214.99 GBP</g:price>
-    <g:brand>1000 Errors</g:brand>
-    <g:condition>new</g:condition>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>GB</g:country>
-      <g:service>Free delivery (Express 24)</g:service>
-      <g:price>0.00 GBP</g:price>
-      <g:min_handling_time>3</g:min_handling_time>
-      <g:max_handling_time>5</g:max_handling_time>
-      <g:min_transit_time>1</g:min_transit_time>
-      <g:max_transit_time>2</g:max_transit_time>
-    </g:shipping>
-    <g:product_type>Woodwork Art</g:product_type>
-    <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
-    <g:size>76cm Wide/73cm Tall</g:size>
-    <g:color>Gold</g:color>
-  </item>
-  <item>
-    <g:id>lotus-flower-of-life-lamp-4</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 76cm Wide/73cm Tall / Silver</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
-    <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
-    <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-3-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-4-1600.webp</g:additional_image_link>
-    <g:availability>in_stock</g:availability>
-    <g:price>214.99 GBP</g:price>
-    <g:brand>1000 Errors</g:brand>
-    <g:condition>new</g:condition>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>GB</g:country>
-      <g:service>Free delivery (Express 24)</g:service>
-      <g:price>0.00 GBP</g:price>
-      <g:min_handling_time>3</g:min_handling_time>
-      <g:max_handling_time>5</g:max_handling_time>
-      <g:min_transit_time>1</g:min_transit_time>
-      <g:max_transit_time>2</g:max_transit_time>
-    </g:shipping>
-    <g:product_type>Woodwork Art</g:product_type>
-    <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
-    <g:size>76cm Wide/73cm Tall</g:size>
-    <g:color>Silver</g:color>
-  </item>
-  <item>
-    <g:id>lotus-flower-of-life-lamp-5</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 76cm Wide/73cm Tall / Natural Wood</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
-    <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
-    <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-3-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-4-1600.webp</g:additional_image_link>
-    <g:availability>in_stock</g:availability>
-    <g:price>214.99 GBP</g:price>
-    <g:brand>1000 Errors</g:brand>
-    <g:condition>new</g:condition>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>GB</g:country>
-      <g:service>Free delivery (Express 24)</g:service>
-      <g:price>0.00 GBP</g:price>
-      <g:min_handling_time>3</g:min_handling_time>
-      <g:max_handling_time>5</g:max_handling_time>
-      <g:min_transit_time>1</g:min_transit_time>
-      <g:max_transit_time>2</g:max_transit_time>
-    </g:shipping>
-    <g:product_type>Woodwork Art</g:product_type>
-    <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
-    <g:size>76cm Wide/73cm Tall</g:size>
-    <g:color>Natural Wood</g:color>
-  </item>
-  <item>
-    <g:id>lotus-flower-of-life-lamp-6</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 115cmWide/110cmTall / Gold</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
+    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 115cmWide/110cmTall</g:title>
+    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. Finished in a rich brown wood stain. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
     <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
     <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
     <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
@@ -4958,63 +4934,6 @@
     <g:product_type>Woodwork Art</g:product_type>
     <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
     <g:size>115cmWide/110cmTall</g:size>
-    <g:color>Gold</g:color>
-  </item>
-  <item>
-    <g:id>lotus-flower-of-life-lamp-7</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 115cmWide/110cmTall / Silver</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
-    <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
-    <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-3-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-4-1600.webp</g:additional_image_link>
-    <g:availability>in_stock</g:availability>
-    <g:price>354.99 GBP</g:price>
-    <g:brand>1000 Errors</g:brand>
-    <g:condition>new</g:condition>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>GB</g:country>
-      <g:service>Free delivery (Express 48)</g:service>
-      <g:price>0.00 GBP</g:price>
-      <g:min_handling_time>3</g:min_handling_time>
-      <g:max_handling_time>5</g:max_handling_time>
-      <g:min_transit_time>2</g:min_transit_time>
-      <g:max_transit_time>3</g:max_transit_time>
-    </g:shipping>
-    <g:product_type>Woodwork Art</g:product_type>
-    <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
-    <g:size>115cmWide/110cmTall</g:size>
-    <g:color>Silver</g:color>
-  </item>
-  <item>
-    <g:id>lotus-flower-of-life-lamp-8</g:id>
-    <g:title>Lotus Flower of Life Lamp, Laser Cut Wooden Pendant Light - 115cmWide/110cmTall / Natural Wood</g:title>
-    <g:description>Laser cut from quality birch plywood, never MDF, then hand finished and assembled in our Bristol workshop. This is a beautiful crafted wooden lamp that incorporates the flower of life pattern into a three dimensional lotus flower. Functions as both as a hanging ceiling light or as a table or floor standing lamp. Included is a E27 light socket and a power cable ready to be connected to a ceiling fixture or a choice if international plug sockets. Choose your plug type at checkout. Common plug socket types listed below (Also check the included picture for reference) United States, Canada, Japan, Columbia, Taiwan: Type A (ungrounded) and Type B (grounded) France, Belgium: Type C (ungrounded), Type E (grounded) United Kingdom, Ireland, Kenya: Type G China: Type A, Type C, Type I Israel: Type C, Type H, Type M South Africa: Type C, Type D, Type M, Type N Germany, Korea, Iceland, Finland, Norway, Sweden, Greece, Spain, Netherlands, Indonesia: Type C, Type F Australia and New Zealand: Type I</g:description>
-    <g:link>https://1000errors.uk/p/lotus-flower-of-life-lamp/</g:link>
-    <g:image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-1-1600.webp</g:image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-2-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-3-1600.webp</g:additional_image_link>
-    <g:additional_image_link>https://1000errors.uk/assets/products/lotus-flower-of-life-lamp/lotus-flower-of-life-wooden-lamp-4-1600.webp</g:additional_image_link>
-    <g:availability>in_stock</g:availability>
-    <g:price>354.99 GBP</g:price>
-    <g:brand>1000 Errors</g:brand>
-    <g:condition>new</g:condition>
-    <g:identifier_exists>no</g:identifier_exists>
-    <g:shipping>
-      <g:country>GB</g:country>
-      <g:service>Free delivery (Express 48)</g:service>
-      <g:price>0.00 GBP</g:price>
-      <g:min_handling_time>3</g:min_handling_time>
-      <g:max_handling_time>5</g:max_handling_time>
-      <g:min_transit_time>2</g:min_transit_time>
-      <g:max_transit_time>3</g:max_transit_time>
-    </g:shipping>
-    <g:product_type>Woodwork Art</g:product_type>
-    <g:item_group_id>lotus-flower-of-life-lamp</g:item_group_id>
-    <g:size>115cmWide/110cmTall</g:size>
-    <g:color>Natural Wood</g:color>
   </item>
   <item>
     <g:id>D1897249</g:id>
